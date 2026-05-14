@@ -1,0 +1,847 @@
+{
+    "metadata": {
+        "image_width": 64,
+        "image_height": 64,
+        "frame_stack": 1,
+        "num_intents": 2,
+        "intent_labels": [
+            "always_take_left",
+            "always_take_right"
+        ],
+        "intent_texts": [
+            "Always take left",
+            "Always take right"
+        ],
+        "num_samples": 59,
+        "capture_rate_ms": 0,
+        "created": "2026-03-28T05:57:15.060Z"
+    },
+    "samples": [
+        {
+            "timestamp": 269781.6999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEUklEQVR4AeyVSWgUQRSGn61xDa4HDyqCiHhScUXE7aBHj4oYxaMLLoigJAQFNXrUKBIPXlQEkSCIHjxJFMHEiAQNBJSAFy+imKBEAyb2V5Pq9HR6qZ7pTkxPD/P3e1Xv1Vv+ej1jbbn9YbCSYUmFf3ICKnwAJJ+AfAIqnIH8FajwAch/BI1fgY5L18WLLEyPMQF+zWpCvLY2myzv3v+6LouAsKZMSHh1ZY2AsDhp24wJ+JNwJe7G3XrCaSLDGRHgd5tTv0XGHhWH7ZfWih9MkxsRoIMxBUCvx5oEGte1mEqvnxEB6+uOFZ1zk1BkMFz4jbx3b3fLC9nT0mIYsXQ3IwIIP8V+AFuo7+95IoAF/wZIjQ37m8RLmrbxOm06+1YvHem35xhTVIwJ0DVAAtBr5Kr9TQgHrXcPOfpYKM/r2o3TGhOwsq74NXBnaL26zVm+abju3P7iH9cEdDQ+VHZuXyn2Y9LCavtZ+Lr1wk7hOVgQqT5DCWi9t1VAnArW1RaIOmI9k8+zT6ijuw58UZLXAvjF9NtThwIeUT+AtW1rBQQcd7ZDCdhQ0yLA8Q5QpsxbHmAZ3m47dXR4MaRx82BoGShq29bJvob1yj7p8gqpsf/6Xlr9skCkGIsKL2et3bxtUl/07adWiQabNXc2CUC33t/cJqbgQBDcMbh9/Nh7cv+RPLj4VAasj/L69E6F6b0TxA+fjq8WjYbmk1LfeU7Vtrd9hkwYHFA6ccHmgcmIEdi4Y8RW0YZunE300AnAyY1b9cvEmtPsC+33q3uyHDz5WC3RgVoMPWYs6R/SRoq+5TOLNqd19YoGBnTkmTnV0mgDyVrjzM8qrRrLWAQcvnE5MjANTlvaqfzQ3ajq75H+rr5Q9EiVQIQb5+cXykS+mzVXxdYPSNDQe265t334x9a9jw5hhcisEoaXLBo3TeH1pUHOaokeBBoGbnvj0tmiQdMa+KRGAMHB9/av6sbR4wASOKvPmDSvfZGQANDDkBoBFE8T1dXBIxhWGDbOEoNYrNNAKgRQMMUnVTCxiJlUPHecRAmgSG6Mgt1JktCJSWxyJBFPx0iMAAqjSB04LUkOciUVv2wCKIabobCkioqKQy5ykjvKN8peFgEUQDFRSdKyk5sayolfEgEk5QYooJzkSZylBmqhplLixSKAJICkpSRL8ww1URuIk8eYAAKTBMRJMJq+1Aao1TRvJAEEAwQ2DTrWftRKzSCqllACCEAwEBWoFHv3hYkCSjkbdYaaAT2E+foSwCFAgLDD48FGD/QC/OodQQCOHAJ+B5LcW1L/V0CSMf1i0QugN6/dIQAjwNHrlJU1vdEj0D1ZLABGoA1ZlfQI6BmoCWAjqw0H9aV7trQS5JjlfXpXE5DlJqN6ywmIYijr9sxNQNwLywmIy1jW/PMJyNqNxu0nn4C4jGXNP5+ArN1o3H7yCYjLWNb88wnI2o3G7SefgLiMZc0/n4DxfqPl1v8PAAD//2I2UCQAAAAGSURBVAMAAJJKnyLTLqoAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 0.051800000018543665,
+            "steering": 0
+        },
+        {
+            "timestamp": 270114.89999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEXElEQVR4AeyWTYgURxTH3040alwSTY6aBCQsgUAIySY5CDFeEk8eFWHwKgqKiLKiLgrqqjddRfSgiIgfiHjRuwqCHysiKoiIB78u4icrqwu69q/X19PTW1NVMz296073Mv+uqvdevff+/6qe2dI/B24N5RklyflfIUDOL4AUN6C4ATlXoHgFcn4Bii9Br1fgxtbdYkIr3B4vAWoRVVHi/iuBWCBu+5znqQSwEfMR4eL2PwTY8mTt8xLgXQZdxInH5xmUsqZ0CqAnGRdh8jMRYM08Ss65WzvFBN/yTgH+Wr88yoUIIDI0ODGduMnmSg9xV0zSn1w7BUhuYP32O55mINih7g5hNEf4WRecvyALz533C04R5SUAZCYliuza2ZGwDC/bHvwyPKnx1Feqhrva3Fa9zGLlJYAWRgSga9M49MNtk7nKNnvttao1C5MNe9aoSwCfZq727I7Cfny5U8CN3pOhjdPnNrGYMLOdIUR8HhpG8WEV4PKROSNa2R+83xiXbL7LMAIHN3TI3g//y9Xj8wIfd7hN5i9+Eswl+l4w5TXZwk0pHuuudAqwpbAK8He58iWkxE3J+I+wYod0ZWWbcfIgGTNnzZ+haSh8ikzY9quUe4Zt5cOzpRz89EnwNyOO7ycJ68AUfuLEmc9d9ZvEEeYJcpVu7v1XfBBmtTw0x7I9PWG+yc/fypmjp0Oc2HJWLq3+L8JXr9vEhHsrfhdw4N176Tm1UrpvbwxzUbZr2tRozpp6jBEeVn6ge6dXXq/IX2NSqmE3mkvTT8nSPduEMQk2vLn/pZiAD8xc8VimzhpkasTAz1/L4/KUyDflzmsBGHa86BewqW9Auj4R1BG/AvLHOvt16Ry9BYC4KxvkTNB9j3pnyOCdAStk30sNFwQBkSGYJNeIEEcQ4vz0/jQtivEWINrRwARRJg6+EuDa3t7eLkFkSF5jr3/zrU69xkV91a8Aa0grSNLVP1FA5gI873sanjhF6wE3hb26R09Z164R0gpbbGYC0DwkOFFbAzYfe8lBLltcGl8mAtAwzadpLL6XXOSM25o1b6oANMmJ0XCzGtQ85CQ3NdTWjLFpAtAYTTajKVsOalDLFlOPL7UANMPJ0Fg9hdPEUoua1HblcflTCUADNOMqkpWf2vSQJn9DAlCUE6CBNMWbsZce6IWeGslXlwAUARRtpFiWe+iJ3kA9dbwFIDFFQD0FRjOW3gC9+tZ1CkAyQGLfpGMdR6/0DFy9WAUgAcmAK1Ej/vubvxDQyF7XHnoGcLDFGgVgEyCBbfN48MEBLsDU7wgBCGQTMG0Yjza4ALgl+48EwAkITAa1yhpucATKqcQC4ATqaNURjgDOILwBGFqVcC1eyrmkk1qBrWyHe3gDWpmki9uYCjCr+70AV5NZ+sdUgCyJ+eZuOQF8iWtcIYAqkdexuAF5PXnlXdwAVSKvY3ED8nryyru4AapEXsfiBuT15JV3cQNUibyOxQ0Y7yeftv+PAAAA///A/vnMAAAABklEQVQDANimUJ9SfAhLAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 0.31103333331478966,
+            "steering": 0
+        },
+        {
+            "timestamp": 270448,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEtUlEQVR4AeyXT2gcdRTHn2NjGg1qWj1ZFaRoTyK2tAdB04MBLx4VIfYqCvYQhYq19VBK9WCJqYqCggdRiggeevGkUQQbV7RoJYr0Ij1JTY39ly0l3c/svs3b387Mb3Znpk12pvQ7v/fe7/39/n4zS4JHP/ptucwIpOT/KgJKfgGkugHVDSg5A9UrUPIL4P8Injh4RKIQRdxcwzfKvpptfb8CkGIH0+F1tXurWe6bAIZyScDWC75/Y6uAXmLy9k0koN/TTBNnB7dy3gP68sUSoEMsORnWn3EMq0TdeXCbRMHXXiwBbqAlIoqE7XtfdENi9agTj7LFJjAbOrQx9STGEmAH0uF19VWwsT7fIve/3lvrSu8aYgnAkUEAsuLSRpW61x3Pvt9tzGB5+ptZARlSeEMTCdDoYRVa69vT97ckkahfgj+mjrT3XUG/La7d1Z+a/dY1FaKnIoDKkACQ43B8elw+3rdCjhJxYubzMESHf+SVn0LdPqJsdr8o2UvAC8FXXbWfO/Bnl80aHjjc/CBO7L8i956dtlvCK3X8k8c6bChRNuxJ4AOYtJ9mL5YAGgJpkqjP9sPvqtixPrnrdKgzfCg0Hus2jTaezf9WblpWnkfHO8mqHX1iZbMl3dVao5bJxs8jeHVum1jgu3Pqofi/BXZMzgrAsVdwa378bMIbxuDAdRx/aatrknWHHgxt00uLwkAAgw7PGuLuYWFlT33ueRytEwyPJfj1vXFJAk6KD8z7rbalM/Md8Wpfv1CXY59+2cYPL0+IYvmXYbl58Qa5Y+5sCOSNc//LX7sfDvHh5WXZd3K/vPb76+3c5KVP1j1jzdvzXVBHXUFjePk77Y91MyxoLsnPYOwLAXixWoxsPolZzp+6KQTKrqm3QlltrLfcVxcL/C5sGROAfHHLrWIxMr8oFvigM+CbC+dESWAF7FvMNEjCHnX61s9LwPPvHGr7W7ltbAk6HCrypt3N9x4dQIJFff6iWDCcBTGK05MjoQhBodB6/HzbhpYkISF7zg219bSCl4C0iVy/hWN3dpz4UP0/sXD9G7tiwbCKDbUhscO6sVbn1IHanqk1XxfVdZ3ZfLuA3Alwb8m/tX/Ck9bCaVduB7Fp/ZP8IEGBHzIryJ0AkgKaZ4jR0egTwMcHYslBLvXldIHqva52eGILIYCGaZ4CeYBc5Mwjl5sjVwJokhOjYbdQVp2c5KZG1lw2PjcCaIwmbfIiZGpQK6/cmQmgGU6GxvJqypeHWtSkts/Xt5+JABqgGV+RovapTQ9Z8vdFAEU5ARrIUjyPWHqgF3rqJ19PBFAEULSfYkXG0BO9gV7qpCaAxBQBvRS4lr70Bug1bV0vASQDJE6b9Hr70Ss9A18viQSQgGTAl2i17dMzYIak3iIJIAiQICl4LewxA7OAqH67CMCRIBAVsBZtzAKYze2/TQCbAEfXaVB0ZmNGoDMFKIBNoBuDujIjYGYQ3gAMgzpw3Fw6c6BCnGOR9lMHbhRQZI2k3Mwe3oAkp0HfqwgY9BP2zTdwN8A3sLtfEeAyUja9ugFlO3F33uoGuIyUTa9uQNlO3J23ugEuI2XTqxtQthN3561ugMtI2fTqBqz1E8/a/1UAAAD//6iV8TkAAAAGSURBVAMAq5B5Z/wwe94AAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 0.5701111111111111,
+            "steering": 0
+        },
+        {
+            "timestamp": 270781.3000000119,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAE9klEQVR4AeyYTWhcVRTHj69pYnEwpFFUWhWK1IDgZ3AjartyI92qELsVv7rIRqQWC6VUQSVGqW6EIkUXIrjoxpWKuGgY0OIHQaULJUoJplWjadI06fxucl5v7tz3cd/MtJOXF/jfe+655/N/z0yHRo988MPyRkYkG/yvImCDD4BUE1BNQEEGJg6/I4qCIbrCrS0fAYjoim4KFOEl4FTjdZNQIEdXu3gJuGf/i4lFKzGuwXqdAi8BbnOdOn/z2gMCOhU/T9yYAF5QkcexVRu7cVtuNW6of0xAqGNfqMMVtN99eFhcJKX3EsAk4DDPsopr/xIBq8em7cGU7w3X2PfiPp3rl3a2G06zc+9iApIasEnA2SYBn2MHdgo7d1cLNF80d0wAAbQR3dEBlwR0Nq757S772Db5iS+/EtC2gCLixlpDAJdu8+jA+UGRt8d2CjtnH/Sj47vrVl0TAc9Fn5ta+S2gX3S6P3PoZ3PnLsu3/Rir0khIu4sDdED4Yn89MWoTAa4ln3FXx/nep99nk6NLj5mdhenpb3xZIoPbz40JODX+CccYPdtrsayCT6d3ndwzCUh69ZNju4RfhXZxfBfc+Vbyr0jbtltkLwEnjz8aVN/E6PPG3v4oGMXqsmfvlJHsabJf3JaNYc5lpPHvvW26zT54ZOyBfdVEACN9w8Q528Yr9w0OxfpjY3uMrESYQ8Jik3vzH4sC1FTvdo/ep6o1e8+Ru8155MOHRBtB93W0IHbzKm+7tc/osQXG2Vmi74/uEhf/Dw0YnWPrPeLLhb0jgxMffSYKzntH35Tl7/oEgtnxA4MT/xod+6/77pfxO/pN/ld+elUAvgBb3ZHBw0u9bDHs5uX3+VhvC8RQNE2AbRgNfCpZUPv/TvfKUvSLsNvQe/brdiwIUBmiwdzQ9aiEHZjD6rJl8h9RTP7ZY+SD9Tk5eGZJXhqoyXgDTzokSMCfl4D3Xng5IMSK6fZ9K5/zldPl1SZD5enemwxRA49Py8zwBaHBZdlkdmQblyOtSEO3LMrUyBZDFprXz86yGUBIjNnNRqdLrG8QprqPh2f9/yn67LtH1Cb3fvbEjeZ1eWHgErJ54W9xceaNmtSOL0rjpgl2Ym1Yp2NrfW1ztq0t+5q275G9E8BFq1BC5memTOOh8SBlanbevLTd8Lf9W+NQ9uvHygDhqXrNPwEBMYypb2Jm6tOyMDkntVrzjx7jlGPBlxjE8pnzwj59iK4jE0DBFB9SSJotsYiZZlP0rq0EUCQvRsFFC0ryIyaxyWHbMAUKW59XbhsBFEaReRMXtSMHuYr6u34tE0AxvAyFucE7dSYXOcmdlSPrviUCKIBispJ06p7c1NBK/EIEkJQXoIBWkrfDlxqohZqKxAsigCSApEWSddKHmqgNhOTJTQCBSQJCElxJW2oD1Jo3byYBBAMEzhv0attRKzWDrFpSCSAAwUBWoCL3pw9tElDEN8uHmgE9pNl6CcAJECDNeT3c0QO9AF+9TQRgiBPwOaxHHb0AenPrjwngEmDoGpXlTG/0CLSniAPgEuhFWXd6BPQMzASgKGvDSX1pz5EKSYZl1tO7mYAyN5nVW0VAFkNlvy/dBIQ+WEVAKGNls68moGwvGtpPNQGhjLXTfseBiwLaGTM0VjUBoYyVzb6agLK9aGg/1QSEMlY2+2oCyvaiof1UExDKWLfZt1rPJQAAAP//Nd/IAgAAAAZJREFUAwAUdZGfM8k0kwAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 0.8291888888610733,
+            "steering": 0
+        },
+        {
+            "timestamp": 271114.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFI0lEQVR4AeyXTWgdVRTHr69p09RnS1pFoRUhiGRlFcUuBE0Rd+JOXPh0J1XULkQQqUWhlCq4qFH8AAXRKIgILgqupBZxkRDQ4gdBoRuNUErTNkTThJY6v5s5t3dm7rsz971J+t5kwvvPOfecc8/H/973kcbmkX1XiuCBj3+9UkU01Dr/a9x34IV1TUHhGzB1+J1KElWYgEpOHw2lCVjPbwNNwMnoeg9GbKzHlyZgd/xB6CPB5+tn4jQBRQfgphSNLRL34xv3KFAkdrViMgRw0uCTg3eYmqxlURYJ9uC2LnXWSmYIsAtDgj287etGdw3ssnVTo+heLwEk2XyWZ39i7+F7VTvIRIaApcgiiNTEq99IkKETQ7RZGALS/n2H/kib1F1PfpCx9ZIhZHDp20kAN0EC0rLXSUj361ofPzBtzE4CjDdWLu5YUX7+7BkF1Br9Pf79CSUoq2Q6jyHA/jlsf/K/ffTq12F6s73mnyVg29J6nj8dvxZrQwDFGBygC+zPgipcf5lLZIIAjB9aP4DSa67/0tkZzBlwg4A4bjt/VIGT418pIHbkwK4mIgGXTQK+HHtQ1NJlhgBfBRk+9Nfg7v2P6bT8sJqcaD+Mz6cTrMLDELBaxR99atbZtn3itu4MThknP99rLK3ox45ZxMrOSIJItH21Pr1fAUPAntYJ1Tz9kbLf82135zgmJ8YSEVMvPpdYy+KWfy4pIOs8KcPueeK4bl7isQ8cuVMvf2gsa2k/IMPg1sHE3sYv740pgb3JpQ/uGDVm2eOSW+aVOvbFNwZsIg65Zf46dePUeTUwdZGlBjo2fMQJXv39NQVk/fJwM9Erdp0gfvy59XKsFRR/LSlzA9jy3+gwwkBug3wwNoa/1j6Rw4+cUf+e2uSEDowfQ7f/prVn3z2iJY9No0MIDVvXBsdjaGZe2Xh9elGvn354UEEMW77dsA0RhAQB7GQ4G9hoHBs6kMH/HudiYckiTYwdIUQjAT6R6MAeFh2bCzsnFtXdF+bUdw/dYNwQAsajGwOMw1ai02eZIQCjD5zmuWM3qetHltWu/e4PONf+NCGsGUwkug1XDpdttrVyk7ZPb9Tun7Zt19J+QIbBwkqc+AsR8P7zr0h8QhYhYmnuKkkbly8oG9FKr5FpUGh2of1/JQy+OLpVyeDEF0Z8+sQXIoBAH4QIuRVIBmfYZrOph0T35Uj7IIS9SIhgWBka3R7cderpfLJ+89yCqFqWQoDOFD8gY276jKL5m19KFotDgsRCa0DnIqc9dFAST3DD4wt20eTyzKJumM2n38r+5MUegubEJR0OoeSmhjZ08EifPilyCeAbABDsA43RpC+mDB81qFVGLnLkEkCQDzTDydCYL65MH7WoSe28vLafbwJ7jd4VATRAMyS6FqA2PXRTuyMCKMoJ0EA3xcvYSw/0Qk+d5AsigCKAop0UW8099ERvwFeHtwGQmMIEkJgiQDb3mqQ3QK95vUECyCWAZIDEeUl7xU+v9AzyevISQAKSgbxEnfhPHdqgQCd78/bQM2AGX6yTADYBEvg294OPGZgFuPrNEEAgm4BrQz/amAUwW7p/QwBOQGA6qCprZmNGIDM1WACcQBxVlcwImBnoG4ChqgO3m0tmbojSLrDKdmbXN6DKQ+bNVhOQx1DV/ZW7AaEHVhMQyliZ8SMHLytQZs7QXPUNCGWsavH1DajaiYbOU9+AUMaqFl/fgKqdaOg89Q0IZaxq8fUNqNqJhs5T34BQxnotvtt+/gcAAP//y/edpAAAAAZJREFUAwBQIo+fmg38EwAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0
+        },
+        {
+            "timestamp": 271581.3000000119,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFI0lEQVR4AeyXz2tcVRTHT6dpbOrQmKoopFBotQZcKBi6KWhd6ErcqQjRbbtpF1oQ1GqgFFxIiSlKXbjRIIIKgv0DdOGiIaDFH0TFLtQoUprEkDadpKV9n9Oc6Zv73n0zb+a96eTNlPnec+855557vt93M31Tevyjn653M0rS5f9K506ckjC6TY/IDTAxukWIiABGHCFsnqf97p3HBOR5RlJtrwBsQgTAPA+EiYfneZzlq5kogG3KQ4Q4wnE+6yEv25AAWR9+O4j6ONwWAXzNtNv/5IlRUQG2XhQxtLsJ97y8bwekDZytAjAxIITN87B5E/T1HCYdzokIEA4WYe4jbtwKL4AR9VkV4MrdvnDx/SoANBHhvYm9gmXdSXjhm28F5NFTVQCKHzz+GyYWSS9D08EPqthNTTj7dpZrdmVNvKZ4sKgRIFjr59GXTqtNMyDCr6+c8m4hDlyC3g0ZBPgCrFcmVoAfPjlUb19NfN8bh2UweJeocSYs2ilCQhsaihVAIw0Om/58WDMfOnlYgC6Cgduwa3FCzk1+rkCkwJ34MWHOTj2RmJdlMCLAh8f2pqp/duKA5nO9dbI+PP3WtfWZyCNHntP59V1fqO2kISJAs835nvCzL8/FlrSnbUF3bf4kG3dTxoL3+6Q9w0EQBEY/XgEqF2c1od6w7+T7kZS4xiJJgQPS9/9zVbDBsubjq/H69KgYyf1/LcjYx/sVbDa/WXxhQPyz0qq6mDPxCkDQxY8fHJBGsG1pk5z59KsqbA/+MPqmr+gRWPPfM70oNmffm7+8LXu2vSpY1i/OlOW1obL28f3gDt3PQAwLIBle44vD79uv3fw1GA4eTHgXCOcxv3S+X+Iw9MwFwnXRPzKgOWZ1ETNAGvfA7JK4GJ9ZEUAcYQDzRvDg0mYplYa+lDhQIOxfWfg6QpYcFzuPzMnCmXtdt3d9eWTIG3MDKyPbBbh+1mFhZv/tU6HGn7pDJoPbYgiLwxx/STz/Bh74WXiS9oQ9aRH335PDNUJFEuo44gSZH11TQkayTolqeHhqpbqPGgT4s4E8c+AVgCBksK3ABMQiaCO1aNbIYiHSyL6kHGpQ181JFMBNbnWNoAgRBjVpDKIGmsXfDngFaPRp+Zrcsvq/GMI5lecvqd98q7MrYoSDHbL1aEWwLsifW65gMoVXgGZPqczffPFZ6x/UEstjfUrYxChPXVW/rc8f31wlTOC/d8syKGtMFfcdXVaLIOVyWXPVkdGQmQAQhxRNYgE9GmHmjQKylosgNjdLPKvbkIkAkIe4NdgOy3kIUe8sN873TdjXkgAQpxjNYJvB7mO3fjQ1s589rdyGRAF4qeEAF3fuXhXIQ9yuupvTrjW3gD4QAaQ9N1EAKwZhA8T55uZQi3eCpR+ACLwtgkb6qisAxK3Q/MwF4RBbd6KlP/oEiBAG/e6Y2YKpoq4AZFKsE586vcUBEQB9W9z98jN/ogB/jItQhGK2IWvLe0DWNa0efdM/MJ9rvQJAnuQ9gQjYjQpEAHJ6URQOkYgAqAUgDpz8jbs8dJf2DjedrA81AlhQFVtPKJQJRIAbPAHcVAAWgCAgUCTweyTMxzjCucRA0JzMuwHwBSUG4JKO+xHi5hRhrX8CSUTaIUSe/xUmcSOWKEA7yNNE3uAnOYg7J1GAuA0b2RcnQuEESPuAegKkVaxo+b0bULQnmpZP7wakVaxo+b0bULQnmpZP7wakVaxo+b0bULQnmpZP7wakVaxo+b0bsNGfaKv93wAAAP//oFXuuAAAAAZJREFUAwA2mbFnv+gkbgAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 0,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 0.8518222222063275,
+            "steering": 0.28322980592974667
+        },
+        {
+            "timestamp": 271614.8000000119,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAE1klEQVR4AeyYz2tcVRTHT8cx6Y/BEKsoRCwoaEBQweAmoHXjStz5YxFduFEXdSEFxZ+FUupCpKQiunCjQcQfINg/QBcuGipY/EEU7EKMIsWkLWmnSdqm73PbM9y5ufe+N5M3r5N5L+T7zrnnnnvv+X7vmWRmag99/MtamVGTkv9UAhw/cFhCKENzRDsAYXotwg/vPCCKXp/l2z8qAAsQAeDnDYjbe7pje65XfqoAenCvRND91RYtQmYBtMC8bNFEQ3VfMwFCBREvUpw2Abb+L6KgkEHFIwcmRNEmQFGEi7xhm5OStmNBAegEOxG/qD+EnJU3IO/bMyiAL3kQY7Vli9X5ndagJO66DkAERT9p8NR33wvIu6basGfHj968yxONh2aTzxQgnnVldvLVH6841+DpHrmuAzTh/mc+FKDjrPb3lw8HUxEIHJ15OJjDRP22BqYQBAX46dMXOirgwdf3yEjyPiLrojSStkgbbf3QfwBq9Qrw/P4/mJOjh3Ybm/bY8tc9JuXu9/YIMIPkQTfsOnVIjk9/aYBISTj6myZMdHEXk14BOt1n7fZfzRLa2zhXH4++dfGqJ3LfS08Yf23XV8b2yyMXAZRM6IYff3ZeU9qse9uTzh9H+2XQtjBlMJW81QWxtLFkEkQFGN45nqR195u1eES49Z8Lgs265rXZCXEJTn0ymblQiJP8eW1FggKE/hXydvjnD3ZLGraf2SJHPvumBc0nbqM+e55aBKvxm2ZPifqse+O3t0XBmAWvjDbaaiDGHMAH9YP3mhz8EIIChBa48bMnhsSH0cdOuqmt8fa5xZY/NL7N+GrNIPLYNndGnpu5JFgb+441W6sQB7QCEadWG/1afHjx/YPr4s3FbwXYhH1777hjRRaP3Oyb8sbOjY96475gc/wGUbjztiD4c//WjVDTSbfYUHGevjQUfgmI9aOErVDU1XysrxM6IeweBDGFOxcaaz52YWLVpCECSH0JQMKs6PLx9/RY20vEJ4i7tQpEsRRtw83tdDw20zRdoetSBdDEvGxMEJcwxeZ1rrsPZxGLCpDlttgkC65fOS1Ac5efPGvG/73bkJW5pkFj5oJs3bssSaaB5tp2fsn+AG/PdOdHBehuS5HlhXlDzl6/NFU3QxUBsibgPBBEQwhhC8K40WgExdF1WSzdRRf0RIDhG8dkdWikrY7hL3a0xipCKxBxbEHsNMTIoxuCAnTa/ty6XSA+RG0QywMjsipAuyEmRNp5QQHSFuo8xAG3bpPF15y8LbcPdF+E6FaEDQkAcQ4HvSSsRGOWGpjvVIiOBOAdHoA40EM5uB9AV1BTJyKkCgBhBSQXjp0UDgGM+xHUhhgIEXrbrHWnCqCJEAdsrrF+t9RKzUCFwNp1ZxKADdgM2Is3g0/NAA5aLyIAxlEB/twnwkI2IHkzAw5wATaPqAB3JgKw0F7QK//E/ut6tXVrX7gARABMrBOACcDkoAIRlFubABBnEmjCoFrlaASAONDgoJL28apBnAmb/C17lwiVAjWIg1Kw9ZA0LwFPvDShSoDQVfNFBAjN92u8k7r4VsrbAYNO3BbJK4CdMOh+JcCg33Aav6oD0hQqcr6IT4Qun6oDXEXKNq46oGw37vKtOsBVpGzjqgPKduMu36oDXEU223ij9V4GAAD//6VAxV0AAAAGSURBVAMA7cqxZyBHih8AAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 0,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 0.8369777777724795,
+            "steering": 0.4867539914258975
+        },
+        {
+            "timestamp": 271647.89999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFTElEQVR4AeyYTWhdRRTHx2uaNOnDmkZQSEFppQQELRh0UfBj5caFK0VIFdxoBUW0UKkWC6XWRZGaSqkLQWtwoQiCbtzZhQtDRYsfRNGCYIRSmtaSmqRp097fvJ7beXPnzr33vfu+bl7I/50z55w5M///zHu5ecFDH/5ydTUjUKv8pyeAeQFO7j+sbJj5MvqBSdhFkLwrXmTsu3fuVyaK7J3WK9NbABFAWrOi8ohRVK+0PpkEkCbNECGJbFJc9lKUDe5746VcvZohQq4NFFyc6wYUvLZ+3xfdM2+/RAHWns3bqvj6Zr8NHt0/roLp8E+fvXUhL9bOd/sY4gAe+gYs4SWgrCIIXS0AA58I5MuKSACT4OKIOSq37xQAyiKCWGKCdv4pfOrb4wrIXhq1kQADjk7vHdriiPpDrg9Ve0aWGub0baxgIhRBPGp23QkeCB+EwPVxzGzdflSBWMIT+P3Vw57sjZRN8EameZ58+ssK0Q2QgG1/+uQFO1T3+OTk59Hc76cejnyX0ypxvAI8v+8Pvbc8Iny0Z4sy3zp3nj+kBLpZzpc0oXK2i5VrAV4MvoklzMDS2Rlz6PWPrDymgKto6xN7dRiRtBO+uE7aFQtLm/KrBWhK57CpfXo77no3jCr17LG3tS3yxV5Lek+Ej7tAxraNBMj7X6HdKGn8962vJKWiOCd+x7+XFdj2+g9RXJwkcrunx5WQe3DiuC6fOLZNW14kh9934F5MDJEAsUxK4Ocjj6g0DF24Sdd8/emXCux4/4Aef/zMbkXutunz2vZNL0ar0ZOcDeJv/vaW2jz0msIylkn4AmKmz1hAXHyxAUHZmARN+0H4oTYwMmaGYv7w42fUxVP9TsSKwwDrhSb67R8bjPw05+kTFV0yOHNBPTe1ovaeXlH4gl3za3Sel13DFSX4cf0GQjHU3IBg+Atlg82asZHtR9XCua9qyP4zORprvPHlWbVu06VYPCnw/9iwAkl5O74wdosSmDkRwmWpmwxFMREs/HkP8VTIKbvIuiZTJ7eCua4aX2xo5pwvrebGl6OT9xYaSVsUetTcAKO2xoUAhGqCOQbMFTGwMtV34naOzZoERqcWpE3dlh6ZBKh7hYSJiCBAXFdZMwi71skkACfompwltjQ36y2jt0kWQThpTsc7saBkqgBsqJG1BjbUfkAuPXlRgTWX/lOA3pWpyyocaZw+WP2UJw7W7qx+VSN5LHEwO1/N4deLVAHqaWyeOiRNDHy2TkFY+pIT/9S+m7ULScHiweo/6uvVsgK375zXNbyMVqq5RoQIBu/+lV5O1HP6EKpUKtHpLveH2w4hC5AXP4sVIbDUiyD4AoRIEkFqkmxhN4BTh5xJmLEgaQN54ohgwpyLCIzzCtGwABAHnDobaITwpj1XaJEZLjEQAhFAlkapAvAp7WrEU54QF/KuulbFTDEQAWQRIVUAIQBhAcTnTpxRnUBc9mdaEUP25xMiUQD5ABTSsoAQl+YS71SLGOwVEYC9z0QB7EKIA5rZuW4Ys2+ACOY/UZkEgDgkaYDtZsABPgAhvAL8FX6FRyGTQDcTN/cOFwA3rwCbQwEoNCeXyYdbTABUAe0gyqMwaOXaNQIIcU6+lZto51paAIgDrgRo54ZavXYAcRbtBOJ5H4XZd6PQN6ATyDdKpN75wWomj2j6BuAIzC8cJNZNNu9eYwKYDeyvp8xcWXyvAGUh6ePhFICTB76Jzcy18mEoJkA7iTdT1KTeMQGSCssa7wlQ1pPNyqt3A7IqVda63g0o68lm5dW7AVmVKmtdx96AVj0Od6wArbpxXS9Ao0JdAwAA//8aZE9lAAAABklEQVQDANA91stnUd2VAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 0,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 0.8222222222222222,
+            "steering": 0.6317524952985399
+        },
+        {
+            "timestamp": 271681.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFQklEQVR4AeyYS2hcVRjHT69p08RRiRUUIhZa0YALBUs3AR8IuhGXihBduPKBC2tBUasFCbqQIqkWXQiiQQQfCLpxIejChUMFiw8iaBdqhFKavtKm00fS+Z3Jd3PuyTn3npm5dzJ3JoH//c75vu88/v/z3UcmuuuD35b6GZHq8791AbqtAH58804l6MTeEhVwaHK/SkPRG4K4uYbdN2N5tRMCZE2KOFk5rcY7Qda1t2jDP7e5/F4fIgBvQs6BooVJVMDtLz8bvP08RSiaZBopLUCzVZA2YdliWoClm37v6n0XWSGRkK/W3wDAVmLzMaWA7c+rXyS5kD1G1V3PKJN4zTOqSBE8S3bErW+BjqzUpYs4BfBVQZdyaGtbTgHMGc9tMXtr0x5/8efEwo98/4MSJAItdLQAO633/6A1ESIAy60/m20ffZ4pgHYe+Gn67jym0XPYFy0ATkT4cM8tCkvfhTsee8/l9vr+3LXfG0MgMHBjxZtDICtOTjuIBWCSA4sPYNpGmoiuyYsm6VpTfFoAXoXiSLO/fPxkWjgRQ4Rb9618WlMNW0+8rQ5NfabziC9t/Vy3Qy5F3QbRzn3vhqyvc2rHZrQNuVDeZt79r14yu4lvj0TA6HSiMnQFGGvm1uSEXZM99Pisdttxm+y49eTXgwIvvmqZmNyhgDnNKgGejr4143H7/foDMu402XBtyOVDhBv+v6iwrrjLx1ZeqiaJjf97HLea+GhcWy42cXz31gVZJQABHwa3jK0K/XrgHpWF4VMb1DeffBWDfHzguuoJhQUD1XN6fix9FxhL0vbh5zF6bd2oX4iBejMmTx/gEyCM+CJpYAFJ0cgXmEzYeWcOb1IuZE60nLBpbEi3xNIZnmmcJm3BK3+8ph49WFGTXz6nhmZOqSemF9XeI4u6Tf+7+65SL8xv1JAxpv109nTc9VYA5Ew89c4byuwvHP96Fdl4VqNx5bbzRi+7eXZsJDtpOWNh7GplYtmtRqcXYjEQBCCQAIHInRqpqFiAhb8aP41BlKAPcsK+uO2XfKwdy6s/t+OCJhw6nymQFmDo5rAfREYePBq6hjMPEQSSkHXirrgQ5mQBhGS+Zq0WoNlBeeSLENgsYfMkbO89WAA2+d/UqD0+lz7zIgSALGtxsoJ2Tjhrg8ECZE3ki9fmGh8+G8+fVDZqD59RwPRXpi+qI29VVD1bY/Pumra++fHPzrf+C0aQAJwIp8RizQDyg9euVM38xEBiOGRBwml1EAOXTxD8lUpDsFaEiAUIfRCymSxAnFNlY1jAmCyy5IDDr1+BccIUhOqQpGvUBTVaGVS2CBL32VgAX0KzfshDvNlxreSLGIylEgBrY0OFyBSA8meBLECcHLPk6a8VQoXIFCCEAORZkFIHIWPScrbtSf7rnJabFgu5LYIEsB+AfN4CiAPIp21krWLcCoBnA3tw3RZBAjAYwgL6cwePKogD+t0MRADsFRGA7DdVALn/IS4DIA6YTHxlsuwbiAipAtjEII6PCbBlBhyoiiABIA4YBMpM3N67VwAp/7/3Nob0GvEGK7Xye4A4TAv57XUBepU8XJ0VQLkThLz5tYWv15AQAOKg10im8YkFEOKUOyefNqgTsbR/iPJcXwtgks9z8nbn6oQIEeQ5ddDuhss4PrKJX797vow84j0329C3gG9Qr78B4J0qAAm9jnUBzBPut/sf7l1bAfKrUNGvQqcAPPwACvU6YgEof0iDXidt8osF6DfiIkIsgDj6za4L0G8nbvMtRQUU+SoshQD2qeXZXxcgTzXLOFfpK6Bd0S8DAAD//4FnIaoAAAAGSURBVAMAhsLYy6kslIgAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 0,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 0.8074666666454738,
+            "steering": 0.735787083829907
+        },
+        {
+            "timestamp": 271714.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFW0lEQVR4AeSYTWhcVRTHT8c0aeJgmlZRiFhoiwZcKFi6CWh2bsSlIkS3otKFtWBBi4USdFFKSbXoQhAJgviBYDfudOGioSrFD6JgF2qFUkzakpqPfqTzu5Pzet+d9+7c9/JemDcJ/Oeee+85557//57Jm5na4x/+srKRUZMN/tfRAnz/zmOlX09HCgBxAHtGgF0GMglwduKEgDIK0ZxpZNPWNS7vWNv018MC3AQQdaE+rKtd9THqgCQRfOQQAfh8su6Vdcu+OiIBcMoqAjFFi0DONJQhUEwA++BH3thnT7vWrq088GtHkCvjdkOImQ5AhNPHx4TRF7TlP99uNfeMAHbp041HncJeV/I62ntVtlsEsMks2ZMutb0CVInzs99+l6vcYAEWt6fnX69HYc/99VgRkFbENjJMWgTY63n8IQIIzc//kna+6uOSaxeXd9+Niwkwvf8Vs68i6GgWrZdHn3/fmvlNJejzCvHxxbP36dgTDJkRCbD32Hux4I8OPRib550MNh6dv+8/ERTu6wLdOz2Vj2haAZEArsPJm0+6S2b+QUMYPjOYSZsXOuihY/sEqOuOS8cFnJ38TJdkZcfnkb3eRqoARRVSRHvr7RdVk50nlwB920fsHF477a309AvnTRxdYozVF5fs6MEfVnduD1neBmm+4xN7BOQS4HYpa7eSCkSE+/69LoxJ++1OhZj6jP49Z8zxj0cFmIn1kirAzyfH5OXaN5Zr03zxyB9Nw3nFPwkvvfu22OunPvlKFKwPXNkk4O7pS2bsmV4UQHpG9g7+eNnsqQ9zYvHZNfAaQ+wMFtgH2Er89fnNkR/roIaTggUehcyxQ1Eb+iLmevVcryQh5pQy6R3pl62yKPxhM07u3soQQedv/vaWPHemLhNfvir9M1ciHL5w09gE/DS4TSAOmLuIdUD/7vhXY24Pcj4szH3dQtY9hPmdO5cZgvD/yFCQnzotjNwlLtizRXFtRAIxAQgKhd5wVv+hpy4GhbgiDMw038shwbN7roW4GZ9cAoSSMCc4L/9MDkcdY+dxCTthwj5w15lD2L7h4akFloOQSwBIBGVv40Qe7SRbjDZhshbCbu7MAmQp1D3MN08TwyXLTWe5Yd+Z7GUWgKA8WJptfvDZvHxZ0rD0zFUBF47WZXlmwQCyWw6U99NMiwDuk8Amy+1zU/ZaiA35vm3Dhvi13kEB8+M9ArA1R33qugCdMzbkEgRhBIjB6MP5+XDBWgTg0KIAcXIpeWy9fYgC5qwn4dyRO1qWF4/2SUNCg3sPzAsQ569eb/5wghDOVss0WABuvyXaswB5CoEg8Lhm2rJvns4AtiCaDD/ObydCsAAkDml/iAMOJ2Y9AFmAGO551MFemhCZBHCTu3MlzqHuXp75zkM3ModpN7gjNSUJESRAu/bnY66Sz1xxwQGQTIIKMlzvE7oBcHSQADjagLAC4rNnLgoK2z6dZtuiUCtAhGAB5k7dI0paySlxkulalUbqbitAUvtDHJCgSoSTam0rgBukxLuBPNyCBYA46BbikAdeAbT9/zyMq3T8P7pmldlevQJAHHDrIFvqaninCkC7Q2HX6u1jdyMSBdgo5LnQmAAQB7R7t9885EEkAMRZgLz9FTPpCwZ+3YIaxAGEIM9YZWSt3XQAxEHW4PXy54cRUMZ5NZe43f5lHJgnZ56vxaHnmA5Ic+60938ZXeAVIE2YblqPCdCJ7V+22DEByj6sE/OnCtBp7/+yxIsE2Ijtj6iRAEyqgKKfBIkCdGL7l/VZwAig7Q9xUIVOKKpGIwCkQVFJq5THCFClgouutZICFPmPsJICFNkFlRdgrWLcAgAA//+EG5fiAAAABklEQVQDAEoqDNq9omTHAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 0,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 0.7926222222116258,
+            "steering": 0.8108093420180179
+        },
+        {
+            "timestamp": 271748,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFiElEQVR4AeyYz2tcVRTHb8cmaeqgjT9QSFFoSw10YcHQTUGzcyPiSje1ghsVUbAWLNVioURdlBJTLW4ErUEQUVz0D9CFiwYVi1ZUtAsxQinGpqQmaWvqfJ6eO+fd3PvefTOv7ZuZhnznnHvuufed7/ee9/Iytfvf/f5yL6Nmevyn8gJ8+cZ9RqPs86q0ABB3Cftibk6RcWUFKJtoSJSUAKt+22JAKJn4ifHDRoPY1UaZ4lgBNHHtQy6LMHPklIkyCebVZQXIS8yaRwSQlVPVOSvA5btOpmp0uyA1eQUHV/P0oWEFYKChBbn35ef0VFf5KQEgfXxirKsI5pFJCSDJCCH+dOOpD2SMXfOnMQC/0+EVYHrXswkvl3gSVB+uCJ34IFwhwLZDbyuKTXep6VbWe+zzL4wgtsgVAsQuvNZ5x6ceSJUAcQl8NJaek7jPZgqwLfD0X7zVmDcnNhusb1M3lncrkS85q9fXGV4xuBtnCkCyiDDAwMHWx99xIuHhT7sOhycLzpQpUq4A1Pbevs2YFJ468HNqXOYglqDcBrr9i9YRJQCb+l6Gvv3gaaZyQRfdc6j5MnX32QkDTkx+bIBsIIRk7LOx4vjW+mLRAvgWx8Sy/qQ+vHPGbH1kf7KNr8uSCfWxfc/XalTc9QkcFEAK5zJHlh/EtAW6gA3cIuTN84mjrzFt4Z405N21JPtixGPhFSD0LhC7aVl5iHDnH5cMttU9d4yP2qW3TZ9N/B1HtxuBV4Akq/Hx3ZExo9EI5f7qfPzBTSdTe6w9t8oc+/AzCzYk7/2dew1zFIldPb1oAPNYcvZ8M5fKkTE5YOPaFzHJ9fZOjyaWAGvB3yNDNkYc1JjwgckiqA19YoCsOX+q34QgOVgEwj7z1usYi/6RQbPOLBp+8LGTm9ZhLGT8yg+vmvFPXzBPTi0ndvDHc4mP3X962eaL89J8nxFkdoAsEAvBEFyyskbb9c/PmBs3XNCh0vyFkZtMCAgRQiEBfNUKcd+cG/t9cth2hTvnG9OywDdXJIYwofy2BBh66Exo39y4CIfVyTGEY3JmRy8afer6GtpvSwBOVG/Wqo8IoB1BXcLDUwtR5bQsQDvFhipDUIQQhPJcspx0LGF3z6AAPJ0Xftni5tsxxdpBAWdpdsb0XZhLkLcMIYQsgkMUtErWd72gACQjAtYFxbixmDHk6/Xmv7siBHbp0fMGyD7EQH3qkmnIZRYPNv8fXbO7vK9nMgWQYsqwkB+4ZTi11cX+m40AogDSIJXYGCCCwBVD4mIb6fYXZ2Y+LFhhATj9Iu0PcQhx8lgK0iAGdMznnzpwgw1rolqMO3bPm4akSd6c6Us6h8FwfSDxfUIUFoANYwF5Tl1OWaysjyEuuT6rSULcFUPWkIfPIWC1EIUE4PTZIA8QB1wQki7y1rcyD0kB608frNtuQBwBc9RFLkIUEoDFee0vxLkI+dcCkJPr4ruQOWqMFiDr9Hm/B0JeLlCm3bDvn8LbQVwW0QHiaxstgF4EWY3Zr84YgKI6r0q+KwaCgMICQFwTE+JVJq/rxUcMgB8lgLT/X8duZ00CiINOIp4Urj4QIUoAtSZxIY7TyeSpHxQSAOIA4oANOh25Akj7//rft9emW4jLweUKIInYbiMPp0wB9Ol3I/lMAbjXSQAb/29//G7Dig6AONBEea/W427yUwJo4p166kUPxwog5LnXQdGNOjW/BnEAASHOFwuMQTe3P/xsBwh5gr2EGsRBL5HWXG0HSFC3v8S62a4QQJOt8v3Pl6RA19uKnxKg104fwVICEOg0tNsFQQGq3P4cUivfEbLOhRWgF9sfMawADHoRiQDu6Ve9/d2Dauc5kAjgbthL45p7+p1EvowH4fUO0CfOvQ90rOq+1Nfqc+BfAAAA///b+ymXAAAABklEQVQDAA69F1drtzHfAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 0,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 0.7777777777777778,
+            "steering": 0.8645293137576487
+        },
+        {
+            "timestamp": 271781.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFv0lEQVR4AeSZTWgdVRTHb8c2H+3DGj+wEFFoigZcVLB0I2h2bsSdilAruPIbrAVrpSBI1EUpJdWqC8GPIKgoLrpxpwsXDVUsWlDULsQIUoxJaU3StGnnd/PO9MzNfTN35j2SzLyQ/5xzzz33zP3/z71JXxrd+/7Pl7sZkanI13dv3m1cdGLrlRAA4j6yreK+3FaxSgjQavOdiK95AfK6nDefJ1JLAdb9eWfeWjt/cvSIAXZQwUc0ERNw9y3kxbrzEBbIHGPxO2Xb7W7IPuwJ8Ikgi10RsogyB2RtFawVgI1micB8XZEIoAlevvWUHq6KvxLHH2IpAfQpEBHEkhyKKl2DlAA7X3kuxfH44ZHUGIG2q5y+f40RpBIrNEgJkLVvyDMvFr8KeOSbbzO3GdH1Dw7cbrCZmRWahLQgb9vBJ0AXmm8O5m5oOqtsjo/fV3oHVoCji/eXLoAIIKRAyPWRnPW3NEJKGjePzmctdOesAG7QN9ZXpNeXEBj7dc+RwEyzjFzWwrKnIJKiT0dfi5vYnYfeNhN7nrk6jn8DaCFk4q7H3hV3Ra3bfd/LPx3Jvh6JAL7FobEfP34yKBXx7jh09VftbdOHDTg59rkBUqRsN2V9EdsRAYq8UO64u2b78w/ZEL+RrNN8tOqyL15UOPILC+C7Ks29BhlOAYm8HAse3D2JsXj8o9etzXrcs+/7rOlCc4UFKFRdJeufJSoc5NLtLX9fNADyWrygAnHS/okdZtfoEuKh/b5xYtoECfDT0REjYGU08AUmwXvxP6SSQdORfLGExcduPLvOHPvkqwTEwIe79xvm2Bx2/cScAawH5BAXSN6+H2bsOnLA0MYXMal920D8oAaIXRPhgKfeeiNJZiwgqQgQB8ia86d7DFiMfrMWHww8cEZSUpZ96EDPcL8BOubzx7ZdZ8OjX75gwBPji9b2/3LWgEdPNMxLA0uwifHj/+GB9Al459mX43D2t2wQkgJi4kNOw1dt09YL5r9jN/mm2o7NDl9rfJDCiKERdAVkcZYV0lk5Mie5rU6B5GlLt4COlfFFnMld/XZ5SgA6aaPq0b/tlJn9PfsPpEWIqNLmr7HB5Fq4NTpBVr9L/KkdC4YTMDg+a0MpAWykxAMiJZalllBDTkZqImeQJ5QQhjQQ4lK2bQHczknhdqwIgS1SxyXrI+zWa1sAOucWDR3PT02aDRdmMtMRQaATy5DV68UPEoCfA7JA27LdF+KNRsMs9GzWJa2PKIL5h88bwIQIgR3aMk2obQQJ0PZbVAHI914/mEQgygCSAB9RBL2fbTKAOLmCfw42zIzZQNj07Z23voxtsPnIM6UFoPtFj79LXm8OkkDHhKxYPaf9uYO9ZrNZsEAME38hhiAeJgJJbPLc0t+1SgtA0VBAHBIceSyQtXQan5gL4j6cfu2aJCyEsAQRA4sgN+89h2vJM9ZgL6wpJUCR7kOel9mdeB5C2jNVOAQhIAsRA9II0aeuic4pJYC8IM9CnvsuXc7LD53feuBSZioEBSQiBMBHDIAwoLAAdJ9CWYA4oPOd7LB+p74GOu76WggIIwSQvMICyEJt+XAjEOKQ1zmr7YsQWNkLfiEBpPt8khPCWApOnThjwEoRz7sG7KkVIA44EYUEaFUQ4sytFHne1QkgQtsCVJW8CBgsgD7+LIY4oOuAWBURLIAmB3HGVSbO/kGQANJ9FtSJPHyCBCAR/PEqT2Pq0PklJib9R1EJakv3NfE6kYdn7gkQ8iTXES0F4K4DSA/FR5/P3/hrHUX35xVAE4d80aJVyk8JAHEAgbrddTj5kAggxEmCPB8Z8UFdjz/crAAueSa6BZGQp+sA4rr7jOsMewKEuI9onY8/fKMs8iTUHfYEaJLddPzhvUwAgoK6H394pgTotu4vE4BAtyE5AW73u+H40+xEAAbdCCuA2/1uEsIK4BKu+vHnf40ELjd37BXATVrL43b3dgUAAP//BzCg0gAAAAZJREFUAwAREy7WJBA4cAAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 0,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 0.7630222222275205,
+            "steering": 0.9028014999911341
+        },
+        {
+            "timestamp": 271814.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFvUlEQVR4AeSYTWgdVRTHT19j0qQPNf1AIaLQVgl0oWCoi4LNzo24UxFqBFd+oGDsolQqglRdqMRUiy4EP4KgUnHRjRuxC5E+qli0EEG7kFYR2/TD1iT9St9vwrm97+bOzJ15k+TNeyH/ueeee86Z+/+fO5P3Urn/w1/nyoaVd/bMucjLoSIl+/n+jXu9O47ze4MtZ6kESCOZtm7xNmapBDC7LtAojQB5uhuiU2kECCFDTFahUgVY8edmUXADH47s2Ss2fDHN+LKSynKvBgFqdSIgtICSduPj/G5cK8yNADZx225mkwjRTP5S5BoB3JsVJYJbt9XmsQLoRuduP6rmsoyL+fxDyAiw5aXnmHtxaGxY0oRYdUoEeAssoXPrzh8z3c0IkJS15e33GpZ5PECDs4Unj353UGzYW20QgFNgww6sjT5rTyN7Nrq29gXiSTtsECApcDnXum6rBt/+0MQ2AaEJXgGeqXwTmm/iZtaKAONIMEIeH43J8kyHCOVuyyuAG+TOeUxcX9b5b6N7U1MQIUs3UwvWAz4f3la/Xv/NJQDpiACwbdzz+Pv2tCnbrp/WXXc9VLjcAsQx+/nTp+KWjB9i74zdZeZ3nBkTcGT8SwG6EEpC490x7QVIfKECfLD7OimK58Hdzz8cpX2UoZbb/ahA4KXiU3nf1QcC04sNe2jkRGJBl+jW+oceEJc0evzluCXjL/QEUHX21CRDMHwNIPmJT15jWIBb/7osQMWIy1+Q6Dh21YYiT+W+7Qcjw724fwp7Nx2VX/YNL4Cb5859OfiIY+w7t0IOfPa1AT7w8cguYU0x8+1J6arNkBYBP3E7fzpr4tbVzkRr7mVj34uy/4f5j/rkAGIYK1x80ABdYz79+2aGBlT69wtocNYn+EDdjH4vHOsWGyOjb0Xz/gf/jdbdy9Pvvh65+iZPR+OaofXSPdgb2fZlfNPN9lQQAXHW1v4TsOerF+TJiasy+XeXYGvwY4fnP1wV9ghAlk1zUrBtsth6Y3tcveGinD6w3nYVZk8P3ig+2DfonTwnhQmgheloHGGN0ZE4QI760sb/B/sFpMWFrCNQrAB0M6SIHQOR4+MDtivIJgchgJuQlWzW+FgB3I2EzCESEpcUgwgAMZPifGtZyVOjMAHybJgNxAExEQIUUXtq6JIAnnsbhQnAhuPINOunNkKAEDEgCmyiAxPTAty9ZBKAN7xbgHnIpojzYXbqhNxw8ayBG8Oa7bPFgCSwiWJDFNh5cXYmAeKK5PVDvmfNgFzqvsmAWpBWnN/eJbOPXIigPh2rE5el54vVcrJ7naza4f//FPWS0LQAdJ+uJN3EXYM4PsgzKpSoLQgEFfiJ1RFbxfjnzarUz1EkBGJgA2KS0LQAScV9a5BX4rp5HSFKV908XWdkTUfsY6+uZDBACIDjlh3nI1EQIg5NCZC1+zZ5NkgnbeADELSBLw4bdl8RVwSNVSGYI0b9QcM0YN6UAKZSigFxoJ23w22i2PZakTZicAqoiRiMzHMLQPcpkgaIE1OtVs2bHqIK1pYKdJx7IQYj89wCUCDt5Qd5iAPiFwtJj4F9TzrOHOKMzHMJ4Os+3+wUEAeLTRwSeQBxzcslgCYrYUb1TR2e/36/HOTjXoa6N9+YWQDtvu97/HKS5zHwEUzzZRbAVxDigK4DX8xS+PKIkEkA7b5NBuLMl5M498+LTALoTfT4l508fHIJAHFAgbJ2nr2DYAF8x7/s5DMJQDD44xURiAPmZUfQCdDuK/lWJp11b6kC6LNO4Y317jO2ExIFgLxNWr9EdIQAkG8nonFcFpwAiAMS2r37cGwQQImz0C5vebgkwQjgktf/miQlt8NaBeJAyfg6344vP+VrTgAOH3n87YxIAIgDJdopxx++FZs4DhftfPzhGp0ADEUndR/OCwTA2UloEMDtfrsffxrdIACOToMRwO1+pwhhBHAJl+X4u/vOOr8GAAD//+WWFeUAAAAGSURBVAMA8pcnqo6X46QAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 0,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 0.7481777777671814,
+            "steering": 0.9304006464667309
+        },
+        {
+            "timestamp": 271847.89999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFgElEQVR4AeSXTWhcVRTHT6dt0rSDMVZRiCi0VQIuWlTqoqB15UbcqQjahRu/0EXsQtCqUEQXKjHV4kYQDC78ABfduLMLFx0qWPygCnYhrSClMa3WNq025vc653Hnzn333vdR581L4D/n3nPO/fj/z3lvMq27P/h+aVix+pbRJR9ieLVkSP++fuOO4M1jcoZSgBhiQXW6CUMpQPfuUSYkVuMFCKk0dAKEKhoibMdzCbDq19sE2JuY8yOv7ROF6a/rOFqAWOImUYQw52XHVVef+2QK0FmupIJEE7YYPqLEgLm+TuNMAexLLt30g+1qxDxKADrBx3bri8/6wgON7XjhG+/5UQLoDnTBoZmdglWfbdedEgG2v27zh786KCBTgO2RVaU7QN0Imvc5NHdPOoU0UEemAJqAzRLDR7wuXWCSh4sNrwAQ/3DPrfaaqPn5jVFpVzQp9PxzuFcAEnxAIDueh7ivg3RfcgDzNTe2BTCOgVl9HdvrSglgb6bzd2biu+an6X26rFLrqr757OthpQWgC4BuqHbbY+/rsJA9MvtpzzqzgjFdYOb3bGRNcguw/e33rC3c028/etIdMLy8X8xuuXlhRoBNfnz5q9VYFhzuyPjunz7+ct/aHgFcqu2/dF/fos70M30+27F46qjtyjXf+tyDaf7C7Z+l49AA8i4eWet6BMhKCvmfbn0ZSskVf2DXiTTf9XgRtB8DiIMQebsLUgF0oVoOKYon9v6ce2nWuT5xb/jtHwEQ58B7p7dhciEV4K5HD4rC3kEv8d3+nQKIYxXMQ9Bc0+oafOvPrJIDH3+RAh8ghxi4trMg2DWd8wKIAfIAY+JYHzavf14AOS0WhkAiOdgstCY+F4Xm6ByrvrPHRkSxa/otATrXHNM+9e7r5jQZj0yNCUgmxsfslquTGSIABAMbO3+KicfnLskjh9vy0o+vSNoBycqCH/YlITy25fLPZyWn1nXEhk0XBLhiVfjOTV0lNnTfKAFsgrrYZyfuP5lU2pejMZ84muOyf09NCHDFYn1RAsRupnmQPz47qdNoq0KwPnpRycQrIkDJOwniucQoUu3QmsoFoHoQKCuCrmcvFUN9sTZEnn0KCaAvODawwYVtX1VzFQKRq9hz/s6L1XwL6GXKXmxx/oSsvXBat8u0iJxHDIgqxo6eEcXk3LlqBci8cSAAcVJGr5mUiyPjDKOhYkCQAmCVIBZAVGFvXOgRsDdhzuFchnEeQL7dbieVz6o+/sWHzooJfArOG/1kQ/LyxK7bvSgAfwiVCRA6yBVX8mZMSUFWx8QhZoJOURDXXOzvb7YFnJa1iRBYclyoRIAi1XeRNy8IWSWIJQa5LBB3ASHwI4KrKyoRgANiAXGgz7uSs9e7iNo5WfNje1c7Q4iBEEDFKC0A1Xee5nBCHDfksQpEADr/P6yKUVoALhvz8lPy5gvPrjJ7VYFNe/6VrC4w9x+Xkv8HxFYf8hAH5gUGPeZRqKQDlAg/aU1AHAyCeGwXFBZAq//HgeuS3/IQVyGw84dPYmQQ5JODux+hR6GwAN39naYu5OkC5wUNZyEBzOobeyXDupBPLtP98HVBIQG6+/YYiAOcg2577qAIdUFuAbT6egDWJF4n8twN+ETILQAbAl5+WJM882FDYQEgDiBcx6pzrxjkEsDV/nUjH0PazMklgC785dXLo2EnD4toAezqN4F8tAD6rDep8pAHwQ6A/Oblloc8lp+RLGwKvAJAHqJKnnHTkCmAkocwlcc2rfpw6hMA4oAgUPKMm4geAUzikG06eTimAtjk7a+5JrZ/KoBJHuLg+t1/EW88Wjb5xjO2CKaPAFXXmF39prY/fBMBTPI4VxJaK5k8hU46gIFiJbU/nPsEwDlMKHvX/wAAAP//xhxICgAAAAZJREFUAwAu4heqb2l5zQAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 0,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 0.7333777777883742,
+            "steering": 0.9501132578310597
+        },
+        {
+            "timestamp": 272414.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEXklEQVR4AexaO2sVQRSeXN9REmO0UUEQHwHBB4IWAU2ljfgHfNRREUKqgGilaCUhkaCFIGojYuML7LSwyAXBoGIEERRTSR5qNCag8X5zc8bZuTM7+8zdnVX8dmbOzjlzvu+c3VWS0r7rr2ddx4LNS2ZNKLGC//kvQMEbgPl2QPlCPwPiijRUiUOIGyus//NLu31dfAUgz6gi6EjDRnGzMBoFUEmra1vyfkRxD7DFmI/7RgHm4/AsnGEUYM+Z01nIL/UcjALoTg77GOhiZM0WSoCoXbF0NGu0q/ksXL/C/zMYljA6hFA9gjEiTyPZ6z2CPHIolbtPYTQCItw4u4VhNG7K8Y1Qj0BWeapdJ+fZ3vNCXvI5VR+L1AX41YpjGKOxukruCvJhosnk4Ze6ADgkDHkQAuCXBtSYgQQY+HNQ9dOu6T1Bo7xp57Gr8tI6f9fdb90TdEP73GOgVh/+gQTAxqDQkYfvy1udGKyAf3Pls7n18r9/iJEYGyZ62VDfXREDnYK9MMAPowkkgno/sAAnS09U38TXDZ+28ZgyeW6oXED+/s11lZn3L/bayMNj8PZ+DDXgAtg+hTVeEQzTo8NWr8HeDr4HleWTucuBc7/57PDxEXatq4nPw1xM5BGDC4CJCXAGTPfTsFNFdec+GnsrjqR9whBhYhUgQkzusiOl/0x9XNnF49suPZ27GKATUfa1CrD36DO2ujwh+4j5q4EO5gex0TBRfbFNtjV+a+DxYSfI9/FektfynPbbRiGA7KzOf7a18DiqnRsTvKztesp+fFhcgzvnHzMC3W859IWduHLRePqR7c0MgIiE1vJ3BqCgBCGAMVKMG6WWe4yAMDTHODX+oIbo577at/zyjTNMh/GHaxAyFKbamlgDq75QyTFVAegQjMs2vWGoGlUQtnoA3QzQ2UKAqffVbzDdUEe/dlP36tYgrquwbq9sgx+Ek21x543D4yKEEEBYUpiARJywEA4xkhYCOaUuQJJJpyFEqgKAPJKG0kkCMdERAM6IEzs1AZAYEo2TXBBfnBFHiNQECJJ8kntMQujOwFeAUMLnSbcpjm2+qq/LkYQI2hWeDrB9CnUHqrZ6kldzITGQk3qP1h4ByBh19Dsoaswk/PyESFQAJIvDMGYRyA2PBkDFSkwABMQBWSSuywm5QohEBMgbeVkQLkCcLwHIywHzNucCRE2ayKOdosaot18sAZB8nskjfyEAHgMAxiCg6gfZm+U9QoAwSRL5vFcfnEML4BL50AIQeTi6gtAdAOIutD54AIEFoOq7RD6wAEQeDllH2PysHSCTd636EMsqADYBLpCfHhsBFQ98BZCr7/HK8QIiAETBKIBM3oXqE2EaIcKima/6X5R0nTyJgNHYAbhZBNQI4HL1l6zy/vR5cnLS+wi4TN7UzaIDZPKmzS7ahQAyORff+jI/ec4FkKtfJPIQoiSTh8F1qC9C3gFEumjVB28hQBHJewTAoojgHZDn6sct2l8AAAD//8aBGz4AAAAGSURBVAMA0yFLchaK1xAAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 0.7257555555701254,
+            "steering": 0.003288992201174521
+        },
+        {
+            "timestamp": 272748.10000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADnUlEQVR4AeyXP2gUQRTGxy2OiIIESaWgpJCARbBJOk1nI2KTTtLGCAZJJYiVipUhRg02goWNiJ0IlpYRLIIWamEhphJRC1FSGO83yVvm9nZvZ3dnvbmdk3w7f9+b9/1m7w6jkfH5bXTy4bvtunSgfUZduavmjVTN/zZu3tUnSKsHHj1iAK93C3VVG4aRmS85Ntf61Y8BuCygl1HWkMvzquRyDsDWnO2+KuZsYp0DsDnUpz1DAHIbU1cvSTeoNsI4KuuaXw8ROSYNkCPflELM+6r/8hHwGYJTALwJvt50Vl3Rxehl1tpAznMJIhsDTt8AmwN921MrgD8Hd+xKuzPKf3KD+bu6d5SJqwwg7xdk4vKD7ko9mqkMAC9AEDF2oQ9LO/+LLJuLetJik3NOACSTmuOFo8vm0El/Y/VpRx6BZWvaDNYAXPwSZOWYv/7RPM+q/+jasY59R36sKFHSPJ/7n7vfNQQRWwSEBkCgb7qz0gkhWd+ez8eTU6XG0drf06mB649Ppc73e/Ls3KaaXJxV6yszcSlFbjwOanfw2PMNYEN7n5d/U8v3dV1lzevg9iMVgM/G2zVb/125cEIlJcHiMRXA9PlXSiQBWe3btRmFWKdF9G3E3jQt3Lulw2VND4yHzNPy5UsrIlb6RkjcZY2B+ItkIpmIeRuRrA5hZPTMV/XrU0s9ufGiQ8yJ5pZu6z0yNttz+8eUaLbVUmjr/W/1ZnE6VuobUNVQNPpM2YhzzIKT/S+rh9iidXhxU+0b3yqt1sRelSZnALgxXWnOQ25VzOZs18uY//58TPddP5wByCtMjJu3mhcj62ViJDav1QBsby8vWdY6t13VBDmAmHVG2XkNgOA6IFAwhZPfhYDoMh81xQAYuBTmKdhlTskFBCTjKm0tAOo0b5oFAuI8c75I3zkAiqnr5rOMcV4WiKwYmXcKoB/mxQhtGRDOAPTbPABERUA4AeCTeYFAawOiMgDMc5jPMkEk660EQJJxgM8ApDbqRNSNmC8NQBKQkESDJGpG/HKUAjDI5pMXVQoASSBIO+gqDIDbb4p5Lq8QAMwT1CRZAxDzTbp9LtIKQFPNWwFosvlcAE033xNACOYzAYh5Ngyaitbb9SVomm/aN34anA4AoZkHSAwgRPMdABigEF57fIr0G2DeviyE0kam+dBun0vWbwCdEM3jWwMI1bwGELJ5DYBHyNIfgSGAgAkM34CAL19bH74BGsMAP6qW/g8AAP//GbfbDAAAAAZJREFUAwA2gDuf3hW2fgAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 0.9850666666626928,
+            "steering": 0.000117253291009088
+        },
+        {
+            "timestamp": 272981.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADgElEQVR4AeyXP2gVQRDGxyuexr88NCAoCEHi68TGdGpnI2JjJ7ZGwRCsBLFT7CRGCYoIoiKICCJBsLSwMCAYVNDGylQSDAFFLYzvu2SOeZe92917e5e72wt82b3duZn5freXI8Ghex+XXGnb0JklnVzVcpUnIEc/s1dvGmUyjTNK5iDIGQCbXsoEYU0A2MDKO7YBYEN4pvueSyXdu2GeCEraL9N6XycAMNLMVAFCXwBU5qtgWvbtHIBMXoW5cwC/t5fHNl5RVlJXzgEkFSp6HcZNaloBOHjpvEnOSsVYAUhztl/A6YzfJqhMr0NS79YAijgFpsc3yZTN/dYAUBQQWLh2KW7+ywWzf65UtdGbal21lgkAEp0LXmFQ6v3DUYIow49N86bpZc74PZkBxBMVeT07+bSnHE5N/MTA9P3Lw4SxJzh2UUoAaPrGxHDU6p6FCZKKNroTmO8OtO/66i/U1L+j2EpVKQGwKVXnLx7sUi1nXosAvH10OHOSIm88fnqO7oxvjUritKzfsjO6tp2EANg8j7ZJVPF/5j+rlo3WYMoocCVIAllZMh5CADLaJQSZ13aO9zepF+zJfPFruXdx9ABJyT3MQwAjp17TjpkFwghhQydZ9MPUEYJ098h9xOu0cXGdMq/uPuzjM41R1lTNAwRBvzrtsBjmtlIldrk2/fg5QW8W79KTKy/p59eWVqiPuBObBwk62WoR9G5shKTCE4BgFwraz4gVz8frPMr99rHvWkMw821y+Quwe2yONg39TRXyy5hWZ4BUcgoARaXYLEa5jjkMsdgY1tPEhn5MD6aFhXtnb10LR92vXAHEi7NhjPG9tbrODcDA3k+RJxiGooWMExc54qVzA4BC/G5j7kquIeQCgI2bvtu2cAABNWzvU8U7B4DG8jIuDaCGCxBOARRlPg4CdeWanOvmzgCgCTwVXcE89lE362noGwCMoziayMOcTU70gF7Qk+l9fQFAIRQ1LVZUHHoyBZEZQFnNS8gmIDIBqIJ5UxDWAKpmXgfCCkCVzSeBMAZQF/NxEFoAMA7hD4q8uS7zVAAwDqN1NQ9viQB8MJ8IwBfzSgA+mV8FwDfzPQB8NB8BqJN5mLJR4LN5gAo/g3X+zsNkmgKfzQNMeAIw8VUNAF+fPPtuTgCT8HVsToCvT559NyeASfg6NifA1yfPvpsTwCSqOvbb938AAAD//4oYeiUAAAAGSURBVAMAVRkvnyvqurkAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.2839348435289787
+        },
+        {
+            "timestamp": 273014.5,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADeElEQVR4AexXv2sUQRR+Lnj+BInBSkFIIdcdNqYQ1D9AxCad2BoFD7ESxE6xPRMRRawUQUSwEMEyhUWCgkELLbQylQgS8Adpot/BW9/Nze7M7Mze7d5s4Lt98+a9ee/75u0dSY49+LDpgz0z5zZd4FOrjNyEIv9rBLAZgJUbiwTYxNYtxmkCIAKQR3L797xdotV/YuZHjHbXKICJsGyXyfNT7lXVNgqga1yK0rl6URdCdRGhkABaxjV1NgKYLu5Ixoib8sa9j9cUMPUxkRMgiUtbJ0ZQAdqX7hKAQn+m8Vl9WAng+hqMk7zpxtUrsRIASRABYBvPMuBKwLcHawG4EIvAa/l893CelnsnpMvJZvKfLi865eUF5/WLPGcBkFQWTM3a1DWdoZ7hLMCF5JV6xtD63rVDQz5bh4nA6sLTgaN4aqQTZzCkX2c7C6A7JLTvVu+/gAd/9IhhQ961l8oJoLtRV1Iu8ZUTIK/5U2fXqNOdS0NsxzxN0BjJ8qPjGvf4XCA1yur9CfAVIetfYh8iPj3hi/rK/GFSoesnmT2zRIBu09b3/o7bbz/i83D+9k3aub6FEKP2AJ8Jag6vkcc2P5PP3U6/EDZtgEQ1Dj7Gtuk2m0GeLx4/J+D1+n16cv0l/fzSMgKFT+/eR4y5VouAjY+/6W13NsXSylFKfrWnEG8N3I4uOJl6RoBuDz7sMbCWsCH1dWF/mrJrZoPygEC532rvIB32vtlK/e8AJIQCSEIkPCXk+SphuZdlH+iupaSzYtiP+mybnsEFyCo4dfJbOrpZMePwly4AE5cjXISob35WzdIECEVcNo5XR65D2MEFKIO4JAoRUEP6fOygAqCxskZVkkQNCCF9Re1gAoyKvCQKEVBX+lTbtPYWAA2gEdyKqVgZ+6iL+uijyPleAqAoGihSOHQO+igiRGEBqkReiukqRCEBqkq+iBBOAoA4AJVlsSrb6DXv1bAWAMRBFAfiWTegb3AAZO9WAnASDpHJdbPRPwA+APo3CsCBSETCJABcAHDLFQABCAQmgbjKAby0AoA4gAA1adLWQwKAOEjGQB48BwSIjfyAADGSTwWIlXxfgJjJ9wXAxyR94YGPC5KYyUOogV8BOGJDI0BsN67ybSZAVSS2dTMBsd24yreZAFWR2NbNBMR24yrfZgJURWJbNxNQ9xv37f8vAAAA//+jitbeAAAABklEQVQDADAmGp+qFN2TAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.48674583882931977
+        },
+        {
+            "timestamp": 273048,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAD+UlEQVR4AeyXz0sVURTHbw+SzMA0XBUFImW0kDa2K3ctimgjtHKr/VDCNkYEQUWrRLSsFkFUBBFBCwn6E5SKogIraBG5CimDqFxo7zNwh/tm7p25d+aNvjdvxO/cueece875fu95PiwdvPt+NQlaOwdXXZGkTtZnSqLBf7QCzF2dEiryrJFWgCBhxAja1P2mRSGAaquX95AAcWSjiNWjCCEBTARthak3EawFMAlT7/aQAL0Xho2cbKfAmKAGHSEBarDHTFtKLEBPxKRk2rFFcpdJ1QoQ9THQ1e8+e9s3/93mv67LiyQv17gmtAJwSCeCzkYsQIRaIU8/tjAKQIIowvjzgEgBIIgIEuyzAiMLsspvyhsrgOmgan/zYEiAOxd3i7Q/H0en0qZwOm8lwKnSC6ektRDM1Or6CNqsBAgeymJPw63lf6qicr+dfOK7+bgEp4Uc98pTyOoHxrzUhAAbvu7z2twzPiyAtyk/dv2cEBIq+bLL+12qwldu1QT4tzjvNZX1Q4pFHZebJl6HqgmgS25rW935ITb02MCC6BnpF7MTfbGxLgE1IUCw4dmHh4Km0N50+9Mrh0OxJgN1Ugng+v8ABXXNzI2e1pm1tt7xm57d9M00NrRfqPCCNQ/ZSyoBNHkjTZt/bRDvpvtC4JBql3HYJY607604h109I9+xq5B2uUrf2OslAUrSEbWevHGtorgaKxOyDl7+xFI1zDx6JsDjK8/FwOh18ftLk4/gXvqOb+kQoL+pSYDl+T9CxauRAx6XSydaxGTXVmE9AbfOnNcSK7U91dpVIzFAtcl3Gl8pffaJsQ9Cxu4YWRAtnctG3B8/5/uaupuFCeRrf7mRxV4AL9rwkORYdVCPmcipMcF3SfrHTEfQVbFnUisMFhvrCbDIZQxpO/rdv2Fj0Do5rAWIU7e5K/xdLm/72+T2VPTIkypBxGFrASJyhFzyxkOOFAZypjhuPFpVAWiS20p747puyUlunS+NrWoC0BxNpmnG5ix1ENom1iYmtQA0Q1M2xaoVg9DUpHZczjh/KgFogGbiimTlpzY9gKQ1EglAQW6ABpIWrtY5egD0lCSnswAUomCSYlmeoScuhf5c6jgJQHIKuRRY61j6cxHCSgCIA5KvNaGk9ejVRohYASBOEyRkrTfQd5QQkQJAngSg3ogH+4UDfIDqMwpAIIfU4Hp/hw+AG4BPSAAcgEAC8gi4AXhWCIABwjhZ8w54+gI0Gnl5uZ4AjUoeEUqNTN4TgAefBdZGRKmRyXPh3t8AXvICVx6FAK6K5S2+mIC83agrn2ICXBXLW3wxAXm7UVc+xQS4Kpa3+GIC8najrnyKCXBVLG/xxQTU+42m7f8/AAAA///hoeI1AAAABklEQVQDABd2MJ+UJqiMAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.6328497505356773
+        },
+        {
+            "timestamp": 273081.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADzklEQVR4AeyYPWgUQRiGhy1igpIQopWCkEKvizba+VPZiNjYSUqNgkFSHYidYqVIlKAEQVQEEUFEBEsLC1OIQYuzsTKVBJKARoOo9yzOZnYyu7czu3uXm9vAezvfzPf3vvNdcpfg0L1Pf/tHz0bATsJQ088FSfk2w34wd/WWUH+wgbrn8zrIQ65/UQiQJ0enYxMFaDUFKnF13WlCtvUTBbBN1K3+qQLoUzB26UIiz26dglQBEtl6dFAJcCBlrD266EQq4QS4iFC7eCeW9OdIzOwaIxTAtVtdBNc8RcTxC1vCJl8kgGkKTHt6cm4e6PvttCHuWi8SgAQQVsGe74gJIMmeD17LZeLzw8MJAUQBP3luMG95owB5k7rEd0qEXAL8Wmy4cDXGDDW/WH2ein8zNTq22OQtnOain1kLkPZxWE+e1b5/eU/ouveG+aP2/PTT8Fy+6EJBmhw8pU+W57tHh4W1AFkS6z7z2v8c9HNslfzupZtCBecSvFWWC/jMAXlytkUACrnixYOdrqGZ4goR4O7/Ec5U0dLpxPiCGJs8FYuyHfVYcNOQt99cmt8CM3+OiSx/CknQbhRJnt4LmQASbQbUJ/YLCVM/R6f2bdhumwAfZ46IJNAVEyfPsVXIfZ6qH7bE4Jm6GmKshUP9/bI4ePqN2D63FD4DmUB/4qzvSZszsGWkxiM3zt2+JoBM9PLxcwHersyKJ1deie9f+iKMT12P1ur+yW07hArO1hqrQmKgsSJmfwch4EEtnqVPQDD8TAAKqhg+/s1IhMYlvk6v/wXYOrombNFXGxASq7VBIaH24SQAhFRwe6qtrtVikhhPlZzqo68laX0/r/2jNhymcBIgjMz4AlmJjCGR267JhWhd1iJRAG7Vtag63q45iGNKyMW6LCQK4FKQZrltGneJN8WQi7ymsyL2ChOgaOIquTJFyC0AtwN5teEy1mWJ4CyAJE5jZRA25aQWYlPbdG7aa7XnJAAN0Eyr5GWdU7soIawEgDiFaaAscjZ56YOebGJ038wCUIiCeoJO2/TEpdCfSy8tBSAxoJBLgXbF0J+LEKkCSOIkbxeRvHXo1UaIRAEk+bwNdSoeIeAA0nrYIAABgARpgd1wBgcAH2DqOSaAdCLI5Nyte/AB8AMqj0gADnACqoNPa7gBuAK4BSwAB2z0AuAK4B1OAEYvENc5wjvgRT/oJTucgF4irHOtBNAV6TXbuwmwvcBKAFvFfPOvJsC3G7XlU02ArWK++VcT4NuN2vKpJsBWMd/8qwnw7UZt+VQTYKuYb/7VBHT7jebt/x8AAAD//4WZwUcAAAAGSURBVAMANPctnzk6tfcAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.7363107930830569
+        },
+        {
+            "timestamp": 273247.89999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAD8UlEQVR4AeyXu2sUURTGb6YIRMUYNFgoCiGEQIrEJqXGXsTG0rQbFVNsFRArEW2UdX3gA0FQbESwSOOfkC3EoEIUsRBTWZgs6EoQNvNd9gznznPvzM7O7NwJ+face+7rnN+eZWetk88+taHRiUobOjxaaQcJ81HCWYMkSxj+VwIY+jEjoNmrV2Qv/DsojTEvTgcAgjFVs0IdAIjNXXgEI0zqAgWArN6wl0AA6AKIeHCfYn52/cY9v3BuY1b72OfQ5O7Wpgr9kZAdAAhrtQXx4cVSKIw8TjbsjoPi5iYBhG2uXP8aNp3pHC+c+zpJKQDoWUDngEFfqwDoZzFx3zHKMel+OicTAJT8l2r23xgKgEb1MoFR7ONrU8o4D4P5zqM75eIeUzzKKgCiFvdqPm6yQffrnOc+wwEwf+eBey7VcVTS6/XXzv34qEBOoOPgDKgz7MqsvTylrHMAKNEUB/Sj65L1TuAhi646vlUTJF485rftX6gQ/CRyF4+z+g4AD124OC/yAMjDs8DZxU0xu3xeYaTb6spme8Dffe57ANhrPf+6T4P8As9hMQLPY34Lna7OydvC8vEACPoqlCdpvIRdqnFM6NKVpROCFLSQILjnKe4B4F5IY51ngT3NIQF9fLgggkTn0jyNyVIcFjFYtxAnuecwpjnkAh1qbMm8Vt5v05SwsJA0Mhn+09jZ1SPn4v2bzkmrr94KrrEzv8Sf78NSi9Xb0tKYbPPJLXFu37gUYjsbLTGy0RTYC//pf0tAiDkX2U598oCAUHfXHWDv69k/kg0qCnPQz/oRed/R5U2xd2LHV1jA54anR0Rrer/4vTouyMcYwlo/+QKwxt4Ikt8mHqN13PJ5+CiIC7Ew8aJRTNBa3kFBa3j87/QYH0rfF4Cc6bxQYbiMfG47yxSDFtQpWNlsD8KKtqd7+h8JQOc2KpraV2cvXwuAfJymnxgAkqXCe5VoUoA6efgCaH2biTyDCk8rWUCNTKIHCzwAor4K0y6c19QPCB4ASMAPQj8LRw4kQMDdNNa1Uet9AfBNuBxJpNXq/K4gH3cjj6D5JPFAALgw68J5YWlB8ADIW+FpQ3AA5LlwNwR0JvLl8bi+hYMgtFjcQ7LYh3yRd9K7LRwEJT0oi/3IGxCguPc7H4G4B2S9DxAgQIB08xl4AFQwIMDXhVAYACgeECBAgBCLUqEAULGAAL8bCIUEgOIBAQIECDE/FRYAFQsI8AEBgs9VeAAoFhAg+G4IRgBA4RCHQCCMAkAQOIjCAUCR3QgQIGMBEKQSAJEw1ZYdYOo7T3WXHUAkTLVlB5j6zlPdZQcQCVNt2QGmvvNUd9kBRMJUO/AdkPSN2wUAAP//TYwxfQAAAAZJREFUAwD5sSefM+Wa1AAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": -0.13916388997731516
+        },
+        {
+            "timestamp": 273847.89999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADf0lEQVR4AeyYu2sUURTGj1MsBiHrolaKQhBdEHw02vmobGxT+Qf4gCySShBLsZO4SsBCsBAbESzS+CcYsAgqxMZCFAQLo6KBCK77LZzl7N07M/cxs7P3TgLfzn2f+/3uubNhk+bclZ6pzj5+1wtVO/s+dUqo5n+1ALB650HqMdcCQKr7fkf0ALJOv++fogcAk1naBpBFpw59Vhmw1n1OUExgrADQr68D7z4Q8FKCBgtV/HH61sJkX4JVGIdJHWdut8sAsZJPFmCZD4vp/5ygvyzBOMTrOwPgBWyeMjDmTQoC4kJPbh9B2BFNFMBI5CmpOAM40Zk3trDj07HhWJwENGyouOAEwMZ8lr+j9xZSu9V3jO91uZ68ouV/F0kNaA3AxXzv4Hs1Lt1fGr2PhzaWSEqd8GMPURnfItYA1I251G2NyCvkEi9rTiUAsjY06b5CAbx+es5o//IlmDbn0Y3Z4Vq4QvgKk/OGnZ4FawBrGb+ueO6l9OkXFk+OxbAGMLZCxQ03r54iqbztqBCcAOAr5e3yeVK1d3VjrE0dw3VsFGWeg7oq9LPQx2X5RLuU7EMZfdgvnjo5AdAthLY/7RYeVuI5K89ektS1h3dH1lHr3Hn5eJOg+UaDoK31TZJ60zkzGIr53cO7CQIYVqEABpEMP7Ah3dDfHxvkor+NJqlqtGcI0sWZWf9JkBOAtM3rAqW1pZlMG6+275rbojypc2R9sz1LkBMAuZBJuXXp29ipmsxTxxzofBmaVvtc68YAktYLYpkEkyf8ubvfZErmGJj/vrIvc4xLpxYAG5VPk8WlaZPxpmN8zWdd2USa5LLpxjBOpjfqoUmbAXkmpOki0jsvXpn9xgCqNA3IiO8CIm9OLgAExt3GJvIWC7FfC4BNT5NxHAD2VTTkEQAIME2mizarWy+BaSgE42VkQYJFIR2daW3DgRW1t5ErUNSiZa5T9GEFB4DhFpUFQQLgLCgCQpAAkAUMAWUfBQuATftmQdAAOAt8IAQNAFngCyF4AIDgoygA+GRBFACQAa4QogEACBBk81KMCgBngQ2EqADAuISAep6iAyANm1yFKAHILMiDECUAZIEphGgBAIJUWiZEDUBmgYQhy1EDgFEJQZcF0QPIg1ALAIAgJTOhNgDkVQAMhlAbADCtQkBbrQDAsBSyoHYA1CyoHQBkgIQQPAAYchFD+A8AAP//yX2U+wAAAAZJREFUAwD6GBcOr7fG9AAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": -0.00034460801494159445
+        },
+        {
+            "timestamp": 274081.3000000119,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADmklEQVR4AeyWO2gVQRSGJ1tcUSExolUEIYoGAj6apNPYaGMnqbSy8QFeJJUg2oldCDcaEBEsxEYEizSWKROwuGihjYVoZZEgSCBqTP4bznL27OxjZnfZvTMJ+TM7j3Nm/m/O3ZtgaPTG/3MvPnmrQG3/dB/Nb//187cHwE/rO653Aexw8PdvrAK6nTeKy3U0MQDSMGDIMdv+SgNftpkAbM3KODJPrZyvq58LQJlVUJfRpH1DAL7+LxACSCJUxfiXmXkFVZHbNGctAEwPWeX6GIDT7enS9hv4Nh7mmrh/J3xu0kMMAA4nIcg+1tgIECCb2KpitACwGUw/uzuo0KJftk7ONqMiEgGUYXh5bkqbRmdevhTlVy/+f4C0CQ0G5dIIgDq/Ci8+/KeOrs2FwkElBIyVrQgAmXxh85IcKtw3ucWqPn7cRCKA5Vfn+Tpnn7UATM2brH/54EQumHgB84X49oD4WBnPWgCUGMZuB++pa9xOzD41jrEJuHfzrOJKy3Fh5oyCaI0WwOS1JXVoZU2hpYVZLWBlrZHzJjFJFwHjMq9JXwsACY51umgS9XFhSpH2/RpQEPXTWiSkeR6Dca5bTx6H+bEec2ilMJ5X/OYpJgZAt4EcQ58SmLYwpotZfP1Occk1SXFXTw0p0nSrpaAP7UnFtXR9vAezc/yAgpAbHqAYgM3VK5hvjIYv/1S/v7Zy6U9rSOm05+BIGI98z/8GauPzek8xAHU4x6GSTH7vjBgd6Uj7h9o/upGo1cXDan1sULXG9vaUCSCp9IxOJRZLs6YmeTppGAb5fNZzJoCsBHnmpeE8MXnXmBqWeSsDwE3LTcvo080XzRUBEAy/VZBt0qpN83MVvXnKFcAwiQZNWv4CM4krsha3XySex0YqgE+kPXPTRV5gaXukzWFPnCFtDc1ltbkBYEMqcRwgK3G/zGcCIOMumeaXowUA0xBuvMnGcUZuxuY5AgAJyXSTjcNoWecLYBoi40jeT8LZi5w3AEmoSJK6YuncRSBEPgJ1GSmyL0GwzdH3AMi4bRU4AYCqwAaCEwCoCmxaZwDYVoEzAHD7NhCcAgAIpLzvA+cAUBUQiKzWOQAwTBDyVIFzAACAKwuCswCoCgAjDYKzAGCcQ0BfJ6cBcMNJVeA8AF4FOgjOA0AVpEHwAkAaBG8AAIJOXgHQfRS8AoAKkBC8AwAIXF4C4FXgJQBUAEHwFgBB8BoAIOwCAIV+VtGzbwEAAP//73BfsQAAAAZJREFUAwD01TOfoP/2oAAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.2832632009762983
+        },
+        {
+            "timestamp": 274114.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADs0lEQVR4AeyYPWgUQRTHXxY8iUJiglYRBQkaCPgBYjo/Gm1sU2ll5WeQVIpoJ3YSE4lYCBZiI4JFGsuUHloEDcTGQrQSNQQ0kKDR/8ob3s3O7u3tzN7tzRj4Z2bfzryZ/2/e7h0XHX30biNkRRT4338AgRcAxRWwMP2MpEKCEsG4btgU08f4ch1XgMmMSwj12zMEmdbpdCwVQBkbqyKEtgIoA6ptzujAxHhqDpePAS/yfnKGu5VoMysgC47N7qsEIQZQllEbSO2aGwNwvVjPx1GCOO+RG1fibv/XuKnUPwUAVQDx7mSfYzbt45t7baaXNlcB4BUeXu0j1+Y59767/yqBW453sk0AmP19yno/G7sWCTIlujeVrAT9pah/+uD7A2TK12pMH58AoA9o1/Xu5SliYU0dAmJlyAjgYvSyjLXir8OmCjt561divbIeQ30hIwB9kM/XDQBePTlGUCuGWxmf95MAL2K5B3yMQjLmqq8AtGIkz+L1yUsNw0yl3zDA4uLa+UMENUtxYvJgYogCMHZ2nqDt9eXEoLSADbRW5qa9k2AaStufjLN5bvmeAsCBvO3b2eO0ZaWHAAx9XciTFcNcvo+xuvgeWtxDqwtxKXlfxrP60cLfHyvkxJ8jA3Th/h2SMVOfk2I895u1yGsaM/f0BUnp4/RrznFmfz+xxms1WltaVXozMUbQ/LnR2Mv08DZiST+FK4A3UXb740ON8mi91k8mbR4cUvO/HV6n3qUVBQnAUgE8uHy9bG8qf5ZBNShHZ+fEZ9q6Zy1Vg6830epIH9VGepVSAaSVXY59ZA4ZOP1FnQgbz5zQ5KY0/H1uR5PRydupAJJDW4v0Di+qCWwU7afpIRW36fBp2+TA3FIA6KeMhVwK5ouctmkPzgBI065O2bRh17EoGnheOGe3mpaGC1UAG++Gk5ZmTf3cANi0yxeZaUPtjmUCgGmoaqZRediXC1hGAEjOprGYi4WqmkMBgGmIjVd1w3Jf2K+8LtKPkIRNd9Npu9pr5CpREfou5uAAbfKoR8AmSafm8uHZQOhqAADPENAvoq4HwKaLVoEXALgKikDwAgBXQZHWGwBFq8AbADj9IhC8AgAIrLzvA+8AcBUwiGatdwBgmCHkqQIvAQACqxkEbwFwFQBEFgRvAcC4hIBrk7wGIA2nVYH3AGQVmCB4DwBVkAUhCACAICUrIRgAsgokjGAAwLSEwFUQFAAThOAAAIJUkADkoxAkAFQAQwgWACBAQQNAFXQ9AJyijf4AAAD//9wxq1cAAAAGSURBVAMA5SFKnwRq3+kAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.4862644254664892
+        },
+        {
+            "timestamp": 274147.89999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADoklEQVR4AeyWO2gVQRSGTxa8GoXEBK0iCiFoQPABop2PRhHELpVi6ysJEkEUUWzETiRKxEKwEBubFGnstPRioWggIoiIqUQNAQ3eYK75B85ydu7u3n3MbnZnI/47u/M4c/5vzt2Nc/Dxh2YVta7/bBNyqOL/VgG8G39OUFULYbUC+OSzqoL67fu8RaHa/ddHVD6ZVgCb51btWLCLB0BWVVAwz246qAIPAHckg5uiVkFuAMD041jx3ge5AgCEoskogI6vOz3+8Bvjju4ffFes1gNg9+hQ6uz8IEgQqTcwHMB5dKmLYBwyHLsU4ZyJpWPGEm1unSbIL+COuyME+Y2tZJ/6CVxwXqxYDvqXQf9bBJ9PyFSCehwFQO/M63nb3D06evMfoYV083nkkQsAnCAU15D+Qo27Psp85/XTQ1Hm5TLn5JlZzz5vJ2+p5yy/IokrIA44GICUm+VL2Fr5Nfr75SU9ubF9eUV2/10AYUnF2b4+djHO9MznHhnbQ1DQRs6B06/o8vAVQhs0Se9nWNzq40HPJr82V8/tJamgPcP6AcatgDjJrZ/voE31OUL7fuIwSWFD+Yx7xEbLY1jLz+iTQj+L+/lZtjzGrRyT9zwe1DqYzIO4jyLM/zPYgyaReO3Us0nSpQc8/+CO3qWeT+3qJuh4o0FDtRo1ZhZahInjAxsJ8vOFflUBnBAWZKkgM0F7Ljmf6PfnWqjW9vbRYq3bV1jbc+K7Cv9z3yJ1zsy3SAFQMzK8hBlHgkjUT3FT2tDfIF2/pjarML1v1tDCYFeLXABhSaoIhi660W/jfYkibxmdbTGbJJALIMlivzWdA9Oebv2EPYMJH2CeTzZhCHeZcQCILE856QkjTpBMmUd8YwCkaQTOSjh9U7EfDl+jVABkeZtKKs84eO/FBiBNZ1HepgG0ixcJgG2mJZRQAGy8SCeNXJCXNJHmvgUAgvMLDZulCV6GtS4ANl4W08jXBGAHgXDiZTEO0yZzdUwGQ3J5CoeXdj/3J5A2UN7r+eDSQigtAFPASw3ARBWUGgCqIC2E0gMAhDSyAkCaKrACgKyAuF8FawBwFUgYUe6tAQCzDCFOFVgFABBYUSFYB4CrACCiQLAOAIxLCHgOk5UApOF2VWAtAFkFYRCsBYAqiALBagCA0E7WA2hXBdYDQAWEQagEAECQki/FygCQVQAYDKEyAGBah4C+SgGAYQkBVVA5AIAgVUkAsgoqCQAVwBBKDwBm0ug/AAAA//+XnOBNAAAABklEQVQDAFHNSQ6ap9/xAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.63176965232134
+        },
+        {
+            "timestamp": 274181.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADdUlEQVR4AeyWvWsUQRjGJwseRsFTwUpRCCEKgh8g2mlsrMQulWhrFE2RShHtxE7OU9RGEBQbG4s0/gknNqJCbCzEVOIHAQkkyOWeg3d5Z3ObmdmZuczMJuS5eedz3+e37+1tdvr5527dtHXsSpeUiZr9vb/3SHJcOwCS+15nE0APQq3+T96+Ifn1UgH4npGkqwXY8QIgQJ9SSrwKvANAJUhXD6zjHUBgfvN0UAXQUAB8nZV/e/MsAgisAYx8PywglZdQIVgDGGQcpUXjzV8Uhdl6AQCrgAAhDlnWALr7v2j5O/hAfgHR2jSERdYAkGOnNYlmoGD8YWti4FwIg04AVDFSfCh+bL+RjsH7AyQNOugUj9gwAEjkwN+WIKFfhIAx3/IOoOwunrv7f11vpy49W3fe1aR3ACaJHp2Zypd3Xk7nsa/gWvZOeAWAC+j+FF64vCD5fHFnQujulTYadowAdF6dEZDJNQDBZL2rtWdnjwlIdZ4RANVhOvOmAItn3pw+LriK86o+oEC0zgjAtsURAX16Mim4cBjvU4xxEo3RfhrnLa1Bi3G0RWGcqzhPfVpDfbQ0xtsME7riG3k8Ol7+Nnj18X2+NI/nXr8VReWTvaBs38UjTUGaajTE8vzSGvW2i/b4zr4Qk+CTxhFj3KgCsKGKysyUnbXr/E/x71tDqZVGUwwS9vKzf59YEaPzi5KeXr/VX+IVgMp4mdEf7b395HQ+9s0siO1jy2vE9+7+sEUsHdohiea9AqCLUIs7w2VilM5Ay03/mduDocryCqB4hytnyTbCvK1pdpz7FyEXd5gnyGPX5nG2kwrgpnFoTKoMgJd3TIYpVzygISMA3HTVBxglMKxWdR0lgBRNcyilAMh4aHcaeXEDtrEEAIfTAy004zDqI6cMpiEY93EBJB6yMpiGQk6S54ZcccP4mE0sfQVsDhr2XlcQogXgCniUAPA1AAAXVRAlAJgnCIhtFC0AMm1bBVEDoCqwgRA1AKoCmzZ6ALZVED0A3H0bCEkAAASS6fMgGQBUBQRCt00GADdsUgVJAeBVoAshKQCoAg4BfZWSA8AN61RBkgB4FaggJAkAVaALIVkAgKCjpAHoVEHSAFABKgjJAwAEruJDsRYAeBVwGIhrAQBGOQReBbUBAAhcBKFWAHgVAAYg1AoATBchRA8Apmy0CgAA//8O8I1PAAAABklEQVQDAN7LJeysXKLRAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.735799393776258
+        },
+        {
+            "timestamp": 274314.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADsUlEQVR4AeSYPWgUQRTHX045jIIxoJWiEIIGBD+a2GlstBG7YKHY+pkgqRRFQRC747xotLETGxEs0mhlKsl14gcniIUYLEQMAT2I6Ok/5q0vk9ndmdvZY2cS+Gdm37x5+95v3u1eUtp//3VrpWlN36kWq0Qr/CczgPqNcWL5yDITABTuY9GDl0eitDMBiKIsTnwCwhCcAljk4M0ACIkAuj7u9KaYdhONBcDF86i7AQiq9ndj4wSp9qJexwKQCSdBkH5y7gOEY8+nKBZAa+sbWU/sXNcFsc4FWEDRLKQTCwCLpmIIPV9NdxTHLxEAumC6OkQY01IGhB2V/+/XNP+irCcCsEnybOmpjXthfJ0B4IrQBbeq2wkj24o8OgdQ5GJ1uXUUwLbZKkm9rD0iiBPDqzPPr9N4+vO9eEwFMFi5Q/Wxc+yfOiYV8Oz6qsT9AxfuLawnxVhwcPgrFYDDe9Ghq79chnMSq6MA1IyPnpyh3aPDkRmvXFzglYqxE9ICmH5wgKB2EsiafNb9tjlrAdgGKYr/wbE91qkkArDpgonfh7U3RwxIu2hovHh6L0nptsUVDzuk2wObFsC+E1O0sT5LGOEEvZoYIlOduX0z8l0710UQ9iKOKthZWOO5HGGXkms853W+5lHaeS7HEjuq44+B3qgIuSHLfPLhE1JlEu/4rh5iDZfLNN9oLlOtfwNBajzYINivvL1GUo9fjMT/OYwNnVZ3/78/wb9/KFOcfpZ7SCf49x75EqXc3ZijNDU+rzYDwIlF0R1MkCyS1sk0/JbRGVrXNx/p2+SmaGtzYD2lqfL3o6p9BkRRxKT5Ptv/B9WCP9U2i+jmU1m0LNg8wlJPYwBLt6VfuSpY3gnFuyhaxnQKQBbd7gnL5OQ8j+IRPzOAPItGgnnLGIB8EPpeNKDePX8Jg9lbAJ6+Fo3cdcKXNSixA0IrWgdCC4ALd/0g0yVgY0NeNv4mvhEABOcvJUUrHIXklVOJC8/rBki+yCr5VjgOzCXQ6CPgMmhesfI4LK8AMFiXXeAlAAbhYvQOAH8MXHWBdwBcnLqM4SUAl13gJQB5glnn3gJw1QXeApAnn+WB6DUA7gIJw3buNQBZLHeBtJnMvQeQtQu8ByBPuZ0uCAKA7AJbCEEAQBdICLg2VTAAZME2XRAUANkFphCCAiC7wHQeHADbLggOgHryaR+FIAHILlCBqNdBAlCLTOqCYAGoXRAHIVgA6AIVAmyqggagFqvrguABqF2gQvAegHrKttd/AAAA//8Q+eDeAAAABklEQVQDAGpJTtB1m3oZAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": -0.19363162596781208
+        },
+        {
+            "timestamp": 274581.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADo0lEQVR4AeyXO2gVQRSGjytejIJ5YLBQEILEW/mAoJ3GRhuxCxaKrQ80hGCh+AJB7CQmEm0EC7GxsUijlSkT0ogiEUEQTBWIIaiBBBP5F044d7KzszO7V3dmDfyZ2TNzzs7/zbncJDry9MOqTpu7zq/qpMvxLR5RxX/+A0hrgEM3rmiXPw2OEEu7yYMFYwekQWB/AMFz30YjAN8M2Z43EwB0AcTF5Zxjvo6ZALC5Z7e6SWfex4/B6bfjZAWAQfg+wjgEH84A9j7Qf0OgcFnFxvl8zgC4AI++AskFAKYfDnUTRgZR5lG9fZw1FwAU8F25AYyunPCagRUAV7PqV+S74ZcESXLYM3lvRIb+ytwKgMuJds8P0fHbvwkjK6lOfeBJUrjwmFrQGsCl6LVag0w39+buxnU5uoCpli7PNW4NQPeitIOjA3R5HJ8Y6o2nur8048Um/CoMgM3BT52bof39fU2wY18ymnh+1D5LycD/CEqIXOraQFTfZ3pO+hsAOYV1AIol6WvbQFI4c+zahYMkpUs8NniAIN26Lh4DcLktXcGyxQEF0p0r2j45T4fPjuvW6f1ob4OwMUtsy8KGtTzkqMpSA3tMedgD8T7MpTiuG+MOkAnqXJdoEx978YpUZc0/s6+VWH21Gi1NL64Tag3vaSMIcynEoJsf75Aq7It+1dsxllY/v9SItVxrpSRhXYJpmV6IIWGcm5oljKrmepZjIHEHlMH9SvR5zSgMsbKeDWB2XP1BtXoLLda3rY0dPZ3xM2JSHVObYjDWAC4+uk+PL19vOBdiDQHDA5uToyEldXlX/wxt7Vqi72OdqfvURQCxBoAitobbT8423C5qFCFX4/LdTgBkAd1cmv42vFO3zTkO87Y3nvSyQgE023SSgbyx3AB8NC2hOQHwybQ0mzS3AsDGm/GZTjqcKYbzmPaY1o0A8BL+uiqLcZgq6iyJAMpqGsaLVgMANl4U3aIPq9bDOXFmNW7zHKFAGVvcxkSevREo5ilQhlxcous5Gj4CrkX+ZR5foCsE7wHkhR8EgDxdEASAPF0QDADXLggGgGsXBAXApQuCAiC7IOvXYnAAuAskjLR5cACk2SxdECQA2QUmCEECQBdICHjWKVgA0nBaFwQNQHaBDkLQAGQX6ObBAzB1QfAA1JtXPwqVACC7QAVSCQAwLSHILqgMAECQYgiVAiC7gGFUCgCb5hFdUDkAahdUDgBuX0KoJABAYHkPgI3YjtwFfwAAAP//A9CRawAAAAZJREFUAwABmD4OW6PTOQAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.2959893134786369
+        },
+        {
+            "timestamp": 274614.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADo0lEQVR4AeSXPWgVQRDHhyseiuAzwSCoIASJqfwA0U5jo43YBQvR1g9IkGAh+FWJncQXCTaChdiIYJHGLlaSIIgoEhsrUwU1iBqIaJL/wTzm3d1+3O1dXnYv5J+d3Zndm/ntvI9Exx5/XJHa1H9xRScZG4IdUc1/UgCO3BjRIvk8NkEsbaAnzhQA5G2CgBgIIDD6rEwAqoKa31Qef9eVANAF0JNbA9rqfO8CJQBZNUBA++7r3x/kHl9sKwC+FJMnz7PTrwmqHQAUDTGs3AB8fRmgaIgL59EIYPL/KY5tjxKCtNsBHhlGAKjlSvQKQ4cejA+Q78WjICsACEwqqzOSMT7MCwPwoTibHCsHkPyi9L71nCCZ3OzdCYLkWpl21psfn18pgD2L43Ty9j/CyOIHy/Ho+UdyWqmdPNwJAG4NSh5adF7mWbY5OAEw/Z9gm8TM+FAciq/bsbGOf5wAFMnzzIV5OjA6XGRrJXucAWTd2szT47mTzTon9yEFNlgBwGd+1pehAs/LteX6pUMkpdp8YuwgQSq/bt0KgO6AboDR5cM+AIF4rhq1AD5MDhELB7DNI9YgnvO4fXYx3gdfljiOR8SwLUesS0mftDkma033HeDFmxGK5KakzQfrxssP76XcfwZ74rWpZy8pS7HT4s+5/U1iDTcatDy3lBKOae3dRhBsFubQzU93SCXEajsAAd1Uz+kF+v2lEetvo0lZgp/BbJ77SVLf3y50zKUPdb1r9tKGALDz6nRcJIqR+trahTyNApgd137R0uDWDvUe7uuYSz/DcAKQ1f7GbNcCZJGwbQtd25r63T06T1v6l+nHVF/Kp1tgGNYAihaLJGQro2CslaEihSefaw0gudE0R6EslxtWPQc3r/LlWS8VgLzpPEkUic3b8qpnOAOQRVdx06rE8VyVL896IQB4eJXtnacAU6zJbw0gpKIlFCMALnw921smqLORm85v48sEgIM3eouXdSFtACgaQuFlHW5zA92OiWTRPhaO/F0gRj4WzQVz7i4Q2i8BPrRuo/cAXLvAewCuHRsEAJcuCAKASxcEA6BoFwQDQHZBno/FoABwF0gYJjsoACiWIdh2QXAAAIFlAyFIANwFDEI3BglAFmzqgmAByC7QQQgWgOwCnR00AJsuCBoAbt4EIXgAgKBTLQDouqAWAJIdID8VagNAdoEEUhsAKFpC4C6oFQBAkAKE2gGQXQAYtQOAoqVqCUB2gfcA5G3msRnCKgAAAP//uyaCnQAAAAZJREFUAwAxfUAOtR1tqwAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.4963943427320562
+        },
+        {
+            "timestamp": 274647.89999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADuElEQVR4AeSYTWgUMRTH44jVKrq1IB4qCEW0Jz9A9GYrgiKIN/Egem0VLNKT4BcIoieRrZReBEERRAQPvSgIepKKIKJIvQiCPYkfFKSwRSv/YTO+zeZlM5mPzmQK/2byknnJ/5c3090G++58WFzVP2zUxtrwohTm+6RAxPz5NDYe845iTw8B7Llwlt1l7Ts75MVACABOTBAwTuVTFUQAYBAQ7l7aKtBKIe6zWgDojG67yT8euvlli7UBmPh7yMqDL49BGwC4PxM8RWNUmSvj+IuXQkoLQHVeZrPUizRNY1YAcENZIUjTaOFDlTUA3AgIUuj7oFgAfDCseogNwOYFqS5S5H5sAEU2o+6Ne+7pvEwAbP51S+j0rv5IQHQDr6+NC4jG8rzWAsCHIVOp22z42dXlefqwXkudqAWgTtL1O0E4ePmP7ra22N6Tk22xPAPOAEyb/NJzzjTcMjZ9b6Sln2fn4dCgcALg+k3x6KlZsWP0WJ4eO64VGwDeD1zW6fuD3BAbl1+/2QkZD8QGIPdjeknKOUna8yO7BBWXa//YTm7IKu4MwCp7SpNuTL7VZtKZRwzS3tAMPn71/38cRgA45fcTQ0IV4silxlfPLYvmYlwn9R7MUWPoIy6Fvk66cRmz+RCEnAF+6SQTce3p29e5oTA+9eCJ0CkcJL+4PCe21wR0uNEQjZl5repbegRE0oV9xC5+vCI4YT7G0LIVwG0MN+Wh9Ue+id+fu8TK3j6x0FXTCuOQDlD3zJzg9PzA2sgCCyCakfGFNAojVF/rfdYrdw10C1XzA+sEp943K8SP3QshICcASaqDmsR1HKMqkU2js2JNf0MNW/UBAYCcAFit0JyknnAznLiB8Z9TGxLnMQJwPWlqOskJc+5w8txY3LgRQJxkWZume0nj5GW+RADyNC03jBbrok1DsQFgcby8oCzKOw1TNEena2sA0rgPpikUIwBpuoinjb1RI67XbQCQGCqiaWkyzSqMAFDTaS4gN51Fiz0nzRsgSZFPmzOY1iEFaSXiNpp1HAeYZI3oEUiSZKnuTePwSg1Agk9SBV4AkCBc2tIDkI+BaxWUHgBOPQkELwAAgqu8AeBaBd4AqHwFAIBLFXhXAQAB2f5V8A6ArAJAsJF3AKhpmyrwEgCtgk4QvASAKqAQ0OfkLQBq2FQFXgOgVcBB8BoArQLu2nsAnarAewDqyauPQiUA0CpQgVQCAExTCLQKKgMAEKgkhEoBoFUAGIBQKQAwrapyANQqKD0A9URt+hTCPwAAAP//DqOihQAAAAZJREFUAwCiZEZ9lkk8HgAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.6386693251493967
+        },
+        {
+            "timestamp": 274681.10000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAD5klEQVR4AeSXPWgVQRDHx1OeRsUYUVIoCiHEVH6AaKexUBuxCyJ+tFExQYKF4hcIwU5iItFGsBBBRLBIo5VWkmAjfhAbIWCwsDCEFwMRje+/Mue8fbt3m9zlfLcX3v/t7Ozc3M5v53JJsKKla06qubFrzqS999/P+aiAxM/uy91iVgwz4KJ5tJX9qXfQtpRrv+qAuOJzXWHM5oOzwfOqkK23ivUYqA6oIlCwiRFAkbrACKBITWAF4FMXHH35inTxIVsBIAAQbve3EUYIvjyJi47acySAqAvrec2lcN6/AqC/CnkR49DvQxi80uOOfWE9CkA4K6ARZHHCbwee1C1apw6IekRkZVsm+8kkxOgQRvsGCcLa/5QTAN6gy4Zf3FjK4ZHjnpP31LpLThWY0peexhkAb5RHPRHm42vP08Frv2DmRs4A0v6PcaS/oy4ghQBcnnNAgPSdjzz891rR1zA/cmqCtvd0wqyRKV9NUIoO+QpE2hAAJlnrwdW2rG+p7icPTAHI4lWo7uzwdfH0ToLiQvf37ogLiVwHhBN9u0gBiIysLLoAQsJKaGofQIBMCU3Fwwfhz2DTNdK3fnSSBsenafMBqgXwbqiDTMLvCJMfvpVTSwiCLW8kbaxJ8Zr0wWY/j/DpMq2xL25ELsSgeIwBHBAmPMJOouFHz0iXa77j2xqJ1Vkq0ezYTI0GWtcSJHNiDl35eJ1Mevq6W/lxzY/2JgxKVY/A3XOXlDPJFwp3vf7MnZvG0OnPJYJ+lhpJqlwuq7mE0jA2FQKCbdPY12XEa1T5OfZmNUFVACr+zD4NrR+o6fA3VSiKlbJtYvm6jWqJoTRfKNNM+xoqtTcowXYRg8DoDMB2WmpHjl96wV8G/hbkeHlV2KqWWfo+vKHK5zqRkJwBuCaXcWkWzHk39UwQiud50jEEgBOGkiaURSc5Yds+FnrqtnwhAFuAi3+xi+Y94PTZTmtcMICsik6rUFueeQPgwhejvW2bZD/uifvz3GWMi3ECgJvyawqbiEuap3UrAJ+LlgdUA4ALr9eTxr6wR1lEElsBQEJfWzwOToDCQTUusN7WcWhp7El1QBqJssyR5oHlEgDDTqMLcgsgrS7ILYC0uiDXALgLkjwKuQbAXZBkzD2ApF2QewDy9BfyKHgBgLtAwnC1vQAgi51vF3gDgLtAwnCxvQEgi51PF3gFQHaBKwSvAKALJATM4+QdAFmwSxd4CUB2QRwELwHILoizvQXg2gXeAtBP3vYoeA1AdoEOhOdeA0CREoKpC7wHAAhSOoRCAJBdIGHALgQAFColu6AwAPQuYAiFASA7QNq5ByCLibNNXfAHAAD//zagdBIAAAAGSURBVAMAgzJVW1UUYigAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.7410089420637974
+        },
+        {
+            "timestamp": 274781.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADxUlEQVR4AeyXO2gUURSGj4PuEtS8UCJEtAkxIPiAoJ3GQoIgdkHEYOsDDUEEFRWrYCcxSsRCsBBBRbBIY2cqSUgjPkglKAYLQYOogQSM/EPO5OydufO8s9m5m4V/z32ee893zuzDaWs6vSh14OH7xXqSQ3X+WgVQ5wVAqxUgK2DH7QuyWxdt585wJyFwqC4iVoJcfQQUIFZ1j78eJygsKOsqAAGzOHD0ua1aawAgSEgNMKpvDYCoQHXzLoBzzivdvBXjT3sOauNwRv/1aiejJrbPDpOUXP925DlBcgztyaG7MDUjtwLU2+CSkDqu9j83D1YM6WDwojVfdrrNOL7dhVV4CwRQhXNX7Aj14FAAtZQp9eKm+qEA9l0z+99gYrjH1L2N+QkEgMAf3ejUHjLxWP+pypuOnZqh3QN93PVseeMWgn9vYIUbHoBqfRU+GGyseshhCXMBBH0VBo3lefMrZ/aSVNBZhy7uIShoTjcmfwP0D3X7lrkAfKMxBsKo8vZqVBWARP0E3jQ5Sxw8W75jKgD7+8cJYidh9t1oD7EaOj64S7kvrTsh3uQct3ma+7A8prNY87erhbYdJleXWzZ498GcgzcIDmCTCvt0Onvvlm8qaAyLTu5qIujI/Dz1lUo0Pz3n00hHM0FYz0L/+sebFKQXb5a/xU5MbeAtFTZVBUgPY09ekk5yXZx2y9HvVG5tp4VSk0/Y/6N7gf58WobTMP3LhQQbpOlva0mO91KZ1FdmAKrDJH0EI/V1pF27HVDKz9a7822XflOpq4Hmuho9i3aUsFkCQbsCwP3zV7EmFyG7Mli00xy0dWCGfo5tTrOVWqfWudAkKA8Ank0olWfNJgTJCsuuZrtvOEvwPmdLAx6ApX4mo2Y5k7OAzWkzH+DKG8oMQAZtIsvezZQGsq8MGemmAlCtoI1EGOEkEQAOPM9MR9w38XTUhkgAHDQ+zFYycJyNu0QFlHQ+EAAOQsAQDk7qtEjrKwBw4LUcNO5oErADh8g0VMuBI+g87ufk4RSXzVNImin/FY+AKad5+jGdsMIBYLimqqCwABhEVltIAPwYmKiCQgLImnW5v7AATFVBYQHILGZ5FAoNgKtAwkjaLjQAGWzaKig8gKxVUHgAqAKGgCpAP4msACADTgrBGgBcBRJGnLY1AGSwSarAKgCyCuJCsAqArIK4besAJK0C6wDEzTyvsxJAkiqwEgBnl23YB6K1AGQVMIggay0ABCsh6KrAagCAIBUEwXoAsgokDG5bD4ADZatWQV0AUKtAQig8AM5sWvsfAAD//2p7p8YAAAAGSURBVAMA1tlBqXFt5pwAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": -0.27260195550947147
+        },
+        {
+            "timestamp": 275048.10000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADgElEQVR4AeyWO2hUQRSGjyuuBFbzQFCIaGMREYxCiIWgsdBGsQsiBusoGCRYiIqCEOwkbNTOyiCIjYWNVqbcZUFEkVgo+EgViEHUBYNo/iHn5mQzd+5zH3dmA/+duTNz5s7/3X83mzvy8N0/l5Ujx//aABwPALUT0E6A4wTaHwHbAnDm1QzVyuTRmgSwaZNZ3ZwVAGBeZy7MWCQAH8anCNJt/Kb4lCDdXCuPhQawe3GSTtz8q4S+lDQu+xu+7FPeyxNTBKmbBl+eDB01PjE0AOzy8vZGNJHEECIVNXBxJABIQNSzlR6NeiXNSoF3AE0nEgBNvXGoNDlknG/GZO0zUwFw+vyct2//2LDXH7x7nwavX/LuW7GTCgAYAwQIfT+1IoxAAKVp87eon1k5vnnLjpZNQiAANvK56zJ3I7fyYxG5OKAgyY8gbB0aABYH6WTP3qAl6+avjh4kqXULVgaOjR8gaOU2dMMJHpkY0NYYAXAxt9odmjgYBAQ/gg5//U4wv+u4/qBGAIdGZmhbeZHQ6svDj17MvVCL3z4YIik1KC5yTvZ5CY8Fmcf6j2P9aIjNXysPrHk29srhYtLvvm6vSO0WcPHbC2WYQyt1bn8nQcP5PEF/ZqsktVCZV8uLe7oIUjfLF/ShG+9vkZ9w9uWldLZSQKOVMQG1Fc8fPyOTLty7U1vi3ZvmsCjf10HQ9is/VYsxqFAorAEi4XTM/iCdFgaWUKr0urNHtYAAqRtxiQRA1KXa/fUpT6xvxV7VX8p3UpCqfVuJhQPNjXSgod7pqhaMDlZTALBZbtWpE14AoqeyyQOC+zBqCIDuU/PqraZpeOfY6s/vJOzqBkCaRqyTHLKetakCyIppCTQxgCyaTgwgS6alWV0/dAJsMi1BBAJg4634RYazSTNx+loA2Jj/ZbWicRhN61weAJiGYDytzXHQegtnTvKMHDZg01kyDtNpnDeXxiY4TDOFlxj3+d5HIO4GWa/LPABOcNwUZB5A0gRaASBJCqwAgBTEhWANAECII6sAxEmBVQBkAsL+V7AOAKdAwjD1rQMAswwhTAqsBAAIrCAI1gLgFDAIv9ZaANKwKQVWA5Ap8INgNQCkIAiC9QAAwSQnAJhS4AQAJMAPgjMAAEGKvxSdAiBTwDCcAsCmuUUKnANQmwLnAODtSwhOAgAElrMAOAWZB8BvMk4LCP8BAAD//04JaKgAAAAGSURBVAMAlWBVn9NXlhwAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.2999734463496254
+        },
+        {
+            "timestamp": 275081.5,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADbklEQVR4AeyYPWgUQRTHnyesBGKSCxGEQGxSnAh+wKGdxkIbxS6IGKwVUUIaBUVBCLZyimBhFwSxsdDGypQeacSvVIKiVeQIgh4YJPJf8s7n7O7sZGfv3J054Z/35s2bj/ebd+ajcvjh23WfVSHP//UBeN4A1O+Afgd4TqD/EXCpAU6/XCQpk9qc6AAu2qRgNccawOvGE3XPno5RvM2BqQB2rd4hqbjDAAGKmyt6LBUACnhxaytMKAkjqegtn/cQhAXN+bsEwS+ijABkvXiRC+eajAAcv/Gb843s+sS7SF5RYRgBiFSzETh17uuGFzVxEKJZvY+oJ1oBwGYMYd/laQwTdfDapcS5/zlhDQCXfzA7BBPRtu07I7E8A7pvgY+njhgdlQjg1YLZBnwKvjuwD9ucu0joCkAo6uvjnrEANls8NjoxuhsmoqTuiCTmHDCtIRaAvMunkVk5jPWftz7ExtOCV88fIKmk/KNz+wlKmtfFZ+brumn9H0RMKWpP6MIkYEC6rQ/NLIbTE8eIdBBiOwCLx5qrBBvukuOXN/eniKVuy3HVch7HeayzyOXCAQFjVVhfUYM8xqT0MU4T58MiV1r4EOKss3uHCZoOAoJ+LbdJivMakyMEqePr729SkpB7pTpIZ5YG4cYK94ntAGT/rFVhQj179JTSdOHe7TBX/ZIUl3lBbYCkeE7CkP7A8ndqLa0QrKpWfY2Xd6wOQiKAzuouOz8+BqRqLRgmnb4FYzRa30Ht2lAoecXxhXYsGBUUj3sOoHpy5Z+C5eWz+gwii+0agIHJv78QyaK/NMaz1tmVdV0DINu6aEVLkrkCkEXLQ4rsWwMoY9HyQTIBkJ9puVkvfdzB5Ly0HGMAOJBfu8if6bSC1XktAFeLlhBiAXDhRX9p3FMWk8XvAMBmZWrxvB6nwoXntWGWV7BZg/vbrK+UtXCbouXazkdABsvi8+PZdEGpAeTxUKUHYNsFpQdg2wVOALDpAicAoAuyQnAGACBkkVMAsnSBUwBkB5j+bOAcAO4CwDCB4BwAFC4hYKyTkwBkwWld4CwA2QU6CM4CkF2g850GYNIFTgPAy6dBcB4AIEip/x94AUB2gYQB3wsAKFRCkF3gDQBAkGIIXgGQXcAwvAKAoiUEdIF3AABByksAsgu8BOBUB8hiNuNzF/wBAAD//2wreWkAAAAGSURBVAMAc2lLDnzbL3oAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.49874333847966246
+        },
+        {
+            "timestamp": 275114.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADiElEQVR4AeyYS2gTURSGj0EjAWnaUHFRqJsiEaEqBN35WCiI4q6IGFwropTgQnzUVelWUhFcCC7EjRsXurdLQ0BEq3UjKO2qUopECxGp/QfOeHLnkXncNjN3Uvh77z33Mff/5k9bmjv25ON6lpWjjH/1AWQ8ANRPQD8BGSfQ/wiYEoALb+aIFcZT6hMQxbQE5ACwd/WBNf+lNkssq6B8e19/QZBS3rJhXON8UQcATDCE01N/CcJYShqX/W3fDxCEMxrTs2gSLweAb4OT2i6dBggOADrcS+Oyr+Ns3Wd4AkD0wz5sfXSeoLD7erneE4Dfpc5fXvKbpiN3rvvO93JSfXYkADiEIRy8MYFhahUZABw/nhwg/HZA30tJT4MN4O2z4wR5GfGqny3td52C8af39rnOJaloA9B1qUbtmq6jIp1TW5wKtc8VgM6/Bbxuc+vKYZLyWneydshrSkvdASDKx0DLTVwOYfPcYonsY6zqaHWOts+M0+1GharTFXXaMbYBYONwY5XQOlZ5FF6vfPaY8S5/eHSCIHUFaqp4TX1s0NqDedS4RV+VnBs9RfY+1KV4X04t8pgXdGsBgfegxXq0kOxjDKEGXRov0pl2mybyeUvthTWSwhoYh9Bn8fjup/vkJqx7VyzRxeYudD2Fu0B2ArDyd3kIjaVXz19SUFkbXL5dfTjjUv1fKlV2U75csLTnZotarZY9KWHIfmHhJ600lwmtm+wDNjrdIGws6e0/RX99zRNrsT5CO0sj9Cdf9NWP/DAB3Fp5gKClagE+bLlB8at1JMA+ZRM7bBitjseUmjssEIARRdoBFMbmO3wNnVu237Iu0x0PiDnQDgD3kaYRbdSSKm0A0mRavoxYAHplGs+VJuL0QwPAw/FZhpIeb4DppkAATDMtofgCYOMmvGlpWvYdANh00iOOe0ojUfsWABwGJd00m9SZyByb1nkoX3SzW7y0uM+wEhD3kF7s1/XCUguAocdNQaoB6EhBqgHoSEHqAcRNQeoBxE2BEQA4BVF+IBoBgFMQpTUGQNQUGANAvv0wHwWjACAFEkSQvlEAYJghBE2BcQAAgRUEgpEAOAUMwq81EoA03C0FxgKQKfCDYCwApCAIBKMBAEI3GQ+gWwqMB6AmQP15kAkAMgUqkEwAgGkJQaYgMwAAQYohZAqATAFgAEKmAMC0CiFzAABBKvUApJmgfZmCfwAAAP//GwtHfQAAAAZJREFUAwA0wlp9NeD+6QAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.639994874765906
+        },
+        {
+            "timestamp": 275148.10000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADoElEQVR4AeyXPWgUQRTHn6ueHpxJPCyEQGyCRAJR4YidnoU2il0Q8bDWQgnBQvwEIaSTcFHBQrAIgthYaGNlyoQDEb8iiKCYKnKIIIcGifefMMfbzez3Xm5n9kL+Ox/vvdl5v3lzyVmHH75bzbIsyvhPF0DGC4C6FdCtgIwT6F6BjBcAWXt+TgsGnyZmSEpMKB5vqk8JUpg6MnX61RxxRdmEuAKAcPzmP5LCmAsL88R5f9O3YYLgs1GSSSfxPgEAC728vRmNUoDhNHAI3LYwOUMQn0tz3/raNy72h9P3giCcfB48cd73CQtlxumHCvBxblUA/AABbRitDrwP4546XxuAqLubny5HDe14XGAAp84t2Ta7/9KYbazLwLnPwAAQCAgPxnsILcZOjV676JxK/TgUAGTzov4Rjau27dgtbLrACA1AZOfxwNV4dGOvh0d7TE/KRyItLADIP4WRVkhJ0PxsRABRA6PmfeX8QeJyW+foxAGC3Oxu85XJkptJOS8qQGlJ2SRgQG7bOlSZoy1TIzRwzM1DPW8hUG3ynuX/Ho/eueft7GF9e79MKskQaZNjtxZ+0nZ1oaRcEz6Q9ENrYQLCIKhOFPcRhDiVsI5qHnNnR3oJGsvlCPq72CCuem0Z4VQd7BMSg+ZDjq9/uEUqNV3odW+RztQK6HoK+5AKdAWeP35GXFj9wt0pNEp52WRAbihPXHK+UCjYgEg4+cVf5Kd6aUUsEwSCcGw+WgB4gs5+08/2GyRBW4Bi8PtLjrhWcr3kpR+5XbT98h9qDPUIYcmlSh5NS/2zDV9ITogtAK1V2tjhCcd9DUAUa1sFDPSjKjEAjc/D63LaeXLZdsrrHFIwkRiA/ODa12Ke9PdqfwpS9N5CIgB0S5ojiQxA56QjA0hD0tgDT8Cv72cPVAF4KT7BO32n2/F+VwAy6TQk7neKcew2ALokjX3GSZrHCgBYUJeTTvoaWLokzk8tyb6ogCQX3Ki1ULVJvEtLAEleAy0ByJNPogq0BSCrIC4EbQHIKojbag0giSrQGkDc00e89gDiVoH2AHCKUlE+EI0AIKtAggjTGgGAJxy2CowBwKsgDARjAKAKOASMg8goADzhoFVgHABeBUEgGAeAV0GQvpEAwlSBkQCcJ+91FYwFwKvACYSPjQWAJDkEtyowGgAgcKkgGA+AVwGHIfvGA0CiHIKzCjIBABC4OITMAOBVABgSQmYAIGmVtAegSsptTlUF/wEAAP//5jehAAAAAAZJREFUAwCWAmJbhr+AIQAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.7427320193568505
+        },
+        {
+            "timestamp": 275247.8000000119,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADoElEQVR4AeyXO2hUQRSGjxfcsKCJBsFAIBYGiQR8wJJS10IsFLsgYrD2gSLBQnygTbCTsGrAQrAQQWxSaGGnpUsKxVcKsRBTKSHIyoIB4/6XnOXc2fuY2Xuvycxu2P+emTvP/5szYdc78PDDSifLow7/6wLo8ASgbgZ0M6DDCbRcgXeVZ8RiNhu+jRLEdZeit2NpuukHxpuVRkGtuwjBzwBAgBqeWz4qhJYO//nFiVevSSrt8j6ANJNUp+4SlGYOnbFsWqevSR8tAG9nb4XOKY3LcmjndfpSCwD2/ma6TCtDH1F0SgEAx08vpDJnYxYEAMC9CuHBpV7ae3EcTU6qBQBcAgKMI6Kuq7FrF3S7rlk/deFQAGon1Mfu3EcIyEbDAQONSiSAF4ufG81EHFGpTp5HCKhn8wA9urGLbIURCSDgMqZi+/+H1ADAZubvEQQrFQvgaP9u31TU12S/sfE4571sPOM/V87sJ6mo3ocm90U1Rb6fmCpFtiU1xAJIGpxXu4SAMr4Gh631tHzQfz102A9tPbQAcCa0tULEoPczZQoTd+c2rodF2edqtRQ6H/fhqM6jBQCDMAFHlKWi3ss+p/b00Xih0NSf+TpJYQ6oMryFIJQhlK9/uklhQjt0cm4TgpbknlDWAnD23u3YyZPaeXBhpEisWq1G2y/XuCkAQ4Ipzv+iOC2Wlv05TCD4A1Yf3vMnsxQlGEPbat9MwtZjP+j31wL19A/S98ogLRf6fAEIylgEkfWzsI0WJop4HarBx/VYQHHw0KaVAbxycbi9X4NsGsZhmueTEUBQh3FEqZ0DS1Qf6c1MmJuhGgHAwPqXUYRE6ZhOnCSnDoDZP7fRB2oMIG5PeZmOypq4vei2GQNQr0FeplUDWEd9l0XdGAAWxWZwn6E8Twdr5S0jAGzcJtNJABMBsOm1Pm1Ax16SDJm2hwLAQjAMYWHTSW3q3wQA01AnmJYH5EnTNpw29isNpC17Nphmk3nstXkFeBEbYpZZYB2ArLPAOgCcoVllgbUAGETaaCUAvgZZZIGVANKeuhxvLYCsssBaAPIU01wFqwFwFkgYpmWrAUiz7WaB9QDULJBQdMrWA5Am28kCJwCkyQInAKTJAmcAyCwwuQrOAJBZYFJ2CkA7WeAUAPXkda6CcwBkFqhAwurOAVBNJmWBkwBMssBJAMgCCSEuC5wFAAhSURCcBiCzQMKQZacBSKMoh2WB8wDULFAhWA8AJ5tG/wAAAP///FUv0AAAAAZJREFUAwCF5VnQLmYL5QAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": -0.27405677856623367
+        },
+        {
+            "timestamp": 275581.6999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADh0lEQVR4AeyVv2sUQRTHH4u3IRATEwWFgIJYxEYNHNqJFmKhbRBJ/gAVDBIExR9YBRsLOSVgYSc2NhY2dtqGWIgiZ2OlWCjBE+Xg4o/ku/DCMLvza28vtztzgW9mZ+a9mff97Lu76Pjj9/9DVkSB/w0ABN4ANOgAUwcsLz4whVR636oDAAGqtFNF8dHbxjPFFpFsWp4rE3u8ce7Va4KKuMaqA8SL+gkBpiGuR3zmNdfRGQAu+Liwtd8LMArh7qKVC0BrZ9Fl9O+86PD8TP9uL8HNuTqgBHUXVoIWwNGblwu7qKwHaQGg6CwIWWuIraKMAGDKJ8PwIyra9+O+OFc+A8LQ9j0EKYMquGHVAewLvxiProzy1IvRCQAcL/07jcEbOQG4FL30xjgbcQLASbbj9QvTJEuXe3LhCEG6mKy9ucV61rLVmjOArewCwIBMTvaeMkWo96MzEwfVuz3cebd0gmTxdbzOc9V468Md4rePnBvL9dSZWIdUZyQdgJ9CBJnEh5jieH/20BhBM3FMrDfzxwjis3Rj48AOgmA0S8i9Nj5C51dG8KgV1ySPCQBtprR58eFdacU8jaeGU0GdZpuasx3CyLr3Z4igVLDFwnRr1QqEfFQEQy+ePpfXC58DAmv31V/J+ftv/01G+R8DEcfh5k/Sqfl1m3Yfuav1NZL/nDoAsOQDbOfjZ7/R709xos+NSVqLxxKJ+eIannlvI5JaVEvEa3nGySftFCQnAHkuFU1n5cMoq9ZpEYQ5YjFC3+NdCSx0TntqlHRC3pe59EcO61nqCQDxbWddqlqDWUi1j85R7fE64Eys1LSQEMMqFAAbtymUC3YdcYdrji6+EACmNtcV4LoHuEVCyA0ARbBxVxPdxrtAMN3lDICNowjT4VXYtwLApvHGy2IcdaCubiFrAeCCMpmWzRYBIQUApqEyG5dBoF55zXa+CQCHsGmQtT2g33FcK+rPU0uERDae54Ay5DCEPLVE3STnubCXOXiZrudvfgRcE8sWzy/SFYI3APBC8kDwCgAguMo7AK5d4B0AdIALBC8BAALL9KXoLQDuAoDQQfAWAIyLEDDPkncAZJMMQdUF3gMQgWRBCAIAdwFgyBCCAADjIgTMWcEAYMMYxS4ICoDYBQwhKAB4+zKE4AAAgqggAYhdECQAdABDCBYAQwgaACAMAIBCyBp0QMhvH94r3wEw0Y3WAQAA//+9KeF3AAAABklEQVQDAFaUQJ8y1+rsAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": -0.009731181387592247
+        },
+        {
+            "timestamp": 275648.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADd0lEQVR4AeyXv2sUQRTHH0dyMXAajRZCwEo0lRoI2mksxMY2iJg/QAVTBAvxB9oEG7FIJJ1gYeOfYKdtiJUisbFSLNTgycmhEfU+CwN7c7s7M7t7ZG7njvtmd2bevPe+n50lXO30k7f/QlZNAv8MAQR+ACTxBKwvr4pS1QH1AMB43LQ+jq9V4b4HQJKpKkOwAgAUXyBcfPlK4qK3IrIGQJH3S6tcdkTKdNnFnQCUXdw2H+ZtY13jnAA097um9z/eCYD/dtw77AFw8vb11CwT31KXBnahB0CWk6OP0uFk7fN5LRFA1inw2Uye3hIBkAgI6OndIzK2+2Ak5gddev+pAPRAH8fP584UbssKwPHFeUGFq3mYwAqAh32X1pI1gGu1F6UV9SmREcDa3/O5+r15ZUZ0ZSU6u3RCUFZMP9aMAPpR1DanDZCF5VlBtjn1OCsA6virq54kz/jN2pzEpXLoc1k/hIg9dE4EcX9rfbYrJ3NI5U661ggwKb7RFKvW2XP52IQozdfr8nrxVCRiWDdp5fBeufPuXqrYf2mjIYj7NFEvTVYngMRXHz/gYi2ME/x7sy2IeyXGuh7+GZP737dViPN1prllBJGU1BoAm10hsKc+PS5KrVaLqVQ1Go0Ilg6H8fjmD8nS5ueRnvWtWTNQKwB5jIv22Xfhi4xNTsl2fSISMLjXwhKHnR2y68avaK0po4KigeHP1LN2DxQdohUAQ53M5Z8f6oI+rkx1xQGDCSCkSa1/rR8Q9gMBGK2FEfm0MM5yYfUFAE8b06hIh4CJ7wdCe3qPTG6MRuI+r8gLxFIBKOM0SoF+iBpl5AUcIEsBQFM87X4aV6apQT01LnrNDYAmMI1oqmgjLvupR32bPaYYZwAU3gnTupGyIFgD8MW4DoK+9DmXcSYAkiMfnniSKU5B0rzLXCKAuOkyirg05BpLf/Truk/FdwEgka9PWzWcdC0CoYZpNIjGdRj40OdM4xr0kCnQ93XlwRVC1yvgu0lTf3kgVAoAgFwhVA4AEFxUSQAup6CSADgBthAqC8AWQqUBAEEp7d9j5QGoVwEQSRAqBwCjurIgBAEAIHEIjJWCAYBhBSH+KgQFAAhKCkJwANQpAAQQggOA8TiEIAHEIQQLAAgoaAC8CkEDCP4EDAF0CAxfgQ6EoL/DExD04++YH/gT0PFQ6PsfAAD//xGynX8AAAAGSURBVAMAtSpMn5VomCwAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.2903813833352723
+        },
+        {
+            "timestamp": 275681.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADXklEQVR4AeyUv2sUQRTHH0u88/BMYmyEAyvRVP6AQzuNhdjYioj3B6hgkGAh/sAqCCIWiQQsBAtB9D+wELQNZ6XIWWilKAQCyslhIirfhXeMe/tm9sectzezgW/2zey8mff9zNsLjj58+8dnBeT5XwkADbC6uExRYd4HiR0AIF4A8MWodJliByABcN4vLCN0VloARXN95uUrYtmqzQjg206iUXdBnGnM2YAQHL5+ycY+Q9vDllGpQGMHSImuzJcAcJOmz2DfvWJ/JvCQVf0OkCBUt+/KuvdY5PUBoFoJAt4VTU/njlkp6R8A2BEQHt3cS7h5CHMuKeplAAAvODB/mkOnn7EAVn6fDE0DwoPLk2Hs6r9YAKpZhqHOuRSLAC4Gz13yKXoRAYgZCV5cPX+IotKlHV84SJBuzbDeGQGMqhOSAGktNgnKA8cIIM/mutw3K3PE4nU8xhNzOghYs/sEEYT42mqzvx/GqrCXpEBdqMZIwBhPdAHipEIOdG7/FLFezx8hiPfAe52W9kwTdOPdLYoTcs+26wQ9aXYxFMVnxj2H0gFseqPTIxZXx2P1efdXNTTLa9I+77zYCEGkzcN6I4AL928ThMVpVZmtEcuUqwJR4/X2GtU637XqfJkYeL/e3KQkfyKArKalQzcrUyGMblffrtH8er1OW6/8jE4bx43HvQEocSBFAMYTEizYcWqNfnyshMJyxNWZBgEGxDAQS+q2JujD1+lMEHCmSUMBAKPQp6WG9nyGoVtUfbaNIOzVm52kvMJZn1s1YlkDEL1tHGRbOCPvngA4095CrNwAUFSS285bOPLRBTgPsS1lBoBC/pdx1WxaCGpuXJwawKiMq8XbhJAIAJsexY2rxtXYFgQtADaOw9TDixSjxjz1xALApkW6bckgXwzqldaY5vsAsAk0DsZVUwxBnUsTB6rpvJulOdjmWtQNH1n2DJCcJbFoOfCRBUL/Eyiaoaz1pIXgFAB0AcClgeAUAJhPC8E5AGkhOAkAEFimz8FZAPwpMAjp6SwAGGYIui5wGkASCM4BgGlJcZ3gBQD+FAAmCsELADAuQfAGgATBKwBRCBh7BwCmWfg98BKA+nvgJQB0AEPwFgBD8BoAIJQAQMFnlR3g8+3De9kBoOCzxr4D8l7eXwAAAP//JGSISwAAAAZJREFUAwC0IVifDy/H/QAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.4903482412817079
+        },
+        {
+            "timestamp": 275714.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADY0lEQVR4AeyWv2sUQRTHH2ty5+GZmNgIBxYimioqBEvRQmxsg4j3B6gQkSAoaFCQkM4iSsBCsLDyP7DTVtIpcjapFAtBjJwcevjjvhPeMbc7c7s7O+bWeTny3dl5O/PmfT8zuyQ69eTtH8mKXi8/JMm/COYlQ1AAJEPoA5AKYQAAQ3i/KOe7kAAACJJkBVC2U3Dh5SuCfG+OEcDmft/LuOeDaYgz6PccK9IaARRJ6HOub7Om2koNwFSw75gVwNEHC77XKmU+I4Dq3gMjL3Y7jj9MGgHggRRFJ28v0NOlI8ovdh5SHSEXdQLWfp8jgJDgOe5RAUDwavSCjl2bp8fXJ5QQk6A+AAlmTR4TAPA6mAaGGksAgFFJEIwAAMFFty6fIJOG5TqzeJygYWNMz5rLc6Zw7pgRAD6IuTN5nJAGBOYPnt1acGxlduvG8WoEgFz/EsKbtdPEwloQ99Gin0U8Fq1NaXkinnjl0QrBNPo8Cfd5xPO4vTQ7SVA8Bz+3tauH99Gdd3etujlVp4vrddv0gXh87XjfegIGsmTswCw0X6kQ9LPVoTTd+9olGM64hPdhRgA4DZDrapWZGrGG5di4v4vq9boRUq31jbKo9WnMOO7LXJcgSvkZAaTMyfWYQbTb7cS8Q0u/EjEObNI4Qbtv/FAh3LNUIOXSeNYhKA3iAIAiux6vZ+r8Z/q+UemrOt2gbmVSSYfRjzXHqK2J4x9WGyp1byaxVMDTZQCAj5xsmgs35WQYOojq8z2kS5+HU9CZmaAiQr6PzRrpQswLAH23kTSrACLLWMDEGlnG2sYA3vT6OOlCrBAAFIUdR4G2hX3FsQbW85WP8zgBQCHbZZwLResCAfOGKReAURnXDfiGkAqATY9ix3Xj8XvUFY+59K0AsEDZTLNBnAK+L9omAJTZuG4WEFCrHnO5VwCQCCrrjtuM+YAQwTgSQbaFyhxH3fDgWmOEBK6TyzTPFYJ6BcpkxKUW3kQXCEEAADRXCMEAcIUQFABAyKvgAOR9FYIDgBOQB0KQAPJACBZAVgjBAYBxk2z/IwQPgL8HgGKCEDwAGB8GQQSAOAT0WWIAsGG0+qsgCoDpVRAFALsfhyAOQByCSAA6BLEAAAESDQDfA9EAxJ+AHQA9AjuvQA+C6L///gQU3b2/AAAA//9L4TLqAAAABklEQVQDABOZYp8xd5eQAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.6346968099952438
+        },
+        {
+            "timestamp": 275748,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADXElEQVR4AeyUv2sUQRTHH2vuYuBM9EQMBMFCMFVUSCdorGxsg4j5A1RQJAQUERRSBCwsogQsbMRG/AssBG0lIKJIbFIZLIRg5CTmDtT7zPGWZd3b3dsfl7udC35v3szOvH3fz77ROfP001+b5YjlfwMAX+YfWd0DpgNshuBsHWw1gK0QTAe0ENj52/MALr55K6o8PlHPAggyzVrWEHoSQB5G24HrSQDtis1j3QD4fXRcjj+8nkf+THO+mDmbaT6SOcP7xhmtlekA3H9YfslgnVwAJ27MWmcewy4AJjbI79F5cnNUkP+BLfNBB/ClV/6cZ7BSjs3m+eLuFbjmvGKeSLevnJIgRSU7N38yakvuzw2ANOaTVqjmdSQPMSJupzvvpts96nh9aGlKDICOT6Y48HFlRpA3BXPkXQuKdQ8jIBijFJSHtblnpxnEIYGJmj/ESdQ8+t+/y1Njxqg/n3/j8rH97hIxuvv5ngSJjZdWKwzy4HXdjFE//vfrXM9l0gGYnS2Xxav62raE6f6PhmBWC+n2eKtWkvdj1dYVuPp4SVCaIsqTI6Kq1WqRqSqVSltAI2s/JUpr34Yi92xONwRJyF8mHeDPX50+ZGAcXogG4T/LfEtKgohVzJHO44wTz7cFhcHMBcCv9bKgr8sT0iiPGdEVGjOqAeIgrS/ukb0LO7pNmlmM3IWMgswAHLjw3ZjGeFBtw9UJd3lnc8PEGCco1Zvftili1ZHFigAQCNuTo5JGmnNjbkS8Yj01ADVOsSSMI2CoefYTI2K/OsnrP6tzhVddLYlXrCcGkMS4FtTpyLs6PRN3f0cAKIQWR1l8mbhF8i7eHXe/d19UHAsAL++2aX/heUEIBdALxr0g8oAQCKDXjOcJwQWAabTbre41GxZTa9jzuM8cEiHaC8U9uJv7tE7qTluHQzKUNlG3z2vNaSG4V6DbBrJ4n0JIk6uvAWAcCGm6oO8BAAElhVAIAHRBUgiFAID5pBAKAyAphEIBAIIq7v8JhQOgV0FBRI2FA4BhhRCnCwoHAAAoLoTCAogLodAAgKBqdx0KD0CvAiCCIBQeAMbDIFgBIAyCNQCAECSrAARdBasA0AF+CNYB8EOwEgAQVNYC0KtgLQA6AAhWAwDCAAAUbFbfd0Daj/cPAAD//wd0S90AAAAGSURBVAMA6z1fn8Y8FNoAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 1
+            },
+            "speed": 1,
+            "steering": -0.7386847151235121
+        },
+        {
+            "timestamp": 276048,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADhElEQVR4AeyVv2sUQRTHhzO3enB4eiAKAQu1SBUU0gmihZ2tiHh/gLUEFFEsRLSwSiE2Nlb+GdrKQQpFrkrlISIEf5yEJIjud8073467t2+ys7c7s3vke/Nm5s2P72ffXloXXrz/XWe1VM0/DYCaF4BqKqCqFXDt9Zu5XK1yFQDjENxTi7goVQYAzEJFGU3btxIAyjBOQCoBgC5TRtsAKIN6lc5sKqBKT6OMuzQVUAb1Ms/Uz24qQCdSt35TAVlP/M7NcwrKynN1XlwBgJAmiflLt84qSJKr5wwerehDufqDl+en6zMBPHm+Pk22EegQ9H7SGScvx0cXHi/HBwx6ZJ7aTAAGe4tT3z27qCCJeeRhY7TQ3bd/qwFxmpCfJDLN51ppm/BxviAp5rlpcdK6tTNHouF7Hx4oUjSw94UxhNeHXTRiSe7wavwjegiiCrix3FNXgyBVO6MtxbU5/PLfZWGWxCcxxvswTeLjFJvCoHVob0/aioQ+JAIAc0iWqtvtxoBgPSRdn5W33utnpYjnRQCCpY6aTCbiTdMSAUEXVUtn9F3NU6NPC9F5IgAq/PRXjlmBEG4V+6Nq+abaCopNzqEjBoC76BCOr+avCuzLlQQhaYyvyRMbAcBBBAGvxOenZr/OWM+18fAA707jQ6vbUUzGe2o36hfxJQZw9Mq/X3ZAgAAhz6VO3f+VuBxgAaFI43RwJgAY/7kRqI9riwot18H+ovXfhd0gtB0KFxwPOiqv9PXYlysRAJmGWRjnC/SYINDFeavnzurTOsrBuadPfFX9YduqtpYOK64YADKOw+kikhYQtjfHCmrvhG/unrCWjPE2aRxjunAP3Ekft9mPAOAQydOedTAgYF7/XeBAKEaeiXA/k3yT3FZe4/ywNAiUo1cBjc9qUQWz5vPORRWQdxO+XoewH9N8P8SAUFQVWAeACwMCBPPo21IREAoBYMsw3wdVgL5tCM4AgHmCgNiWnAJApm1WgXMAqApsQXAOAKrAJgQnAQACKW8lOAuAqoBA7Ld1FgAME4Q8VeA0ABsQnAcACCRUAsXS1gsA9CrAtCkELwDAOIeAvlTeAOCGTarAKwC8CqQQvAKAKjCF4B0AUwheAgAEqbwFIH0VvAWACpBA8BqABIL3AACBS//3WAsA/FUADA6hFgBgWoeAMag2AGCWi6qgVgD0KgAE5wHwpyqJdQh/AAAA///fDzv1AAAABklEQVQDAOSDj+wZqzIPAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": -0.03681374176394586
+        },
+        {
+            "timestamp": 276148,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEE0lEQVR4AeyYPWtUURCGj6vZ+LEQDX5BwEKtRSGdIFrY2aqI+QHWIiiiKIjYWFnY2YiVtT9AWwmkUCQWSWVAiUQjGzWJonlueGVycj/3npusd1d4M3Nmztc8d06ENE49efunl9VwPf6vD6DHG8D1O6AbO+Diy1dOqvp+XdUBcUUTqxJC1wCoutAkiF0DIOmCVcf7AKom3O379zug279Q1ffrd0DVhLt9/57rAP+D9AH4RHpt3O+ArC9+48oJJ2XNzcqfuXo8a8qG5wt1gEBYm/fGKl427zrNG7s/KjeYHXt6svwfRIBR5kYAQWl7UPyhs+tnbHtwbH0wZ4TimVqoA1gQQm8en3ZSkf205ubr0Wg9axWzlniWXs5/d6hhF8b5WRuRj1vnx5iXplvv7iSmr+9puUvjrcS8n/DPjhufHtrpUK4OuHxsyEnnm03na2nyh5P8y/jjR0d3rwkxRgSBECdyVkVg2HXWv94eiIapAObGZ6NiVRw2WmV+TN/bakbuHwjmSkygSIQfShNDw6W2AkIqgOHRfa7dbqcecvj279Q8SYGwlng3KBUAFwQCNrQsDPwdk9/cZigTAIVndQFzkuQ/kaR58271TSrPeKa9qGFlNhcAusBCOHAt/VnY2+Z5Ina+9Vut1d/8wJBCQ8kFQJdS4Z8erl5M8VBWRWJ1Fv6QW3aIc0Zag5hgygSw59xsdBhdMHU3coP/sM9EhQIZCBpzqPUZ51HWnEQAKvzLi31r9rBPYU2ixEDPBBD2i/98OOi2X6v298AaABSNFqab7sOjEYe1GhweSS1zubnyjVbkT1Ica3P+WCCYM3Fvu/vc3ItbqSIAtmgKzzqRLuDyVqwZWFr5fivCb49tc9LihQUnKYYlhvU1M7bD7X+/JVoz9XF31AXEqlCDL5ynaIpC6oLFuRmngrHkLJDB57tc69mvSPiSYljFsIwRvi/2PnLwqxseHwiuBpuHEMWzDzAkxn6cmJXmMg/ZnHx9IDpVsVC2IwDqAvsUdCGKkIipQHxJeXLylUuygpCU7zTeEQAOEwQ9BWIShSGNKRIfi8ghfOJFFLoLOgZgL00nUJBkc/jEZfEpHBErInVBSAilAKgL8hZB0Sjv/Lh5oSGUAmAvSBfYse+XLdzfL9S4NADbBXEQKByFujD7hOyC0gC4UJwoGsXlQsRCQQgCwO+CKguPg1fml2IQALoUIJDGVVt1QZlzggHYyMJtwYLQaRcEA2AvtVk+EIqeXQsA6gKKLwqhFgAo3EJgnFe1AWALLtIFtQJguyAvhFoBoAuKQqgdACAUUS0BFOmCWgKgA/JCqC2AvBBqDQAIVnH/M9QegH0KFob82gOgUAvB74KeAAAEKwuhZwDYLgCGIPQMAIqOg/DfA6CwMvoLAAD//+0b0BYAAAAGSURBVAMA2msLavWaR98AAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.2689831945651957
+        },
+        {
+            "timestamp": 276181.10000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEE0lEQVR4AeyWv2sUQRTHh0tyMXBwehgsIhZiHQxcrbGwsxUR8wdYSwoRg4WITaoIdnaC2Au22krAQpFUqbxCIhHlxPxQ9D4j73w37N3O7M5eztsTvzszb978+H727WnlwpP3v8usiin5nwmAkheAGfkKuPbqdaHvaGQBYBzhXlr6sTVyADCLXKNJMTcny3ikABRlchCYkQIw6KJFzU0AFEU29r7Ply/G3tLuN6kAi6HEj0kFlPjlW+ulqwDrWj0mABSMUnYnFeDz2m/fXDIin/xBOZdunR80PfS54AoQELr1vbWYl9Z3neStPGhKN1obDCDpZGAkxX1jAEG++W7e9MNFN+Q9jgLA+zSV+O7xshGpcN8uuWcuG3PnTbO7TvosOv1oyWRRhY3TxAFpStuD+bQ9fOavb9Zs2rNm27byeDlVN1nkXQE3FutGdLVaNa4Otn4YkVyqX7tx7njPFGN098M9008sEPNu/229QSiTvABgVszRpp1Ejtbu5o5dgklkBxEeGkjW7bwAtNu95RZ6WK1W61aHgBEooXvFzvcCEPtQ9nOhAGRu65sZtrwANJrzJmsVbN+fwm+qAPLVzPTktdr7PeMiBl4Akg4+ter3WZxd+5W0vG8MCIiEhdosjRUxgCAbiPQIAkAViPFP63//OYp0j8Rtjq3+q4C6OTQAkUoBSOKiwKAXgBNXdgyfAXvHNt7vE8Hg3vqs0RCIcQdgIPppSpsfCADjbPDlxTyNFVVgO5Ee8on0A6EhYBpFOtpukwgA49+3q+bjxoKhFdkVBT0EBNsDA6PyxonpSmAcS10AYhqzGE86YLaxYMNUwWG1c0VHdrLzYK7TeP+VfFoEDMwDgk2oAtoiVBHj/UynHTpz0LlqR+RxeUS/vTJt6PuIfPLcvZbW9piyAkIRVVAJNS5VwGW5GRenlTEtqj39SdiKMR1p6WtJnL1EzH+unjQixkggtFbmTAx1PwE2DxGfgeRzad1njHSMvo4xxjhy48y5AoS8LCA0NmdMDGUG4F7Qx4SswTR91iD6vhIIvvlpeZkAyGewv9tK2z9xPtR00ib8diXFQ2OZAIQeEjtfqiAGhNwAslZBXiixIGQGIJ9BXiNHvT4zAH1xqoAfNi09X1Q/RhVEAZBkEBgS132JxWrzQsgFQH8G/L+AX3ctTGKeGP2ileVHMRcAH0PDMC9V4HMfNyc3AF0F/Ba4BwxrLBBCqyA3gGEZDDknBEI0AFQCCrlo7FypAvb1hRAFwFEbx7AoFEIUAHL4qLQaQtqdxhKANp32KYwtAF0FgyCMLQCqwAfCWAMAglZSJYw9AF0FGob0xx4ARjUEtwpKAQAIWhpCaQDoKgCGQCgNAEy7EIiVCgCGtaiC0gFwq+C/B6DfqG9fQ/gDAAD//6DbMhIAAAAGSURBVAMAGTrOfclC5HwAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.4749799518063732
+        },
+        {
+            "timestamp": 276214.5,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEhklEQVR4Aeyav2sUQRTHH9FcDJ5Gg6IQtVALKzFwtShiZ6si5g+wFkERxSLYWSnY2QmCtWAlaCsBC0VstDKgKPEHF2ISRfPZ8C4v4/6Y3dm727AnfG9m3szOvO9n3+4dmKHjD978rbOGpOb/BgBqXgBS+Qo4//yFWJV9wyoLQE2Xbdjdr5IAMO8m2q1x5QD00jxQKweApHqpAYBe0q7iWYMKqOJd6WVOgwroJe0qnlW7CnBvwgCAS6Ru40EF5Lnj1y5NCspzTdzak5ePxYX7EitUAUCIk48DNa+tzzXumqnbLTdUeFwIQOHTUi4ECEpZEk1h/sDpqFvKR18BvL5/QlR53eh1tNdftjr77Ls3KXk0xAa+ykrSZ5+sPdLmb7y9JVd3NtctedRqd8aTP+bk6aaxXMpVARePjonqbKMhrpbeLYiqk5XTuXt4hxNZHRJHmEzS6kqRCzNrEGxf5/O03gDmZr50zGHSPeTD9KZ1IdZYcb0uwCjScWgbAsEbQFaSB2/+SV3SbDbXAbRAUi/s8qQ3AAyUmQv72Qqhr/uPvvspeTXXWpZnp7YJLdK9slpvAI0jo9Jur71wsja28+7jYedsHwhIY7PtRe1mthMPF8TKF6A3gMwMUhZkPR7upT9kOApNNEdE+7R5gEQbeHwUArDnSrFK8Mhn3RJMj8mybLmyWgk8NsRYRFsGkNwAeAw+31n7GiKZbgiDmKf9dWdELHRizGmFME7KISvuBWDnmS/RPuOt3VHbjY+k9wRG1SB9xPnEEGNErIgSAahpNv32pHvG2R/pe8KCwCBzGKQK9FEgVpb+A4Dx+Q8N+Xh3QmhdcTCPwXJjJS0j4mXIBaEQ2FshrJwsKuIhigBgGmEW4z4bDi+tpGYEEPc6Ykjjtm9jxJGN7Z9u6lBeTW+Jvg1WThSF0JkM7AypaV/j9jybNECYI4boq3Rs1zBn48wxRswh7VMV7h0v63GIKoDDfDUyPhEt5TEg6WhgPjRG8ovn5kXVntosKmL0aRF9RN8VcfbSI742dkVVoOPQNjcAe6BNzMaBgJoPf0uWRh5vlThxncbZG+OzU6MRUNr3n3ZEvw/ohygIAIkBAdG3IoZsLK4PqDjFrVUg2rLm0N7vMj4zXEj8dA4CsDg3K5o8yWBYxdiVzrmtu44xa2jTpO8tXuBp65LmFo5sL/ePpBSGbZMOT4v7mNfrQyEUqgB9EWoSvq0FY/t6PcaRjnvRFgJgE+PbwI6L9kOMh1RBMICihu11IeZ1n6IQ+goA40hNlNXmeSmWAiDuMcgyljVfBIZWAdf6QigMIOlFiDHES45E4sR8XLyMmIXgs19hAO7mmELEk8wzj1jTTSkEnyooDYD7o8g12Avj7pmMsyCUBoDDktQP81oF5JQGoasAMI5Ioh/ygRAEwH0R2m+DfhrPAzsIQNJBVTKfVQWlAqAiqmReb1AahNIAYF4PrGKbBCEYAP9bU3XzcTdEvxmCAVSx5OMME7NVwBgFA2CTjSQLgSqoHQBuloVQSwBAUNUWgFZBbQFQAUDY8AAwEqJ/AAAA//9DA1r2AAAABklEQVQDAM6rRq5ikCa2AAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.6240574086562105
+        },
+        {
+            "timestamp": 276248.10000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEqklEQVR4AeyXv4sUSRTHi9GdVW641eWOO9g7AzUwEhc29kdgZqoi7h9gLIIiisEiJkYKYmJmorFgqqksGChiopELirL+YGRdV9H+tH7Htz3VPf2jxulh5tjvvFevql699+mi+2zsvfH42yir4Ub8vzGAYboAR+/ddyhkzUNxA2gaqXF8pHEVW2sANImqNNhrb20B9LtxgaktABXYbzu0AG7t3xeEzdACCNJ9lGQMIIIw0n/jGzDSjz9qfnwDIggj9ZdsdnwDkkRGbTy+AWWe+JkTs2W2rdtz4OQeh9YFBzAofQOA4NPv7GH+4lzl40oDSDsZKGlzitsnb33mGSP8LNH8toNZK5zbeGl39oJothFp4H+Pru13UtFizj6Y6+zFRzbHf1dnXZYaOriItQf4/F65ruzc4ttWKHZ6aytef2zxh40HP390PsO7G6ZclkrdgOO7pxw63Gw6nz4/XXESRWQpCYMxOvfkgssSOX3NEy+iwgDUGDbPQayTlhdfd7bQJOoEAjgAQUr1cGpabqotDKDdbqcm6zXRarU6NwMoFkivvUXnZ98v59pSGECurDkXdQGZW3PLCeVM1bUsz9Nn00ABUIBV6+YXZ+Wuv3Obn37oq2oFwMLA54a8dxNOWmqvEg6qSgD+OdUOWowv2ZRbi8PYmdZk7AMEJwSQUgD0Inx1ufsbTGEhpWaxaNOpVQcMfG6IPcsHxM77/NwAth769QnzJepnjIYlzhEEYowl3RCN89ieANT42zt/x/mm537YeNCHn+cLG7qy8rSl0LcuFQCNf3zedC+uzDhsV1V9Cmw//zXO7APBE0dA4BbECyv+rANA04iGadzmJiYRX2tGpaSI+apKA8FNIPeny5MuBIQYgG062TiH+bS6vNQJT3yOyoqkAHDwsXnE2jRZENEp8QswQh9/GtlTFUKDp5q3aQ60SjZuxzRu12b5rO2l/xdajjUPFzbFqYDALWBQBUJ8A0hSVRQn2VyrRz46BBwbxycmMc4jQLxp/uUAgdXDKwuhEgA1jPUVT3OTt/+Ip9rzG2MQwJCISYrJxpsyfgChaUHQuIitBIAGkT2QMSImMEBA9v/z8YlZEWMfEoi89tnLLW5pfjNbC6kSABpENCwxRqpCcaxizCONZYlZIL38mZsr2tqxQCiiSgD4EtAYhUuqhDjSWJZ18pmXFCtieQckIe34951D04sTzgpYKJm/EgCS2YYYJ8W8FfO2ac3ZGGvKSu8DPu02x8quPx2yUPArA7CHWF+N2Zh8zWGJ0TxWY/wQSkLw5ewbAN9haTEaR2nzReO6BezrBaEWACg0tCyErNylAExOz3Ry8iLsDGrg2BIEIesWlAJgDxkWPw1CUAB6mdUJim4BNfkgBAFA4yjki4yCQykLQhAANI5swQCRbHxQfhqEIACSL0Iap1GgIPw6yEJQPUEAKBmW5mkaMfaJNb7474zpfRAUAI1lNa4G86zR2tDW3gIgBAUwyMaKgLIQggIoUsSg1wrCyALQAwgGIPkl0AF1ttyCYADq3GhWbUEB8BWQsg6t01xpAPZfhLYhvgTIxurslwbga2qYGlf9wQCk3Qgd1C9bNe93AAAA///m0kANAAAABklEQVQDAFO+WBIhwb4sAAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.7313427378294173
+        },
+        {
+            "timestamp": 276514.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADTElEQVR4AeyYPWsUURSGD6NGhMEklUXAQi2sRGFrjYWdrYgY+9QiKKIoiJ2VEDu7NP4LbSWdImm0s5BAQFlYNErcZ+CEuzfzcc/s7JK5MyFv7ufce97nnEzCJlffft5vszbubewXKcRXIi39uv3+g6Bpw28lgCaMK7jWAWjSPBBaB4Cgm1QPoEmabTyrr4A2Zc3yAny3ei3IWl8BQZgi3tRXQMTJDbLWV0AQpog3da4C/Fz2AHwiXRtHWQGh/wWS7KkAPFq/IkXicIuu378syPJME3unAlAWAGDK1t0117jbd/dY+2svB4KqnpsZgKqLLetAQZZn2Hv2hsjjjwO6hTqyAD69WRVVYfQFCyGZ10cTvaROq4cUtaFn+s/znD9nGT9cTie2c16eqI7GKuDupUXx9Wd7JGgimhqD1xeWBD358kzypEfqGmMg3NlKBTEuUi0Au1s7mbFbCwuiwqgvvdSd1zm3xZwrdy2k7xoP2e/uMQPAfJpOlph7IP1vL47R5EphcE7uhjlOUh1mAFXmif/c0380peKcowDDBMCatbJKcOm4MNz5efSDAWCeQC1BhVSCf968qyIIQB3zvjHLeLh2XGR9SXYHe9nLlvstz1v2VgKY5eVFgaabf0XFHiqvqDJObf/KQAFLxTOqqrYSAAcQAO20Cn0nlN1DLC6M0cXTsrI5mhBQyqSgaEsBkH0uLAvIssY7oQkIeiexAeP78Lcgna9qXWCFAJo2r0E1DYFzAYHoW0CwPxcA5lnM05kHw7xp09wsIBDATzkhK+lJuplCYBwCoOaVaHbS+AfG0Y9X5f8FjrcGfc8SggagMACBdN5tDwFg0TWPaYRxxHpTAkJTZ7nnUAlI5wCBGAMC0UcTADT7LGAaYRox1zYBwRXxk1zEPCAOAKj5889F2m4co3nC9KLsiQoQGQDMYxyRbZR3QGxzgEiWb+4Ixr+OMx+7cQz7SUwwjigHf7EL4+xXoCvmeQdoUumjpCvmfeM6zipAB11sewCxZd3qp68AK7HY9vcVEFtGrX76CrASi21/XwGxZJRPm5HVTzQVoB+vWSFEA4DM14EQFYA6EKIDYIUQJQALhGgBhEKIGoAPIe8vROsBYLJK+teBfT6E/wAAAP//6rb8VAAAAAZJREFUAwBaN1bL06GWVwAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.0509009817641785
+        },
+        {
+            "timestamp": 276581.39999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADHElEQVR4AeyXv2sUQRTHHysGhMVoZSFYiIWVKFytsfBPEBG1txZBEcVC7KyEiI1dGv8LbSWdIqnsLEQIKoFDo0Q+e3l3c3M7uzt7u3u3cxP43vx+876feQmX5PKbTwd91uadzYMqcnlMpKc/N969FzRv+r0E4Gv87cYVJ6deAnC6qbEQAdSAFtSRWAFBPWcNM7ECakAL6kisgKCeM8dM0ZcgtscKgMIqq3cV4Pt/QNnj9g5AmaGydXs9ArCJrNo4VsA8L/7w7iUpk0/8q/cuCvI5U7S37DsAZ5emAkzjZp8k59Ht5wNBrhhLA8CVoM4DBenYt330YZB7ZOkBfHy1ISg3+5JJffkz19wbE4LXlTvsZKVq7MmJUU/PjUbNfGpMs228Am5dWBdTzaQ+ifL481OxNVmd7j04mQq6uZ0Kml4djWoB2N3+Ln92hnJ9bW1GzLvEudG1s58vz50YT5p9nWQO6dhsbSA6Nve4+t4AMJGmqSteNv/l2ZGstT84p3DsNcYYRPS7kheAKuZJ/OyTfzSFUhDELNzY8mJlACTKCzadDzEXCaMSgLbM2zAVBvfZa22NSwGQDIm1lUBeXO7rqioKAWA+L8Eu5xRG3VzKcnUC0AtJoCxIF+vkMa6Kwb7sHmreu3MBLJt522S69VeQvP4hmqvuObbzS1QKSVvdY7YzADQgxM2NTfRd3w/qxiZHRGVo3sPzx8fhTm8NxZSCMdspABqEoOMoDXb4ftA0BE2PnBXE173fOl3ajgG0bV4zaRMCdwAC/ZSjUgVEBqAr8ySI2obAHcgE4YKRVDF/6v4e8RpXW78OdqKAQHlVkVUAi/YhxhhH314U//PDXl9RBb5nmtiPVwVBVWQA7MCYRhhH9npTYyB0VQV2zoBACR+6iGmEaaTzbbaLhLAu+5JVAKYRplGbhvNiAyFvvs05zBM/wTidRRjn3kWJvwPcnWAcMVg1ASH7FVg146bfCMCkEULf10OsAF9ioe2PFRDai/r6iRXgSyy0/bECQntRXz+xAnyJhbY/VkBoL+rrJ1aAL7HQ9scK6PuLzpv/fwAAAP//6WzFDAAAAAZJREFUAwC4cxyfvtQImgAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.3100709437518401
+        },
+        {
+            "timestamp": 276614.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADTElEQVR4AeyWu4oUQRSGi1YXFhpviYFgIAZGojixroGPICKuubEIiigGYiAYCSsmZpv4FprKZIpsZGYgwiIyMHhjt79mz1BT3TPdp/oy0z21zE/dTp2q/6uzsxtdeft5r8vaurO1p5HrNTId/rn5/kPl23caQGX3SYIAIIGw0p9QASv9/In5zlaAz1+AdxtXE8vTn84CmLbhPwoA/Nn1Y2eogH68o7+LUAH+7Pqxc2UqQP4HcJ9tZQC4xmUcAAiJVW0rV8DDu5dMkTRwr927aESafb6xlQH4Hpy3D+N58/ZcmRg7XvqbzwdGJHO0SwWAC82TmJd2XuystTPXjXn0cTBZXmoAttFPrzcml/btYN7dG5G4ityEeeOy+d29r84dN7LXXdOMH395mgmXvI1VwO0Lx4woc3rFCcBgSlQm3YMTsbk1jDOh3gB2hz/Mn52xubG2ltHlF+vpGuuu2Je5xcEExg66uQ3ryF0UELNaOx4ISOa8AGAijrM0JenZJ/+lm2nZJ1Ayi8kEBkXJsPGPGkCRec2NBQQ5NfvqjFUB4KK8YNkLfH12qFQoOYFB/lIbagwqDYDLcVHN2fwqlIVAXvIDAjFuQ6UA+JiXywNB+poWCIizNfu0sYUAuAAvo01cVzxnVwFRdI+5ABZtnsuPNg/TGAFRN4yZAJbBPM7j7X80UwLG7uCv4Y5pm/SnAhSDXAAk5hBFnlKhmi/EooSA4Y605s3PFIa9R8BIa6/Z/QyApsxzKF+IdUIgJ0pBJP+Y2b8eJ4dHDDq9PTZofeeXsSVgpgA0aZ6LoqYgkBsBQ0DgZ3z+qEGs2QIKmgAgmM12UJf7eEH4QnkQ8JcCIIBgJtpQ01Vge8AXoiq+jX4bZK9HmLcn2uq3CUE8AQIBATGfVgCTDFyduj8yyJ2vc9zEl2LR/fCLgBDRcTdgGn1/GRvkrtc1pgrqyuWTB+9pBdibMc64SePkFwFhEVUg508AYBxhHElAW+2iIESYRphGbRm2z6EKGC8CQloBizKOaREQkIzbaqNlMN+W2bxz0grIW+jqnPbeAYCWWN/iQwX07UW1fkIFaIn1LT5UQN9eVOsnVICWWN/iQwX07UW1fkIFaIn1LT5UQNdftOr99wEAAP//qaTkyQAAAAZJREFUAwBRoCSfjfMxugAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.5049846484140046
+        },
+        {
+            "timestamp": 276648.10000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADKklEQVR4AeyYPWsUQRzGh1UDwqLRxkKwEAsrUUitsfAjiIixTy2CFoqFCBZWQiSNXRq/hfYHFoqkshchiAQOfCG534T/sTc3d7uzM7O3l5mQJ7Pz8n95nn02m0tx8/3Xg2XH1sOtg7YoVOJfWYDEDaCSdsCH9VtpC4D7k3ZAFmCkQHbASISl/r738ZNX/9kBXvItcTCvQNrPDkCFlJEdkNrdN/lmB5iKpDZP0gHyCuRmBxHg6eYNVQeKNcXtR9dVFU3j2pwLIsDr7c9tanvFIJBPgo1XawoEEcCnkTaxQl5G1xwQl5jeCdCWlBByGS/dUar48m5dhUBd4aY13l5ZnUplxk4d8FiI6oAH184qgUePc0OffXuhwNxDxuaTc6UCLHsL8Gd3qMDdlRVlgnUb9gY/qd0auEQgSRChKSTm/qD0+6co5CSZbfz+8oRtWZVlqUWbFS/kZLQmCbTY2gGzmq/2dfn5/+rUek0eYN3sYLGVAC4Nz3KByY2cwPfxMPPWzZ0EoDmarEta3ccFTUUgTh4PajGPjcYC0BDNtWkIEVzjqIXY1HWNdTnfSACaoCGXxKHOUhchAH245q07XysARWmiLlEX+/QRWoi5AvSJ/P7GybHGIYWYKUCfyMO83PnHMIYWZHNV7a39VfQKxpsOF1YBSIbKDnkaH3V5I8xLiiBjjP6wol/9eCBIBfNysDclQEzyFOSNEEoE8pkQUdT2L3V+cGpiW7vFEGdCgNjkpZvYIlBn7IjR5w54sYYggos7Q3V69/fRZwEOAII4eJwAJwA/INyGV8/oy0IWOaRXOvrRhQuqVOAH4AvYQwT9CLDBwiIQ8/eBjQ9cgf6FOXo8Cia2g7J24fG+XAYfcUHwpA4J4a4dYIuBOPjxprRtB1tDhK5dUG3eKgDEORSbPDUEixJhQgCIA4gDaS72iAti15iVXwsAacChLolTr4pFuKCoEl8keXFB1yIUkAbVO7HM166960fANSjW+UW4oFcCIGzXIvROABFBhGAeE70UICZhM3cWwFQktXl2QGp33OSbHWAqkto8OyC1O27yzQ4wFUltnh2w7Hfct/9DAAAA//+lx6RfAAAABklEQVQDAMXSJ5/Diai0AAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.6462505921073288
+        },
+        {
+            "timestamp": 276681.39999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC/ElEQVR4AeyXPWsVQRSGh1VTXTDY2Iu1KFiL/gixUPt0glhYKBa2VkLExs5f4C/QPp0iVvYqBIuAoIZknuFOOJm79+7Ox85Mdjfsm52dnTPnvM+cJDfNrXdfjsak3Ye7Rz5q1MS/ZgATbwA1qg649/GT93mOCoC3ex0wA9AQJn3NHTDp49fm5w7QECZ9zR0w6ePX5ucO0BAmdblmR9MBIf8HAGM0ADATouoB3Hl8XaEQc31ikgJ4unNDbVKfguQaaVyO5ZrYcVIAscWExAMGhcQSUy0AX1M/PzzCj7eqBdDHiS+ktj2bz29uq1RqSyDnfPLIODt24+18zD1LB9y/dlGhmEK7Yl9f3e5a0vo+CYD9vV/q77c/6u7WVqt416bWipaTfQyxxoqwZ19fqC6566IBYH6xWLCvtyyUdYHWnL2vW+czDyC5PgpAjHlZRBcIuTb1OBhAKvPSkAXB3nJ+yHEQAAr0bfvvL8/19sHewCBP76DAhd4AKIoCffNdeX7oG6LIMzQILwCh5r2dOwExIJytVh57AyhlXlYsQVCPfBc67gRAIkTy0CSp46gFpfjx2AgA4xRPMu41itpiQKwFULv5gwfnlRUHEwqiFUDt5o3h9//VYimeEUDUzrbav/lP4QExv0krAAiCJtoUGPvO53NB31wWiLnrj+d4MDAAspS71ykA1ry7aIhnPhcMAcGt1cDQnaLe/lZGeoGEcgIgp3ldw8mVAwLJ6AaET0Bc2rugUMME4iULc4ouyJmPXPhE9i+H6QAmeFlKubrA9Yfvhm/ui5zPJbpA+jMdICfc8eUnB+7UIM+lumAtAIyjQdw6m5bsghUAmEbU+OPVQiHGOVSiC04BKGUcuLYLckMwADCOKCTniZMvtXz3a6Tx0uZLdIHpgNLG5alZCHJuyHFTk3lpNNfvAtMBMnENY9sFOSBUCSDnIVQLIFcXVAsgVxdUDSBHF1QNIEcXVA9g6C6oHgBdAATEOLXOBIDUpuV+MwBJY4rjuQPO+qnH1n8MAAD//84W0CIAAAAGSURBVAMA/ZUan+krqwEAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.7464429681014011
+        },
+        {
+            "timestamp": 276714.6999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC70lEQVR4AeyYPWsVQRSGh1VSXTCV9mItCtaif8BOLNQ+nSAWFoqFrY1C7Oz8Bf4C7e0UsbJXIVVAUEOyzw3ncu5md2dmd2Z29iPkZefOzpw577PvTW5S3Hz39Xiq2n+4f2xTYWb+tQCYeQDMkoAlATMnMNm3wL2Pn5we7WQBOLkvFy0ASgiz/l4SMOvHX5pfElBCmPX37BJQfdoLgCqRKbx2/RSI19Ek4Pbja0ZE46EUBcDTveumTb7NY9x3j+v6KABcD++6rgkI88in7igB1BnUxn99eFS3pHYuewDaWK2DnpPFl7e3TGjZevI5r6lWtUbTOtt88gTcv3rB1lPv+xfvvHauERTAweff5u/3P+buzk6juK9l6/TNld0zS5rmmEfPvr0wbdIFgwHA1Gq10rWdxuxDwGvagCnEfbky7ioNJwgADHRtRvYBjzo2ELI+1LU3AJoO1Qx1XECwLpR6AQhtXptKBaITAGLa1fyPl+e0T+s4NghvAJinKWvngRdwJtA536e0ba0XAA6nEVvRtvuXnx+13bbe4/yQIJwBhDBvdeexQIOgN4+tW0udAHAAB27tzOQFfSF6RL5tWQFQlAN8C6deT4/I9+3RCmAs5quwfUDUAsA4olC1eI6vDx+cNyLdH/3bEnEGAMYpwmauY9Dq/X8jol+BIVe8NIHYAjCEed8PRhi0SWDIlfXAMHu75uDGv1OVf7kyvwEwhHka4HNBDAjU1hIYchUYawBDmdcNpoCgzxMQRQ7mSYFuLuV4nQB+SKQ8tOms1CmgjyIX80OlYJ0ASOSi1CloBXDpyaFBqeAMkYJaAJhGGP/5yv8fnezroz4p8D13CwCmEUUwjhhPWRsAYhyzQxqXt0GqFBQYR2J8SPP0kFqbBORkPGUKCoyj1ORzOW+TgFwakj5SpSBbAAIi9jVrAClSkDUA/fRj/VrMHoCkQMMIOc4egDYbIwWjABAzBaMAEDMFowEQKwWjARArBaMCUJcCDabL+AQAAP//e21EkwAAAAZJREFUAwDhRR5nqWfJPAAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.8182578770381639
+        },
+        {
+            "timestamp": 276748.1999999881,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC9UlEQVR4AeyYv0odQRTGh00QArdIlfQhD5CQPiQvkC7YaG8niIWFYmEl2ChoZ+cT+ATa2yliZa+ClSCIonwLZzl3nNnd+XtndjbwMbPnzp/z/fa74WL1+/DitRTtL+6/yqpE4f9GAIUHQIwJKCUB8yenSqtjApRYCiqOCSjoZSutjglQYimoOCagoJettFpEAnQ/gkCkCAAwSpLHEYBMpLTn7BLwd+WH4HJ9YUEBrC39FG1ybd7H/qAAfDTIz8Cb58+Yq2pUx2cQnnXKCoDORFf99nhZu2SQALreOqdRnR/8EaHEL1LNTe9VnYGafA5qfTXIBMjmv/zblUvNcxAAT1ePAvo/Nye4fm1/mnrGGlLTkeFk7/vndzvk2vrlppBFm7wDgCE6XB6/bbzIpeYZ+6CmoJjIxhRLmhLWkpoimxAQrwC6DOD+660PGLTCGZBuAZmiUbeub90bgLameTNtKeDrcB7EayHmzgDuz+7q77tJc10p4GcBAsRrPudOAGB+MpkY99M3BfxgQIB4zcfcGoCteWraJAW0ByMgQLgfz13q+twKAC63efNdzZh8jvt9gDAG4Mu8zddABcgVhBEAX+ZVRlxrtiB6A0jZPIdnCqITAIxDOJhflPoc/fb5P6IVAIzDKA7DmKPQexsILYAhmOcvTAdCCWBo5ttAvAMwJPMPCx8FiUPAnBIxBWCW5vHLEEJzvjQ5ehYkAkEj3VEDgHEIRZDBGFu+fhjp+iYQNBKIihuflXnetO8U8LP5nEDUCUjBOJoLnQLcIatKxTxvLFYKcGedAExSUewUJAeAXoRtCmh/3zFZAH0NuK7TAvi6+iAg1wts9tPXIEYKlABmZdwGluueKQAwDtGhNzvmf/Ckva5jrBQ0AGTjszTvCs9kfwXjEG1KyXiMFDQJAICUzKOfGKoBwDgU40LTO0KnoErVuCko2/V1Amw3x94X4ndBFgDoaxACeBYAuHHfKcgGQKgUZAMgVAqyAhAiBVkBUKWA12zmbwAAAP//ATEUiwAAAAZJREFUAwDvFhfLKeB6bAAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.8698628655097155
+        },
+        {
+            "timestamp": 276781.60000002384,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC50lEQVR4AeyaPWsVQRSGh1FSLWiXXgRL9Q+I/ohgY+8HfkCwUFAsLGzEIopWdnZ2dnba24gi2thrIFUgEBKSPHOZZbLZ3dmZnXOZvXND3juzszNzzvvMuZtcuHr1zM2DK+9/Fiutjn7+rL8+ei3z1wAo0/rMddEArn/5qgyAC6/uzXAU+GoAFOi7tqxLPn0oLCsACiVLf9/4WLJ/pS/eXysSAH8CMb58BkChZC0roOTTx3txFYBpV0sALo0S+5OugGvrl5SroQdo/wdg/lwAPLp1WfWJRFIIGKH76Dv6c+iaLObHmGUN+v/pQe1hLhVQR5tDB4NtYbrGFw5AiHnmGgA/3l5VkiJQn0Jjd52mjdHcz463tQZA242cxzbOn+1Mr+9e2yJRALu/dxRaW1lRfWIO2vq22ZZj8jEgPfn1TCED4N3dx8mDYCh006qqDLBYEBhri8m4K3eOvv3mhULu4Nh+jHk35hAQriHbd/cY2jcVMHSybx4nN9a8G2MICHd+TD8ZAMyTcEwSvjXsC1hi+OaG3k8CgMRIMjT43+engpYQIzWI0QBizeP83NN9mmCFgPBtPgrAGPM2sdAqsOtoU4CIBpDCPCZiq4C1VmNARAFIZd4aSNXGgAgCgHFEoFRJS+xDfkMfloMBYJxk2Zx2CiJXH4hBAKZo3j2gPhBeAFM37wPRC2CRzHeB6ASwqOabIFoBlGDegjgGAOOIhwaykxa5rQFgHKOlGMcrMgByM8/nA0SCktq+cVrp3MxjOMXnA/bxqfqwN/umaK5lP48q0Lmaj60C36k375tnQHMwp2vpKsgegPRhZA3Avg0kqyBrANKnz/7ZA5CuguwBcEqSOgFg9eG2spIMHLO3xLPgGACMxyQmvca+DSTi1ACa5v+9rCTijd4zdRVojCObGcaRvc6llaqCugIwmqNx8moqZRXUAKZgXqIKNMZRk3Lu16mqoK6A3A1L5Tc5AO7bIEUVTA5AsxLGXh8CAAD//2Z8jeoAAAAGSURBVAMA1ML7vLjgwF8AAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 1,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.9068148126178037
+        },
+        {
+            "timestamp": 277081.39999997616,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACSUlEQVR4AeyWsUoEMRRFQ2wX1s5eBDvRHxD9Dj9ABW2stLCy0MpCRG38I8FCCyt/QLAVBFHuwJM47m6SyXszeZss3E12J5O8e3IzjF0a735v3j8XK7t6eWhK/tiSzcN7BQAKJasmoOTdh/eaAFAoWTUBJe8+vNcEgELJqgkoeffhvbgEwLSrCsClUWK/JqDvXT/e2zChkq5t+2jd1ARIU27Pf3H32P5r0N/ZJkAaFOIP8vbpZsv0LSzsk3RNtH62CaACpdtBAOysjY1P0sZpfnt7cEJ90fb94c18vnx0Eu6VKq6XBMD4aDSa6eH1bGHqddyLOSRA2P3r86kLc1xA4SHzLJ9+eYdJgBBNQKh5cj4rBTQGLQeIq5VFTCXzJoioxppvqon8SgUBCOwJgHkUFumlGR5yDJqBrS+sB+BYu3XJ+H6zAkABKMa3qNR1rB0Lgg3A0OZdqDEgWADkZD4WRDKAXM2HgkgCoMG8D0QnADAO4ay5C2jpo27UD0UDwE0wiknQahXqh6IAzIt5d9OCAQxhHq/GkFswdz8IwBDmYbTrmyHuDZUXwFDmXQOSKZgJIAfz0imYCADGIewCnpRo51X/AJBxGM7JvNQx+AMgV/OSx+AXAJnHrkNIQG4KSUFszQ0A13zsBH2Nl0qB1WDehcydgiYBuUbeNS7Vt5rM0zHgTEGTACm6GuZVB4A7BeoAcKdKNQCOZ4FKAHQMONKgEgCHcZpDLQBKQeoxUAuAdjC1nQsAKSlQDYCOQUoKVANwjXdNgXoAqSn4AQAA//8QJFYmAAAABklEQVQDAA9q+FgSlIe9AAAAAElFTkSuQmCC",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.04519282131599396
+        },
+        {
+            "timestamp": 277414.8000000119,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACHUlEQVR4AeyWQUrEQBBFQ9wGvIMHELyAeA8v4BHcuPIO7ryRO1248gKCW0EQ5Qc69ISZdHV1VU/XdAmFrelU///yKzPj9fPbX881Dp3/OIDOAzB4AjwBnRPwEeg8AP4S9BHwEeicgI9A5wHo71Ng/cB9BNZEevu7agLu764GTmk+lKoANI1wezsALrlTuc8T8Pp0M9Qqbmo09VVNwO3lOZeB2n1VAai5KGjsAArgsW7FGOQW6yDiTeoJ+Hr5HH7ev0ULPYn+kttUAUDoNE1JEWHDx+NZWG7+Rk9ARf/NjYSLagAgDkIJGpYtFw+/y5qyQP9SECoAIAriKCbWe6gpiO/DWTgT0OP/Y50qUQAQACGpQ7eu56Yg7sUBIQYA5iEgFnSsNXTgQUBTSoMIAByEQ1OH1b4OTSkQxQBaNR/D3gJRBMCC+RQINgBr5g+BYAGwbH4NIgsAjKMwU3EjrTXnO0GuFjIAGEfzWuZxFr4TaEMgATiGeQCoUUkALZjXTMEmgBbMYww0k3AQQAvmY+NaKdgLoDXzminYAQDjKJCv+bbHeZTSSMECIBiHkBbNQxelcvfMACyYD2MgnYLRgvncp5qzf04AbrAQ+5AC6JWqGYAF87FhyTEYrZmPQUis5wRINKrVI4yBVArMAZAGbRKAZApMApBMgXkApe8CswDCGJSmwSyA2HhJCkwDkEiBaQASKTgZADGMnLV5AKVj8A8AAP//kzkxKgAAAAZJREFUAwCoKu9YtzGvVwAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.0016127458991574911
+        },
+        {
+            "timestamp": 277748,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB20lEQVR4AeyVQUoDQRBFm3Y74B08gOAFxHt4AY/gxpUbTyBuvJHgQheuvIDgVhBCwh/oUGmSTM90VXdXugIFk2RS/f+rXxN//fq57rm86/xlADoPgLMEWAI6J2Ar0HkA7CFoK2Ar0DkBW4HOAyD/L3B/d+Uka+4A4/ttBWIivb23BEhP/OnlXewIjt6WALHxKGlsCVAyKDGZ/uP5xkmXlHoO3bYCUtPR0tcSoGVSUjotAVJkad/by3MnUfSMpdcnn4ApMAZgilDq979vP6m3FrsvRRNLAnDQMAzu/+uvqQqaoO8Q9WwAaI6DDh3QwufQh+FAa6wnCwAaonnctNX30BqDWAxAm3k6FApiEYBS5r8fz6hu9muAmAUAxlH4IbuaSg2TAcA4NJY0f/GwctIpSAJQwzxgl6hJALXNS6fgKIDa5qsmoDXzUs+CvQlozTzWQCoNOwBgHIXDSj7tcV5KSaRgCyAYh5AWzaemAPrn1AigdfPUEHcKvCbzFATX9ZgANGsx9tBFK6wBZwpGABrMUxCc116b+ZACLghjArialezDtQZqAXDBVgkgrAFHClQC4Jo++qgFwJUCtQAwPY46CQA5zwLVAMIa5CRBNQBqfGkK1APITYF6ALkp2AAAAP//plBZhwAAAAZJREFUAwBqffC8aLuZEAAAAABJRU5ErkJggg==",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.00005760984842944837
+        },
+        {
+            "timestamp": 278081.3000000119,
+            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABGUlEQVR4AeyWsQ3CMBQFoyzAJkgsgNiDBRiBEZgA0TATBewDoU1h+TlNcj6EC5Rv5HfvEmU8Pj/fntc4dP4RQK0A18thIC4NqDWAOqcB1GZrc1UbcHu8av9zU3PVADaVKjisAAJYyFENQNYahNKAABZidB5CA+ZEevsdGUB8G4wAEO0QALHVJJMGJLSIs+P7fhqSRYPgLUBrNM2jASkx2nxswHm/QzGIAaDST2HwAKaMxa8Aing6uKgBHZRcjKgBRTwdXNSAlpJJb4Ma0GIAaY8GkNpsydJswP9BSFjNAFpor3GPANbYypIzpXs1ICVGm9cAWqNpHg1IidHmNYDWaJpHA1JitHkNoDWa5tGAlBhtXgO23ujS8/8AAAD//0AvsvsAAAAGSURBVAMA/SIcUHS7OzMAAAAASUVORK5CYII=",
+            "language_id": 0,
+            "language_text": "Always take left",
+            "actions": {
+                "forward": 1,
+                "backward": 0,
+                "left": 0,
+                "right": 0
+            },
+            "speed": 1,
+            "steering": 0.0000020579154086194405
+        }
+    ]
+}
