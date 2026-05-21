@@ -1,0 +1,178 @@
+[
+  {
+    "episode_id": 18836,
+    "step_id": 8,
+    "gt_type": "scroll",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": false,
+    "step_ok": false,
+    "sec": 9.11731505393982
+  },
+  {
+    "episode_id": 18989,
+    "step_id": 2,
+    "gt_type": "scroll",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": false,
+    "step_ok": false,
+    "sec": 7.769559144973755
+  },
+  {
+    "episode_id": 18853,
+    "step_id": 5,
+    "gt_type": "click",
+    "pred_type": "click",
+    "type_ok": true,
+    "click_ok": "True",
+    "scroll_ok": null,
+    "step_ok": "True",
+    "sec": 8.038322925567627
+  },
+  {
+    "episode_id": 18542,
+    "step_id": 2,
+    "gt_type": "click",
+    "pred_type": "click",
+    "type_ok": true,
+    "click_ok": "True",
+    "scroll_ok": null,
+    "step_ok": "True",
+    "sec": 6.523061990737915
+  },
+  {
+    "episode_id": 19657,
+    "step_id": 9,
+    "gt_type": "status",
+    "pred_type": "navigate_home",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 5.35776424407959
+  },
+  {
+    "episode_id": 18413,
+    "step_id": 7,
+    "gt_type": "status",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 6.581089019775391
+  },
+  {
+    "episode_id": 19824,
+    "step_id": 2,
+    "gt_type": "input_text",
+    "pred_type": "input_text",
+    "type_ok": true,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": true,
+    "sec": 5.213484048843384
+  },
+  {
+    "episode_id": 18399,
+    "step_id": 3,
+    "gt_type": "input_text",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 8.323788166046143
+  },
+  {
+    "episode_id": 19777,
+    "step_id": 0,
+    "gt_type": "navigate_back",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 8.068869829177856
+  },
+  {
+    "episode_id": 20041,
+    "step_id": 0,
+    "gt_type": "navigate_back",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 7.681390047073364
+  },
+  {
+    "episode_id": 19137,
+    "step_id": 0,
+    "gt_type": "open_app",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 6.241241931915283
+  },
+  {
+    "episode_id": 20162,
+    "step_id": 0,
+    "gt_type": "open_app",
+    "pred_type": "open_app",
+    "type_ok": true,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": true,
+    "sec": 7.063256025314331
+  },
+  {
+    "episode_id": 18833,
+    "step_id": 2,
+    "gt_type": "wait",
+    "pred_type": "navigate_back",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 5.057612895965576
+  },
+  {
+    "episode_id": 20001,
+    "step_id": 3,
+    "gt_type": "wait",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 6.394391059875488
+  },
+  {
+    "episode_id": 18211,
+    "step_id": 0,
+    "gt_type": "long_press",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": false,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 6.462064743041992
+  },
+  {
+    "episode_id": 20089,
+    "step_id": 2,
+    "gt_type": "long_press",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": false,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 8.2001211643219
+  }
+]

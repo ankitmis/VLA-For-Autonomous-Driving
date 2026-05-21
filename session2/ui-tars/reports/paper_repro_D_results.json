@@ -1,0 +1,178 @@
+[
+  {
+    "episode_id": 18836,
+    "step_id": 8,
+    "gt_type": "scroll",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": false,
+    "step_ok": false,
+    "sec": 6.669426918029785
+  },
+  {
+    "episode_id": 18989,
+    "step_id": 2,
+    "gt_type": "scroll",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": false,
+    "step_ok": false,
+    "sec": 4.619456052780151
+  },
+  {
+    "episode_id": 18853,
+    "step_id": 5,
+    "gt_type": "click",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": false,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 5.0196449756622314
+  },
+  {
+    "episode_id": 18542,
+    "step_id": 2,
+    "gt_type": "click",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": false,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 4.608641147613525
+  },
+  {
+    "episode_id": 19657,
+    "step_id": 9,
+    "gt_type": "status",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 4.129870891571045
+  },
+  {
+    "episode_id": 18413,
+    "step_id": 7,
+    "gt_type": "status",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 5.6555070877075195
+  },
+  {
+    "episode_id": 19824,
+    "step_id": 2,
+    "gt_type": "input_text",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 3.633754014968872
+  },
+  {
+    "episode_id": 18399,
+    "step_id": 3,
+    "gt_type": "input_text",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 3.6969432830810547
+  },
+  {
+    "episode_id": 19777,
+    "step_id": 0,
+    "gt_type": "navigate_back",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 8.517208099365234
+  },
+  {
+    "episode_id": 20041,
+    "step_id": 0,
+    "gt_type": "navigate_back",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 6.207904815673828
+  },
+  {
+    "episode_id": 19137,
+    "step_id": 0,
+    "gt_type": "open_app",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 6.507644891738892
+  },
+  {
+    "episode_id": 20162,
+    "step_id": 0,
+    "gt_type": "open_app",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 8.631783962249756
+  },
+  {
+    "episode_id": 18833,
+    "step_id": 2,
+    "gt_type": "wait",
+    "pred_type": "wait",
+    "type_ok": true,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": true,
+    "sec": 4.720113039016724
+  },
+  {
+    "episode_id": 20001,
+    "step_id": 3,
+    "gt_type": "wait",
+    "pred_type": "wait",
+    "type_ok": true,
+    "click_ok": null,
+    "scroll_ok": null,
+    "step_ok": true,
+    "sec": 4.713604211807251
+  },
+  {
+    "episode_id": 18211,
+    "step_id": 0,
+    "gt_type": "long_press",
+    "pred_type": "click",
+    "type_ok": false,
+    "click_ok": false,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 6.662347078323364
+  },
+  {
+    "episode_id": 20089,
+    "step_id": 2,
+    "gt_type": "long_press",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": false,
+    "scroll_ok": null,
+    "step_ok": false,
+    "sec": 4.663092136383057
+  }
+]

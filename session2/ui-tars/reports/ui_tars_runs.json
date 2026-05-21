@@ -1,0 +1,107 @@
+{
+  "step": {
+    "episode": 19349,
+    "step_idx": 2,
+    "instruction": "I want to purchase a striped shirt for myself for the upcoming office party. Look for a striped formal shirt in the M&S app.",
+    "gt_type": "click",
+    "gt_xy": [
+      "0.5462963",
+      "0.077083334"
+    ],
+    "img_size": [
+      288,
+      640
+    ]
+  },
+  "runs": [
+    {
+      "prompt_variant": "A_current",
+      "coord_scale": 1000.0,
+      "prev_actions_mode": "string",
+      "image_size": null,
+      "max_side": 896,
+      "raw": "Thought: Open the M&S app.\nAction: open_app(app_name='M&S')",
+      "parsed": {
+        "action_type": "open_app",
+        "params": {
+          "app_name": "M&S"
+        },
+        "parse_ok": true
+      },
+      "sec": 5.808695077896118,
+      "img_size": [
+        288,
+        640
+      ],
+      "type_match": false,
+      "click_err": null
+    },
+    {
+      "prompt_variant": "B_official_box_markers",
+      "coord_scale": 1000.0,
+      "prev_actions_mode": "string",
+      "image_size": null,
+      "max_side": 896,
+      "raw": "Thought: \u5728\u624b\u673a\u5e95\u90e8\u7684\u5feb\u6377\u680f\u4e2d\uff0c\u6211\u8f7b\u70b9\u4e86\u5e95\u90e8\u53f3\u4fa7\u7684\u201cMore\u201d\u6309\u94ae\uff0c\u4ee5\u6253\u5f00\u66f4\u591a\u9009\u9879\u83dc\u5355\u3002\u8be5\u6309\u94ae\u4f4d\u4e8e\u5feb\u6377\u680f\u7684\u6700\u53f3\u4fa7\uff0c\u56fe\u6807\u4e3a\u4e09\u4e2a\u6c34\u5e73\u6392\u5217\u7684\u767d\u8272\u5706\u70b9\u3002\nAction: click(start_box='(892,964)')",
+      "parsed": {
+        "action_type": "click",
+        "params": {
+          "x": 0.892,
+          "y": 0.964
+        },
+        "parse_ok": true
+      },
+      "sec": 8.819252014160156,
+      "img_size": [
+        288,
+        640
+      ],
+      "type_match": true,
+      "click_err": "0.88691664"
+    },
+    {
+      "prompt_variant": "C_minimal",
+      "coord_scale": 1000.0,
+      "prev_actions_mode": "string",
+      "image_size": null,
+      "max_side": 896,
+      "raw": "assistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant\nassistant",
+      "parsed": {
+        "action_type": "wait",
+        "params": {},
+        "parse_ok": false,
+        "reason": "no Action: line"
+      },
+      "sec": 14.525953769683838,
+      "img_size": [
+        288,
+        640
+      ],
+      "type_match": false,
+      "click_err": null
+    },
+    {
+      "prompt_variant": "D_generic_ui_tars",
+      "coord_scale": 1000.0,
+      "prev_actions_mode": "string",
+      "image_size": null,
+      "max_side": 896,
+      "raw": "Thought: \u5de6\u952e\u5355\u51fb\u9875\u9762\u9876\u90e8\u4e2d\u592e\u7684\u641c\u7d22\u680f\uff0c\u6fc0\u6d3b\u641c\u7d22\u680f\u3002\nAction: click(start_box='(230,79)')",
+      "parsed": {
+        "action_type": "click",
+        "params": {
+          "x": 0.23,
+          "y": 0.079
+        },
+        "parse_ok": true
+      },
+      "sec": 5.8287858963012695,
+      "img_size": [
+        288,
+        640
+      ],
+      "type_match": true,
+      "click_err": "0.31629628"
+    }
+  ]
+}

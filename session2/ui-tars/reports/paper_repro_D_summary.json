@@ -1,0 +1,17 @@
+{
+  "n": 16,
+  "type_acc": 0.125,
+  "step_success": 0.125,
+  "click_acc_14": 0.0,
+  "scroll_acc": 0.0,
+  "n_click": 4,
+  "n_scroll": 2,
+  "elapsed_s": 88.91880297660828,
+  "sec_per_step": 5.557425186038017,
+  "config": {
+    "prompt_variant": "D_generic_ui_tars",
+    "prev_actions_mode": "chat_history",
+    "max_side": null,
+    "coord_scale": 1000.0
+  }
+}
