@@ -86,9 +86,11 @@ def score(pred, gt_step):
 
 
 def full_eval(n: int = -1, *, seed: int = 42,
-              prompt_variant: str = "D_generic_ui_tars",
+              prompt_variant: str = "E_official_mobile",
               prev_actions_mode: str = "chat_history",
-              max_side=None) -> dict:
+              max_side="smart",
+              model_id: str = "ByteDance-Seed/UI-TARS-2B-SFT",
+              use_fast_processor: bool = False) -> dict:
     random.seed(seed)
     print(f"=== loading AndroidControl test metadata ===")
     meta = get_split_metadata()
@@ -107,12 +109,16 @@ def full_eval(n: int = -1, *, seed: int = 42,
         ep_steps[eid].sort(key=lambda s: s["step_id"])
     print(f"  loaded {sum(len(v) for v in ep_steps.values())} steps with images")
 
-    print(f"=== loading UI-TARS-2B-SFT (~30 s) ===")
+    print(f"=== loading {model_id} (~30 s) ===")
     agent = TogglableUITars(
         prompt_variant=prompt_variant,
         coord_scale=1000.0,
         prev_actions_mode=prev_actions_mode,
         max_side=max_side,
+        model_id=model_id,
+        use_fast_processor=use_fast_processor,
+        # Auto-enable the official mobile template mode when prompt is E_*
+        mobile_template_mode=prompt_variant.startswith("E_"),
     )
     agent.load()
     print(f"  loaded. device={agent.model.device}")
@@ -194,13 +200,25 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=20,
                     help="stratified sample size (-1 = full 916-step set)")
-    ap.add_argument("--prompt", default="D_generic_ui_tars",
-                    help="one of: A_current, B_official_box_markers, C_minimal, D_generic_ui_tars")
+    ap.add_argument("--prompt", default="E_official_mobile",
+                    help="A_current | B_official_box_markers | C_minimal | "
+                         "D_generic_ui_tars | E_official_mobile (paper recipe)")
     ap.add_argument("--prev",   default="chat_history",
                     help="string | chat_history | none")
-    ap.add_argument("--max_side", default="none",
-                    help="int or 'none'")
+    ap.add_argument("--max_side", default="smart",
+                    help="int | 'none' | 'smart'  (smart = official smart_resize)")
+    ap.add_argument("--model_id",
+                    default="ByteDance-Seed/UI-TARS-2B-SFT",
+                    help="HF repo id; the official is ByteDance-Seed/UI-TARS-2B-SFT")
+    ap.add_argument("--fast", action="store_true",
+                    help="use the fast image processor (default: slow, matching training)")
     args = ap.parse_args()
-    ms = None if args.max_side == "none" else int(args.max_side)
-    full_eval(args.n, prompt_variant=args.prompt,
-              prev_actions_mode=args.prev, max_side=ms)
+    if args.max_side == "none":  ms = None
+    elif args.max_side == "smart": ms = "smart"
+    else: ms = int(args.max_side)
+    full_eval(args.n,
+              prompt_variant=args.prompt,
+              prev_actions_mode=args.prev,
+              max_side=ms,
+              model_id=args.model_id,
+              use_fast_processor=args.fast)

@@ -31,10 +31,16 @@ from prompts import PROMPTS
 # ---------------------------------------------------------------------------
 # parsing
 # ---------------------------------------------------------------------------
+# Matches the OFFICIAL ByteDance MOBILE format: click(point='<point>x y</point>')
+POINT_RE = re.compile(r"<point>\s*(\d+)\s+(\d+)\s*</point>")
+# Older variants we tried: click(start_box='<|box_start|>(x,y)<|box_end|>') or click(start_box='(x,y)')
 START_BOX_RE = re.compile(
     r"start_box='(?:<\|box_start\|>)?\((\d+)\s*,\s*(\d+)\)(?:<\|box_end\|>)?'")
 END_BOX_RE = re.compile(
     r"end_box='(?:<\|box_start\|>)?\((\d+)\s*,\s*(\d+)\)(?:<\|box_end\|>)?'")
+# Also handles official point= keyword on non-click verbs
+START_POINT_RE = re.compile(r"start_point='<point>\s*(\d+)\s+(\d+)\s*</point>'")
+END_POINT_RE   = re.compile(r"end_point='<point>\s*(\d+)\s+(\d+)\s*</point>'")
 ACTION_RE = re.compile(r"Action:\s*(\w+)\(")
 DIRECTION_RE = re.compile(r"direction='(up|down|left|right)'")
 TYPE_CONTENT_RE = re.compile(r"(?:type|input_text)\(content='([^']*)'")
@@ -46,6 +52,8 @@ def parse_action(text: str, coord_scale: float = 1000.0) -> dict:
     """Parse raw UI-TARS output into canonical action dict.
     coord_scale: divisor to convert model's coord output → [0,1].
                  1000.0 for 0-1000 normalized; pass img_w/img_h for raw pixel.
+    Handles both the official point=<point>x y</point> format AND legacy
+    start_box=(x,y) format.
     """
     am = ACTION_RE.search(text)
     if not am:
@@ -55,9 +63,15 @@ def parse_action(text: str, coord_scale: float = 1000.0) -> dict:
     verb = am.group(1)
 
     def _xy():
+        # try official point format first
+        m = POINT_RE.search(text)
+        if m:
+            return (float(m.group(1)) / coord_scale,
+                    float(m.group(2)) / coord_scale)
+        # fall back to legacy start_box format
         m = START_BOX_RE.search(text)
-        if not m: return None, None
-        return float(m.group(1)) / coord_scale, float(m.group(2)) / coord_scale
+        if m: return float(m.group(1)) / coord_scale, float(m.group(2)) / coord_scale
+        return None, None
 
     if verb == "click":
         x, y = _xy()
@@ -113,58 +127,125 @@ def parse_action(text: str, coord_scale: float = 1000.0) -> dict:
 # ---------------------------------------------------------------------------
 # togglable agent
 # ---------------------------------------------------------------------------
+# --------------------------------------------------------------------------
+# smart_resize — mirrors codes/ui_tars/action_parser.py from the official
+# ByteDance repo. Required for paper-spec inference.
+# --------------------------------------------------------------------------
+import math
+IMAGE_FACTOR = 28
+MIN_PIXELS = 100 * 28 * 28
+MAX_PIXELS = 16384 * 28 * 28
+MAX_RATIO = 200
+
+def _round_by_factor(n, f): return round(n / f) * f
+def _ceil_by_factor(n, f):  return math.ceil(n / f) * f
+def _floor_by_factor(n, f): return math.floor(n / f) * f
+
+def smart_resize(height, width, *, factor=IMAGE_FACTOR,
+                 min_pixels=MIN_PIXELS, max_pixels=MAX_PIXELS):
+    if max(height, width) / min(height, width) > MAX_RATIO:
+        # paper code raises; soft-clamp the larger side to fit ratio
+        if height > width: height = width * MAX_RATIO
+        else:              width  = height * MAX_RATIO
+    h_bar = max(factor, _round_by_factor(height, factor))
+    w_bar = max(factor, _round_by_factor(width, factor))
+    if h_bar * w_bar > max_pixels:
+        beta = math.sqrt((height * width) / max_pixels)
+        h_bar = _floor_by_factor(height / beta, factor)
+        w_bar = _floor_by_factor(width / beta, factor)
+    elif h_bar * w_bar < min_pixels:
+        beta = math.sqrt(min_pixels / (height * width))
+        h_bar = _ceil_by_factor(height * beta, factor)
+        w_bar = _ceil_by_factor(width * beta, factor)
+    return int(h_bar), int(w_bar)
+
+
 @dataclass
 class TogglableUITars:
     prompt_variant: str = "A_current"
     coord_scale: float = 1000.0          # 1000 for [0,1000]; img_w for raw px
     prev_actions_mode: str = "string"    # "string" | "chat_history" | "none"
     image_size: dict | None = None       # forwarded to AutoProcessor(size=...)
-    max_side: int | None = 896           # pre-resize cap; None = no pre-resize
-    model_id: str = "bytedance-research/UI-TARS-2B-SFT"
+    max_side: int | None = 896           # pre-resize cap; None = no pre-resize; "smart" = use smart_resize
+    model_id: str = "ByteDance-Seed/UI-TARS-2B-SFT"  # official; bytedance-research/* was a stale mirror
     device: str = "auto"                 # "auto" → mps if available else cpu
-    max_new_tokens: int = 128
+    max_new_tokens: int = 256            # paper code uses much larger contexts; 256 covers Thought + Action
+    language: str = "English"            # filled into MOBILE_USE_DOUBAO {language}
+    use_fast_processor: bool = False     # match training-time slow processor
+    mobile_template_mode: bool = False   # True → use prompt_variant as user message with {instruction} substituted (no system msg)
 
     model: object = None  # lazily loaded
     proc:  object = None
 
     def load(self):
         if self.model is not None: return
-        from transformers import AutoProcessor, Qwen2VLForConditionalGeneration
-        if self.image_size is None:
-            self.proc = AutoProcessor.from_pretrained(self.model_id)
-        else:
-            self.proc = AutoProcessor.from_pretrained(self.model_id,
-                                                     size=self.image_size)
+        from transformers import AutoProcessor
+        try:
+            from transformers import AutoModelForImageTextToText as _Model
+        except ImportError:
+            from transformers import Qwen2VLForConditionalGeneration as _Model
+        proc_kwargs = {"use_fast": self.use_fast_processor}
+        if self.image_size is not None:
+            proc_kwargs["size"] = self.image_size
+        self.proc = AutoProcessor.from_pretrained(self.model_id, **proc_kwargs)
         if self.device == "auto":
             dev = "mps" if torch.backends.mps.is_available() else "cpu"
         else:
             dev = self.device
-        self.model = Qwen2VLForConditionalGeneration.from_pretrained(
+        self.model = _Model.from_pretrained(
             self.model_id, torch_dtype=torch.float16, device_map=dev).eval()
 
     def _resize(self, pil):
         if self.max_side is None: return pil
+        if self.max_side == "smart":
+            w, h = pil.size
+            h_bar, w_bar = smart_resize(h, w)
+            return pil.resize((w_bar, h_bar), Image.BILINEAR)
+        ms = int(self.max_side)
         w, h = pil.size
-        if max(w, h) <= self.max_side: return pil
+        if max(w, h) <= ms: return pil
         if w >= h:
-            return pil.resize((self.max_side, int(h * self.max_side / w)),
-                              Image.BILINEAR)
-        return pil.resize((int(w * self.max_side / h), self.max_side),
-                          Image.BILINEAR)
+            return pil.resize((ms, int(h * ms / w)), Image.BILINEAR)
+        return pil.resize((int(w * ms / h), ms), Image.BILINEAR)
 
     def _build_messages(self, pil, instruction, prev_actions):
-        sys_prompt = PROMPTS[self.prompt_variant]
+        template = PROMPTS[self.prompt_variant]
 
+        if self.mobile_template_mode:
+            # Official ByteDance protocol: the whole MOBILE_USE_DOUBAO template
+            # (with {language}+{instruction} substituted) IS the user-message
+            # text. No system message. The image is attached to the same turn.
+            try:
+                user_text = template.format(language=self.language,
+                                            instruction=instruction)
+            except KeyError:
+                user_text = template.replace("{instruction}", instruction)\
+                                    .replace("{language}", self.language)
+            if prev_actions and isinstance(prev_actions, list) and \
+               self.prev_actions_mode == "chat_history":
+                msgs = []
+                for pa in prev_actions:
+                    msgs += [{"role": "user", "content": [
+                                {"type": "text", "text": user_text}]},
+                             {"role": "assistant", "content": [
+                                {"type": "text", "text": str(pa)}]}]
+                msgs.append({"role": "user", "content": [
+                    {"type": "image", "image": pil},
+                    {"type": "text", "text": user_text}]})
+                return msgs
+            return [{"role": "user", "content": [
+                {"type": "image", "image": pil},
+                {"type": "text", "text": user_text}]}]
+
+        # Legacy path (variants A/B/C/D) — template is the system msg.
+        sys_prompt = template
         if self.prev_actions_mode == "none" or not prev_actions:
             user_text = f"Task: {instruction}"
         elif self.prev_actions_mode == "string":
-            # join previous actions into a single string
-            if isinstance(prev_actions, list):
-                pa = " | ".join(str(a) for a in prev_actions)
-            else:
-                pa = str(prev_actions)
+            pa = " | ".join(str(a) for a in prev_actions) \
+                 if isinstance(prev_actions, list) else str(prev_actions)
             user_text = f"Task: {instruction}\nPrevious actions: {pa}"
-        else:  # chat_history — one user-turn per past step + the screenshot
+        else:
             user_text = f"Task: {instruction}"
 
         if self.prev_actions_mode == "chat_history" and isinstance(prev_actions, list):

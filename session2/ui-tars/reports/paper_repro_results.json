@@ -3,34 +3,34 @@
     "episode_id": 18836,
     "step_id": 8,
     "gt_type": "scroll",
-    "pred_type": "click",
+    "pred_type": "wait",
     "type_ok": false,
     "click_ok": null,
     "scroll_ok": false,
     "step_ok": false,
-    "sec": 9.11731505393982
+    "sec": 9.934508800506592
   },
   {
     "episode_id": 18989,
     "step_id": 2,
     "gt_type": "scroll",
-    "pred_type": "click",
+    "pred_type": "wait",
     "type_ok": false,
     "click_ok": null,
     "scroll_ok": false,
     "step_ok": false,
-    "sec": 7.769559144973755
+    "sec": 6.227378845214844
   },
   {
     "episode_id": 18853,
     "step_id": 5,
     "gt_type": "click",
-    "pred_type": "click",
-    "type_ok": true,
-    "click_ok": "True",
+    "pred_type": "wait",
+    "type_ok": false,
+    "click_ok": false,
     "scroll_ok": null,
-    "step_ok": "True",
-    "sec": 8.038322925567627
+    "step_ok": false,
+    "sec": 8.12213397026062
   },
   {
     "episode_id": 18542,
@@ -38,65 +38,65 @@
     "gt_type": "click",
     "pred_type": "click",
     "type_ok": true,
-    "click_ok": "True",
+    "click_ok": "False",
     "scroll_ok": null,
-    "step_ok": "True",
-    "sec": 6.523061990737915
+    "step_ok": "False",
+    "sec": 16.21378207206726
   },
   {
     "episode_id": 19657,
     "step_id": 9,
     "gt_type": "status",
-    "pred_type": "navigate_home",
+    "pred_type": "wait",
     "type_ok": false,
     "click_ok": null,
     "scroll_ok": null,
     "step_ok": false,
-    "sec": 5.35776424407959
+    "sec": 13.617764234542847
   },
   {
     "episode_id": 18413,
     "step_id": 7,
     "gt_type": "status",
-    "pred_type": "click",
+    "pred_type": "wait",
     "type_ok": false,
     "click_ok": null,
     "scroll_ok": null,
     "step_ok": false,
-    "sec": 6.581089019775391
+    "sec": 11.407333850860596
   },
   {
     "episode_id": 19824,
     "step_id": 2,
     "gt_type": "input_text",
-    "pred_type": "input_text",
-    "type_ok": true,
+    "pred_type": "click",
+    "type_ok": false,
     "click_ok": null,
     "scroll_ok": null,
-    "step_ok": true,
-    "sec": 5.213484048843384
+    "step_ok": false,
+    "sec": 15.567263126373291
   },
   {
     "episode_id": 18399,
     "step_id": 3,
     "gt_type": "input_text",
-    "pred_type": "click",
+    "pred_type": "wait",
     "type_ok": false,
     "click_ok": null,
     "scroll_ok": null,
     "step_ok": false,
-    "sec": 8.323788166046143
+    "sec": 5.899912118911743
   },
   {
     "episode_id": 19777,
     "step_id": 0,
     "gt_type": "navigate_back",
-    "pred_type": "click",
+    "pred_type": "open_app",
     "type_ok": false,
     "click_ok": null,
     "scroll_ok": null,
     "step_ok": false,
-    "sec": 8.068869829177856
+    "sec": 12.280025720596313
   },
   {
     "episode_id": 20041,
@@ -107,18 +107,18 @@
     "click_ok": null,
     "scroll_ok": null,
     "step_ok": false,
-    "sec": 7.681390047073364
+    "sec": 12.755625009536743
   },
   {
     "episode_id": 19137,
     "step_id": 0,
     "gt_type": "open_app",
-    "pred_type": "click",
-    "type_ok": false,
+    "pred_type": "open_app",
+    "type_ok": true,
     "click_ok": null,
     "scroll_ok": null,
-    "step_ok": false,
-    "sec": 6.241241931915283
+    "step_ok": true,
+    "sec": 10.899870157241821
   },
   {
     "episode_id": 20162,
@@ -129,29 +129,29 @@
     "click_ok": null,
     "scroll_ok": null,
     "step_ok": true,
-    "sec": 7.063256025314331
+    "sec": 9.86083197593689
   },
   {
     "episode_id": 18833,
     "step_id": 2,
     "gt_type": "wait",
-    "pred_type": "navigate_back",
-    "type_ok": false,
+    "pred_type": "wait",
+    "type_ok": true,
     "click_ok": null,
     "scroll_ok": null,
-    "step_ok": false,
-    "sec": 5.057612895965576
+    "step_ok": true,
+    "sec": 6.134242057800293
   },
   {
     "episode_id": 20001,
     "step_id": 3,
     "gt_type": "wait",
-    "pred_type": "click",
-    "type_ok": false,
+    "pred_type": "wait",
+    "type_ok": true,
     "click_ok": null,
     "scroll_ok": null,
-    "step_ok": false,
-    "sec": 6.394391059875488
+    "step_ok": true,
+    "sec": 6.986545085906982
   },
   {
     "episode_id": 18211,
@@ -162,7 +162,7 @@
     "click_ok": false,
     "scroll_ok": null,
     "step_ok": false,
-    "sec": 6.462064743041992
+    "sec": 10.952003002166748
   },
   {
     "episode_id": 20089,
@@ -173,6 +173,6 @@
     "click_ok": false,
     "scroll_ok": null,
     "step_ok": false,
-    "sec": 8.2001211643219
+    "sec": 13.886143922805786
   }
 ]

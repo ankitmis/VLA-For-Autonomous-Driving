@@ -113,9 +113,45 @@ call_user()
 """
 
 
+# ---------------------------------------------------------------------------
+# Variant E — verbatim MOBILE_USE_DOUBAO template from the official UI-TARS
+# repository (Apache-2.0, codes/ui_tars/prompt.py). Uses the point=<point>x y</point>
+# format the model was trained on, mobile-specific verbs, {language} +
+# {instruction} substitution. This template IS the entire user message —
+# there is no separate system prompt.
+# ---------------------------------------------------------------------------
+E_OFFICIAL_MOBILE_TEMPLATE = """You are a GUI agent. You are given a task and your action history, with screenshots. You need to perform the next action to complete the task.
+## Output Format
+```
+Thought: ...
+Action: ...
+```
+## Action Space
+
+click(point='<point>x1 y1</point>')
+long_press(point='<point>x1 y1</point>')
+type(content='') #If you want to submit your input, use "\\n" at the end of `content`.
+scroll(point='<point>x1 y1</point>', direction='down or up or right or left')
+open_app(app_name='')
+drag(start_point='<point>x1 y1</point>', end_point='<point>x2 y2</point>')
+press_home()
+press_back()
+finished(content='xxx') # Use escape characters \\', \\", and \\n in content part to ensure we can parse the content in normal python string format.
+
+
+## Note
+- Use {language} in `Thought` part.
+- Write a small plan and finally summarize your next action (with its target element) in one sentence in `Thought` part.
+
+## User Instruction
+{instruction}
+"""
+
+
 PROMPTS = {
     "A_current":               A_CURRENT,
     "B_official_box_markers":  B_OFFICIAL_BOX_MARKERS,
     "C_minimal":               C_MINIMAL,
     "D_generic_ui_tars":       D_GENERIC_UI_TARS,
+    "E_official_mobile":       E_OFFICIAL_MOBILE_TEMPLATE,  # use as USER msg, substitute {instruction}
 }
